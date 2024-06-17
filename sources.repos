@@ -11,3 +11,19 @@ repositories:
     type: git
     url: https://github.com/qiayuanl/soem_interface.git
     version: master
+  ecat_manager:
+    type: git
+    url: https://github.com/qiayuanl/ecat_manager.git
+    version: master
+  cleardrive:
+    type: git
+    url: https://github.com/qiayuanl/cleardrive.git
+    version: master
+  mit_ecat:
+    type: git
+    url: https://github.com/qiayuanl/mit_ecat.git
+    version: master
+  rm_ecat:
+    type: git
+    url: https://github.com/qiayuanl/rm_ecat.git
+    version: master
