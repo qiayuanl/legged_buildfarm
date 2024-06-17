@@ -1,0 +1,15 @@
+name: Builder
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build_testing:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: jspricke/ros-deb-builder-action@rosotest
+        with:
+          DEB_DISTRO: focal
+          ROS_DISTRO: noetic
+          SQUASH_HISTORY: true
