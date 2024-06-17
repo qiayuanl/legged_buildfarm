@@ -11,17 +11,17 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/checkout@v2
         with:
-          path: 'src/ecat_manager'
+          path: '${{ GITHUB_ACTION_PATH }}/src/ecat_manager'
       - uses: actions/checkout@v2
         with:
           repository: qiayuanl/cleardrive
           token: ${{ secrets.GH_PAT }} 
-          path: 'src/cleardrive'
+          path: '${{ GITHUB_ACTION_PATH }}/src/cleardrive'
       - uses: actions/checkout@v2
         with:
           repository: qiayuanl/mit_ecat
           token: ${{ secrets.GH_PAT }} 
-          path: 'src/mit_ecat'
+          path: '${{ GITHUB_ACTION_PATH }}/src/mit_ecat'
       - uses: actions/checkout@v2
         with:
           repository: qiayuanl/rm_ecat
