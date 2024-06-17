@@ -7,3 +7,7 @@ repositories:
     type: git
     url: https://github.com/leggedrobotics/message_logger.git
     version: master
+  soem_interface:
+    type: git
+    url: https://github.com/qiayuanl/soem_interface.git
+    version: master
