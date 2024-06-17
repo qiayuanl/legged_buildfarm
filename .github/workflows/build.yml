@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
         with:
           path: 'src/ecat_manager'
       - uses: actions/checkout@v2
@@ -32,6 +33,7 @@ jobs:
           ROS_DISTRO: noetic
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SQUASH_HISTORY: true
+          SKIP_CHECKOUT: true
           SKIP_PACKAGES: >-
             soem_interface_examples
             rm_ecat_ros
