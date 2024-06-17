@@ -40,4 +40,5 @@ jobs:
           SKIP_CHECKOUT: true
           SKIP_PACKAGES: >-
             soem_interface_examples
+            cleardrive_example
             rm_ecat_ros
