@@ -12,11 +12,5 @@ jobs:
         with:
           DEB_DISTRO: focal
           ROS_DISTRO: noetic
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SQUASH_HISTORY: true
-      - uses: danielmundi/upload-packagecloud@v1
-        with:
-          PACKAGE-NAME: '*.deb'
-          PACKAGECLOUD-USERNAME: qiayuanl
-          PACKAGECLOUD-REPO: cleardrive
-          PACKAGECLOUD-DISTRIB: ubuntu/focal
-          PACKAGECLOUD-TOKEN: ${{ secrets.packagecloud_token }}
