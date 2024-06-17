@@ -14,3 +14,6 @@ jobs:
           ROS_DISTRO: noetic
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SQUASH_HISTORY: true
+          SKIP_PACKAGES: >-
+            soem_interface_examples
+            rm_ecat_ros
