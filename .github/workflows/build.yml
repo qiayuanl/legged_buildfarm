@@ -27,6 +27,8 @@ jobs:
           repository: qiayuanl/rm_ecat
           token: ${{ secrets.GH_PAT }} 
           path: 'src/rm_ecat'
+      - run: pwd
+      - run: ls
       - uses: jspricke/ros-deb-builder-action@rosotest
         with:
           DEB_DISTRO: focal
