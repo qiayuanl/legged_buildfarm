@@ -31,7 +31,7 @@ jobs:
           path: 'src/rm_ecat'
       - run: pwd
       - run: ls
-      - uses: jspricke/ros-deb-builder-action@main
+      - uses: qiayuanl/ros-deb-builder-action@main
         with:
           DEB_DISTRO: focal
           ROS_DISTRO: noetic
