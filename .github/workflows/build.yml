@@ -8,6 +8,24 @@ jobs:
   build_testing:
     runs-on: ubuntu-22.04
     steps:
+      - uses: actions/checkout@v2
+        with:
+          path: 'src/ecat_manager'
+      - uses: actions/checkout@v2
+        with:
+          repository: qiayuanl/cleardrive
+          token: ${{ secrets.GH_PAT }} 
+          path: 'src/cleardrive'
+      - uses: actions/checkout@v2
+        with:
+          repository: qiayuanl/mit_ecat
+          token: ${{ secrets.GH_PAT }} 
+          path: 'src/mit_ecat'
+      - uses: actions/checkout@v2
+        with:
+          repository: qiayuanl/rm_ecat
+          token: ${{ secrets.GH_PAT }} 
+          path: 'src/rm_ecat'
       - uses: jspricke/ros-deb-builder-action@rosotest
         with:
           DEB_DISTRO: focal
