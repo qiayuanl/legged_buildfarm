@@ -11,6 +11,14 @@ repositories:
     type: git
     url: https://github.com/qiayuanl/soem_interface.git
     version: master
+  kindr:
+    type: git
+    url: https://github.com/ANYbotics/kindr.git
+    version: master
+  kindr_ros:
+    type: git
+    url: https://github.com/ANYbotics/kindr_ros.git
+    version: master
   elevation_mapping:
     type: git
     url: https://github.com/ANYbotics/elevation_mapping.git
