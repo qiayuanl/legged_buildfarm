@@ -11,3 +11,7 @@ repositories:
     type: git
     url: https://github.com/qiayuanl/soem_interface.git
     version: master
+  elevation_mapping:
+    type: git
+    url: https://github.com/ANYbotics/elevation_mapping.git
+    version: master
