@@ -42,3 +42,5 @@ jobs:
             soem_interface_examples
             cleardrive_example
             rm_ecat_ros
+            elevation_mapping_demos
+
