@@ -3,6 +3,10 @@ repositories:
     type: git
     url: https://github.com/pybind/pybind11.git
     version: master
+  mpi_cmake_modules:
+    type: git
+    url: https://github.com/machines-in-motion/mpi_cmake_modules.git
+    version: master
   real_time_tools:
     type: git
     url: https://github.com/machines-in-motion/real_time_tools.git
