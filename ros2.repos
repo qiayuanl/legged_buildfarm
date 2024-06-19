@@ -1,7 +1,7 @@
 repositories:
   any_node:
     type: git
-    url: https://github.com/ANYbotics/any_node.git
+    url: https://github.com/leggedrobotics/any_node.git
     version: foxy
   message_logger:
     type: git
