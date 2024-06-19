@@ -1,5 +1,5 @@
 repositories:
-  googletest
+  googletest:
     type: git
     url: https://github.com/google/googletest
     version: main
