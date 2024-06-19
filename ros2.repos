@@ -1,17 +1,37 @@
 repositories:
-  pybind11:
+  googletest
     type: git
-    url: https://github.com/pybind/pybind11.git
-    version: master
+    url: https://github.com/google/googletest
+    version: main
   mpi_cmake_modules:
     type: git
     url: https://github.com/machines-in-motion/mpi_cmake_modules.git
+    version: master
+  pybind11:
+    type: git
+    url: https://github.com/pybind/pybind11.git
     version: master
   real_time_tools:
     type: git
     url: https://github.com/machines-in-motion/real_time_tools.git
     version: master
+  serialization_utils:
+    type: git
+    url: https://github.com/MPI-IS/serialization_utils.git
+    version: master
   shared_memory:
     type: git
     url: https://github.com/machines-in-motion/shared_memory.git
+    version: master
+  signal_handler:
+    type: git
+    url: https://github.com/MPI-IS/signal_handler.git
+    version: master
+  time_series:
+    type: git
+    url: https://github.com/machines-in-motion/time_series.git
+    version: master
+  robot_interfaces:
+    type: git
+    url: https://github.com/open-dynamic-robot-initiative/robot_interfaces.git
     version: master
