@@ -1,0 +1,13 @@
+repositories:
+  pybind11:
+    type: git
+    url: https://github.com/pybind/pybind11.git
+    version: master
+  real_time_tools:
+    type: git
+    url: https://github.com/machines-in-motion/real_time_tools.git
+    version: master
+  shared_memory:
+    type: git
+    url: https://github.com/machines-in-motion/shared_memory.git
+    version: master

@@ -1,0 +1,18 @@
+name: Builder Noetic
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build_testing:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: qiayuanl/ros-deb-builder-action@main
+        with:
+          DEB_DISTRO: focal
+          ROS_DISTRO: foxy
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SQUASH_HISTORY: true
+          REPOS_FILE: ros2.repos
+  

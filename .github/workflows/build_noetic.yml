@@ -1,4 +1,4 @@
-name: Builder
+name: Builder Noetic
 
 on:
   workflow_dispatch:
@@ -29,8 +29,6 @@ jobs:
           repository: qiayuanl/rm_ecat
           token: ${{ secrets.GH_PAT }} 
           path: 'src/rm_ecat'
-      - run: pwd
-      - run: ls
       - uses: qiayuanl/ros-deb-builder-action@main
         with:
           DEB_DISTRO: focal
