@@ -3,7 +3,8 @@ name: Builder Noetic
 on:
   workflow_dispatch:
   push:
-
+    paths:
+      - ros1.repos
 jobs:
   build_testing:
     runs-on: ubuntu-22.04
@@ -33,6 +34,7 @@ jobs:
         with:
           DEB_DISTRO: focal
           ROS_DISTRO: noetic
+          REPOS_FILE: ros2.repos
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SQUASH_HISTORY: true
           SKIP_CHECKOUT: true
