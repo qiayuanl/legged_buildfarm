@@ -34,7 +34,7 @@ jobs:
         with:
           DEB_DISTRO: focal
           ROS_DISTRO: noetic
-          REPOS_FILE: ros2.repos
+          REPOS_FILE: ros1.repos
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SQUASH_HISTORY: true
           SKIP_CHECKOUT: true
