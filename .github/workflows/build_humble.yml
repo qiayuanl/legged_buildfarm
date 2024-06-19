@@ -16,4 +16,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SQUASH_HISTORY: true
           REPOS_FILE: ros2.repos
-  
+          SKIP_PACKAGES: >-
+            signal_handler
+            param_io
+            any_node
+            any_node_example
