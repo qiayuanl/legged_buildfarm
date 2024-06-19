@@ -1,4 +1,4 @@
-name: Builder Noetic
+name: Builder Humble
 
 on:
   workflow_dispatch:
@@ -10,8 +10,8 @@ jobs:
     steps:
       - uses: qiayuanl/ros-deb-builder-action@main
         with:
-          DEB_DISTRO: focal
-          ROS_DISTRO: foxy
+          DEB_DISTRO: jammy
+          ROS_DISTRO: humble
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SQUASH_HISTORY: true
           REPOS_FILE: ros2.repos
