@@ -3,7 +3,8 @@ name: Builder Humble
 on:
   workflow_dispatch:
   push:
-
+    paths:
+      - ros2.repos
 jobs:
   build_testing:
     runs-on: ubuntu-22.04
