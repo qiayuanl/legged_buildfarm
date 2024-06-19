@@ -9,5 +9,5 @@ repositories:
     version: foxy
   soem_interface:
     type: git
-    url: https://github.com/qiayuanl/soem_interface.git
+    url: https://github.com/leggedrobotics/soem_interface.git
     version: feature/ament_package
