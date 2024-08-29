@@ -9,12 +9,14 @@ jobs:
   build_testing:
     runs-on: ubuntu-22.04
     steps:
+      - uses: actions/checkout@v2
       - uses: qiayuanl/ros-deb-builder-action@main
         with:
           DEB_DISTRO: jammy
           ROS_DISTRO: humble
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SQUASH_HISTORY: true
+          SKIP_CHECKOUT: true
           REPOS_FILE: ros2.repos
           SKIP_PACKAGES: >-
             soem_interface_examples
