@@ -7,3 +7,7 @@ repositories:
     type: git
     url: https://github.com/qiayuanl/soem_interface.git
     version: feature/ament_package
+  ros_msft_onnx:
+    type: git
+    url: https://github.com/ms-iot/ros_msft_onnx.git
+    version: humble
