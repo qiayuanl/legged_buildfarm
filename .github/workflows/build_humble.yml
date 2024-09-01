@@ -25,3 +25,5 @@ jobs:
           REPOS_FILE: ros2.repos
           SKIP_PACKAGES: >-
             soem_interface_examples
+            ros_msft_onnx
+            ros_msft_onnx_msgs
