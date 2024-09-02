@@ -15,6 +15,11 @@ jobs:
           repository: qiayuanl/soem_ros2
           token: ${{ secrets.GH_PAT }}
           path: 'src/soem_ros2'
+      - uses: actions/checkout@v2
+        with:
+          repository: qiayuanl/legged_control2
+          token: ${{ secrets.GH_PAT }}
+          path: 'src/legged_control2'
       - uses: qiayuanl/ros-deb-builder-action@main
         with:
           DEB_DISTRO: jammy
