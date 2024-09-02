@@ -28,7 +28,6 @@ jobs:
           SQUASH_HISTORY: true
           SKIP_CHECKOUT: true
           REPOS_FILE: ros2.repos
-          SBUILD_CONF: enable-network
           SKIP_PACKAGES: >-
             soem_interface_examples
             ros_msft_onnx
