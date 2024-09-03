@@ -20,6 +20,12 @@ jobs:
           repository: qiayuanl/legged_control2
           token: ${{ secrets.GH_PAT }}
           path: 'src/legged_control2'
+      - uses: actions/checkout@v2
+        with:
+          repository: qiayuanl/cleardrive
+          token: ${{ secrets.GH_PAT }}
+          path: 'src/cleardrive'
+          ref: 'feature/ament_cmake'
       - uses: qiayuanl/ros-deb-builder-action@main
         with:
           DEB_DISTRO: jammy
@@ -31,3 +37,6 @@ jobs:
           SKIP_PACKAGES: >-
             soem_interface_examples
             legged_rl_controllers
+            cleardrive_example
+            cleardrive_ros
+            rqt_cleardrive
