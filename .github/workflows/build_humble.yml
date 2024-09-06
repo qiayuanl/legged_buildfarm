@@ -39,4 +39,5 @@ jobs:
             legged_rl_controllers
             cleardrive_example
             cleardrive_ros
+            cleardrive_ros2
             rqt_cleardrive
