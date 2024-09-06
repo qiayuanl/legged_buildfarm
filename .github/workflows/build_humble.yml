@@ -38,4 +38,3 @@ jobs:
             soem_interface_examples
             legged_rl_controllers
             cleardrive_example
-            rqt_cleardrive
