@@ -7,7 +7,3 @@ repositories:
     type: git
     url: https://github.com/qiayuanl/soem_interface.git
     version: feature/ament_package
-  pinocchio:
-    type: git
-    url: https://github.com/stack-of-tasks/pinocchio.git
-    version: master
