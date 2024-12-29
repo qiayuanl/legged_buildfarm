@@ -37,5 +37,6 @@ jobs:
           REPOS_FILE: ros2.repos
           SKIP_PACKAGES: >-
             soem_interface_examples
-            legged_rl_controllers
             cleardrive_example
+            legged_rl_controllers
+            legged_gazebo
