@@ -1,4 +1,4 @@
-name: Builder Humble
+name: Builder Humble amd64
 
 on:
   workflow_dispatch:
