@@ -35,6 +35,7 @@ jobs:
           SQUASH_HISTORY: true
           SKIP_CHECKOUT: true
           REPOS_FILE: ros2.repos
+          SBUILD_CONF: "$enable_network = 1;"
           SKIP_PACKAGES: >-
             soem_interface_examples
             cleardrive_example
