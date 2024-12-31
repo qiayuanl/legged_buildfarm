@@ -42,5 +42,4 @@ jobs:
           SBUILD_CONF: "$enable_network = 1;"
           SKIP_PACKAGES: >-
             soem_interface_examples
-            legged_rl_controllers
             cleardrive_example
