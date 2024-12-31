@@ -26,6 +26,11 @@ jobs:
           token: ${{ secrets.GH_PAT }}
           path: 'src/cleardrive'
           ref: 'feature/ament_cmake'
+      - uses: actions/checkout@v2
+        with:
+          repository: qiayuanl/onnxruntime_ament
+          token: ${{ secrets.GH_PAT }}
+          path: 'src/onnxruntime_ament'
       - uses: qiayuanl/ros-deb-builder-action@main
         with:
           DEB_DISTRO: jammy
