@@ -7,7 +7,7 @@ on:
       - ros2.repos
 jobs:
   build_testing:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v2
       - uses: actions/checkout@v2
@@ -20,6 +20,12 @@ jobs:
           repository: qiayuanl/legged_control2
           token: ${{ secrets.GH_PAT }}
           path: 'src/legged_control2'
+      - uses: actions/checkout@v2
+        with:
+          repository: qiayuanl/onnxruntime_ament
+          token: ${{ secrets.GH_PAT }}
+          path: 'src/onnxruntime_ament'
+          ref: 'offline'
       - uses: actions/checkout@v2
         with:
           repository: qiayuanl/cleardrive
@@ -35,7 +41,6 @@ jobs:
           SQUASH_HISTORY: true
           SKIP_CHECKOUT: true
           REPOS_FILE: ros2.repos
-          SBUILD_CONF: "$enable_network = 1;"
           SKIP_PACKAGES: >-
             soem_interface_examples
             cleardrive_example
