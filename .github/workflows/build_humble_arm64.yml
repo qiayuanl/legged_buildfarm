@@ -44,5 +44,4 @@ jobs:
           SKIP_PACKAGES: >-
             soem_interface_examples
             cleardrive_example
-            legged_rl_controllers
             legged_gazebo
