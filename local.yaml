@@ -1,0 +1,21 @@
+legged_gazebo:
+  ubuntu:
+  - ros-humble-legged-gazebo
+legged_model:
+  ubuntu:
+  - ros-humble-legged-model
+legged_estimation:
+  ubuntu:
+  - ros-humble-legged-estimation
+legged_model_ros2:
+  ubuntu:
+  - ros-humble-legged-model-ros2
+legged_controllers:
+  ubuntu:
+  - ros-humble-legged-controllers
+onnxruntime_ament:
+  ubuntu:
+  - ros-humble-onnxruntime-ament
+legged_rl_controllers:
+  ubuntu:
+  - ros-humble-legged-rl-controllers
