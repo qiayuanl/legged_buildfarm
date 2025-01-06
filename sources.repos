@@ -6,4 +6,4 @@ repositories:
   onnxruntime_ament:
     type: git
     url: https://github.com/qiayuanl/onnxruntime_ament
-    version: e61bc26d51bb118e5fb319d2ca1ed755946c087f
+    version: ad9dec1517c66509683347986325cdf895fe116c
