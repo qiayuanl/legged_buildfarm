@@ -2,7 +2,7 @@ repositories:
   legged_control2:
     type: git
     url: https://github.com/qiayuanl/legged_control2
-    version: b53f9f779043d30f2e1e71b1b0439f0557468203
+    version: 2e6de4d8381bb86482d46a2baf97d1819126469d
   onnxruntime_ament:
     type: git
     url: https://github.com/qiayuanl/onnxruntime_ament
