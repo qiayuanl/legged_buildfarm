@@ -7,7 +7,7 @@ on:
       - ros2.repos
 jobs:
   build_testing:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v2
       - uses: actions/checkout@v2
@@ -33,4 +33,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SQUASH_HISTORY: true
           SKIP_CHECKOUT: true
-          SBUILD_CONF: "$enable_network = 1;"
