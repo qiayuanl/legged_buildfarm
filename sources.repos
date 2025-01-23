@@ -3,7 +3,11 @@ repositories:
     type: git
     url: https://github.com/qiayuanl/legged_control2
     version: c645910934a58a47a1e1b03b9fccc01a1de620f6
+  mujoco_ros2_control:
+    type: git
+    url: https://github.com/qiayuanl/mujoco_ros2_control
+    version: d403e9fa2e5fb6e3278e94a323fd7d53a83c2864
   onnxruntime_ament:
     type: git
     url: https://github.com/qiayuanl/onnxruntime_ament
-    version: ad9dec1517c66509683347986325cdf895fe116c
+    version: 4ce76004bc1e2da8b88b29abd54a25c258466258
