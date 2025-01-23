@@ -20,7 +20,6 @@ jobs:
           repository: qiayuanl/onnxruntime_ament
           token: ${{ secrets.GH_PAT }}
           path: 'src/onnxruntime_ament'
-          ref: 'offline'
       - uses: qiayuanl/ros-deb-builder-action@main
         with:
           DEB_DISTRO: jammy
