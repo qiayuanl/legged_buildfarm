@@ -6,7 +6,7 @@ repositories:
   mujoco_ros2_control:
     type: git
     url: https://github.com/qiayuanl/mujoco_ros2_control
-    version: 3855cf11b4cd9c3aa3110223113be44a0727f9c9
+    version: a34def9a28106ab65a0fefc3c842434b36356008
   onnxruntime_ament:
     type: git
     url: https://github.com/qiayuanl/onnxruntime_ament
