@@ -2,7 +2,7 @@ repositories:
   legged_control2:
     type: git
     url: https://github.com/qiayuanl/legged_control2
-    version: 5b0806e0011a1b396142635fbed0c6bec0ca8b1f
+    version: 0667c5ebca3c3bb3061520fee70296df3348dd69
   mujoco_ros2_control:
     type: git
     url: https://github.com/qiayuanl/mujoco_ros2_control
