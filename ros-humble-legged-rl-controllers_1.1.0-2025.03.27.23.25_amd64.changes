@@ -1,0 +1,64 @@
+Format: 1.8
+Date: Wed, 26 Mar 2025 00:00:00 -0000
+Source: ros-humble-legged-rl-controllers
+Binary: ros-humble-legged-rl-controllers
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 1.1.0-2025.03.27.23.25
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-rl-controllers - Model of legged robot
+Changes:
+ ros-humble-legged-rl-controllers (1.1.0-2025.03.27.23.25) jammy; urgency=high
+ .
+   * Add some info for the command and observation size
+   * Add missing header
+   * Add virtual for parserObservation and parserCommand
+   * Correct BaseAngVelObservationTerm
+   * Update OnnxController with Manger
+   * Add ManagerBased, CommandManager, ObservationManager
+   * Add OnnxPolicy
+   * Add phase_hold
+   * Check if jointNameInPolicy_ in jointIndexMap_
+   * Minor change for formate
+   * Add virtual for OnnxController
+   * Correct phase cycle
+   * Add phase observation
+   * Remove config and launch of legged_rl_controllers
+   * Replace onnxruntime with onnxruntime_ament
+   * Add position_delta action type
+   * Add action_type from parameter
+   * Read from observation from parameter
+   * Use new hardware interface
+   * Print shape of onnx policy for debugging
+   * Add joint_names parameters interface
+   * Add joint_names parameters interface
+   * Add default_position and kp, kd parameters interface
+   * Correct naming of controllers plugin
+   * Add publisher for policy IO
+   * Add StandbyController
+   * Fix some minor problems
+   * Add param interface for LinearKalmanFilter
+   * Add param interface for LeggedModelRos2
+   * Add teleop.launch.py
+   * Replace all ZYX with quaternion
+   * Add cmd_vel receiver
+   * Fix a silly bug cause by copilot
+   * Correct the policy update rule and observation
+   * Add legged_rl_controllers
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ e2f27affc9e5bafa952fdc6d0566ed9eea6cff78 3228234 ros-humble-legged-rl-controllers-dbgsym_1.1.0-2025.03.27.23.25_amd64.ddeb
+ 417dc73dbc08bdf7e68b41049ad5ae9062a28faa 28335 ros-humble-legged-rl-controllers_1.1.0-2025.03.27.23.25_amd64.buildinfo
+ e13d768214530525b3471931aca6431e1e1761a0 135088 ros-humble-legged-rl-controllers_1.1.0-2025.03.27.23.25_amd64.deb
+Checksums-Sha256:
+ 9de13e94551cb18a375cd9e28d8d0d6d991bb4465eac6169c43b814fb088794b 3228234 ros-humble-legged-rl-controllers-dbgsym_1.1.0-2025.03.27.23.25_amd64.ddeb
+ 7307369bee5493edcc2442fde00ee78271e1e2fc4ae92a794edec588b63db112 28335 ros-humble-legged-rl-controllers_1.1.0-2025.03.27.23.25_amd64.buildinfo
+ f871c4500703b814f1f3b06b5755c5fe54692854a4159544951327db816d884e 135088 ros-humble-legged-rl-controllers_1.1.0-2025.03.27.23.25_amd64.deb
+Files:
+ b4b2d2716c060fa87c7be7141611a95a 3228234 debug optional ros-humble-legged-rl-controllers-dbgsym_1.1.0-2025.03.27.23.25_amd64.ddeb
+ 700042f3e674b67dc5408818363d8218 28335 misc optional ros-humble-legged-rl-controllers_1.1.0-2025.03.27.23.25_amd64.buildinfo
+ 1a58a451e241a602b589b5b8df15f06b 135088 misc optional ros-humble-legged-rl-controllers_1.1.0-2025.03.27.23.25_amd64.deb
