@@ -1,0 +1,44 @@
+Format: 1.8
+Date: Wed, 26 Mar 2025 00:00:00 -0000
+Source: ros-humble-legged-model-ros2
+Binary: ros-humble-legged-model-ros2
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0-2025.03.27.01.39
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-model-ros2 - Model of legged robot
+Changes:
+ ros-humble-legged-model-ros2 (0-2025.03.27.01.39) jammy; urgency=high
+ .
+   * Remove the client for getting robot_description
+   * Move exec_depend from unitree_description to legged_controllers
+   * Get robot_description from robot_state_publisher
+   * Add param interface for LeggedModelRos2
+   * Replace all ZYX with quaternion
+   * Fix dependency problem of legged_model_ros2
+   * Correct state_interface order of LeggedModeRos2
+   * Correct "Remove imu inside LeggedModelRos2"
+   * Remove imu inside LeggedModelRos2
+   * Add IMU in LeggedModelRos2
+   * Minor change
+   * Fix initialization of pinModelPtr_
+   * Use shared_library
+   * Using SharedPtr = std::shared_ptr
+   * Add legged_model_ros2
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ 47c43b3183a4a44f606ddd65daa607093ce49bd8 970004 ros-humble-legged-model-ros2-dbgsym_0-2025.03.27.01.39_amd64.ddeb
+ 0e64975e9911fd5913479ead4391b363a5306c1d 23122 ros-humble-legged-model-ros2_0-2025.03.27.01.39_amd64.buildinfo
+ dcd1fed911e648f3ae533945c9d5c060198f28ff 23536 ros-humble-legged-model-ros2_0-2025.03.27.01.39_amd64.deb
+Checksums-Sha256:
+ 01a849f5a61253ed80154b3b77429c6aaf05a8cbf8ade871e7af03a36165bea3 970004 ros-humble-legged-model-ros2-dbgsym_0-2025.03.27.01.39_amd64.ddeb
+ 7f96e03d87ca994f8f09f4dfc16c561f3216b434a7594dc5909e273e99460cc5 23122 ros-humble-legged-model-ros2_0-2025.03.27.01.39_amd64.buildinfo
+ 45008d0bb23a8c8361dfb779446e93e0be05aa1e624d43596cfd886fbb1dca38 23536 ros-humble-legged-model-ros2_0-2025.03.27.01.39_amd64.deb
+Files:
+ 776702b25330ee89a7434384e1c3cc86 970004 debug optional ros-humble-legged-model-ros2-dbgsym_0-2025.03.27.01.39_amd64.ddeb
+ 74ea3aebd8e576cf3f9dcb7fb0042649 23122 misc optional ros-humble-legged-model-ros2_0-2025.03.27.01.39_amd64.buildinfo
+ cc35860b0421dbcea98dfc440a276847 23536 misc optional ros-humble-legged-model-ros2_0-2025.03.27.01.39_amd64.deb

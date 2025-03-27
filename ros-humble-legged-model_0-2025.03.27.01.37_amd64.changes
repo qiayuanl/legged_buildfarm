@@ -1,0 +1,45 @@
+Format: 1.8
+Date: Wed, 26 Mar 2025 00:00:00 -0000
+Source: ros-humble-legged-model
+Binary: ros-humble-legged-model
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0-2025.03.27.01.37
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-model - Model of legged robot
+Changes:
+ ros-humble-legged-model (0-2025.03.27.01.37) jammy; urgency=high
+ .
+   * Add jointIndexMap_ and getJointIndex at LeggedModel
+   * Check the contact and base name
+   * Add urdfdom as depend in legged_model
+   * Initialize q and v in constructor LeggedModel
+   * Replace all ZYX with quaternion
+   * Fix minor problem in LeggedModel
+   * Add LeggedModel::getJointNames
+   * Add LeggedModel::getFrameName
+   * Add IMU in LeggedModelRos2
+   * Add LinearKalmanFilter
+   * Fix initialization of pinModelPtr_
+   * Use shared_library
+   * Using SharedPtr = std::shared_ptr
+   * Add legged_model_ros2
+   * Add legged_estimation
+   * Add legged_model
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ f9f71de62d969b01e2aced89e2ed30926897bc33 14991726 ros-humble-legged-model-dbgsym_0-2025.03.27.01.37_amd64.ddeb
+ a65988e7d6f2a437139e5b9a795cce76b7375f40 18359 ros-humble-legged-model_0-2025.03.27.01.37_amd64.buildinfo
+ 7ecb3fda70d12b3ba1299baecaec801c05d06981 160802 ros-humble-legged-model_0-2025.03.27.01.37_amd64.deb
+Checksums-Sha256:
+ ab131d1415cb17b82bc2a2034b54f858a658f2f8a37be2397a9624f3e62153cf 14991726 ros-humble-legged-model-dbgsym_0-2025.03.27.01.37_amd64.ddeb
+ 884679a9cef9f997d26f5ecd4a1a7b246075f3d6cd4faaed9ea9cddc23686c8d 18359 ros-humble-legged-model_0-2025.03.27.01.37_amd64.buildinfo
+ f393ca64ca8a2338211957d05329925cc7814e731cdbc2812bd2c5ec5b40213d 160802 ros-humble-legged-model_0-2025.03.27.01.37_amd64.deb
+Files:
+ 4790c1c3021c2c9402b7c17421b9b635 14991726 debug optional ros-humble-legged-model-dbgsym_0-2025.03.27.01.37_amd64.ddeb
+ 83652a2e3127c5c6e3398a85cca45dee 18359 misc optional ros-humble-legged-model_0-2025.03.27.01.37_amd64.buildinfo
+ b96fc6b029762e9e4bf8d94ce137a079 160802 misc optional ros-humble-legged-model_0-2025.03.27.01.37_amd64.deb
