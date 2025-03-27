@@ -1,0 +1,66 @@
+Format: 1.8
+Date: Wed, 26 Mar 2025 00:00:00 -0000
+Source: ros-humble-legged-controllers
+Binary: ros-humble-legged-controllers
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0-2025.03.27.01.05
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-controllers - Model of legged robot
+Changes:
+ ros-humble-legged-controllers (0-2025.03.27.01.05) jammy; urgency=high
+ .
+   * Update Mocap code
+   * Add gm_observer.cut_off_frequency and gm_observer.force_threshold configuration
+   * Update OnnxController with Manger
+   * Minor change for formate
+   * Remove the client for getting robot_description
+   * Correct phase cycle
+   * Add phase observation
+   * Move exec_depend from unitree_description to legged_controllers
+   * Use new hardware interface
+   * Get robot_description from robot_state_publisher
+   * Add TopicController
+   * Add default_position and kp, kd parameters interface
+   * Add StandbyController
+   * Fix some minor problems
+   * Call StateEstimator::on_deactivate at the beginning of ControllerBase::on_deactivate
+   * Fix a minor problem in Mocap
+   * Add Mocap
+   * Add param interface for LinearKalmanFilter
+   * Add param interface for LeggedModelRos2
+   * Add ControllerBase::on_deactivate
+   * Replace all ZYX with quaternion
+   * Fix a silly bug cause by copilot
+   * Fix minor problem in LeggedModel
+   * Add legged_rl_controllers
+   * Set frame names in StateEstimator manually
+   * Correct some return value in ControllerBase
+   * Add ControllerBase
+   * Add baseFrameIndex to contactIndices in GmObserverRos2
+   * Add unlock after setup message in realtime publisher
+   * Correct "Remove imu inside LeggedModelRos2"
+   * Remove imu inside LeggedModelRos2
+   * Add LinearKalmanFilterRos2
+   * Add LeggedModel::getFrameName
+   * Add GmObserverRos2
+   * Add GmObserverRos2
+   * Minor change
+   * Add legged_controllers
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ fcc6cbb13e9f730149b5df0c02d654ae752808a5 6045038 ros-humble-legged-controllers-dbgsym_0-2025.03.27.01.05_amd64.ddeb
+ 167eed24b83f10c36d66e3e1add146a112c6fbf3 23665 ros-humble-legged-controllers_0-2025.03.27.01.05_amd64.buildinfo
+ 5cd85cd434fcea9cb0677be6b9b4f4f047868fc8 181906 ros-humble-legged-controllers_0-2025.03.27.01.05_amd64.deb
+Checksums-Sha256:
+ 8430d234542602833a2547c50cd26a3a6c6bb03199988a04fc07d7437f9a1578 6045038 ros-humble-legged-controllers-dbgsym_0-2025.03.27.01.05_amd64.ddeb
+ b4a01858efe18b11753c48683d2a90a5dd6518b00852ac6c463085a4c3a52578 23665 ros-humble-legged-controllers_0-2025.03.27.01.05_amd64.buildinfo
+ 33143e495ab4e056ffa9f2d7b157a29b924a24fc6a3d938ab63a2455cf4a6100 181906 ros-humble-legged-controllers_0-2025.03.27.01.05_amd64.deb
+Files:
+ f88ea0c904a861ed02a5ebc319b483ba 6045038 debug optional ros-humble-legged-controllers-dbgsym_0-2025.03.27.01.05_amd64.ddeb
+ bdaafaa6996bc6e9f2ef300bf8476d9d 23665 misc optional ros-humble-legged-controllers_0-2025.03.27.01.05_amd64.buildinfo
+ 81efca12c76331496cb2ae92f70e9701 181906 misc optional ros-humble-legged-controllers_0-2025.03.27.01.05_amd64.deb
