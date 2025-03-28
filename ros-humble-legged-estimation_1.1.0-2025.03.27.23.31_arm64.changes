@@ -1,0 +1,41 @@
+Format: 1.8
+Date: Wed, 26 Mar 2025 00:00:00 -0000
+Source: ros-humble-legged-estimation
+Binary: ros-humble-legged-estimation
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 1.1.0-2025.03.27.23.31
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-estimation - State estimation of legged robot
+Changes:
+ ros-humble-legged-estimation (1.1.0-2025.03.27.23.31) jammy; urgency=high
+ .
+   * Add gm_observer.cut_off_frequency and gm_observer.force_threshold configuration
+   * Simplify LinearKalmanFilter, don't do measurement update if no contact exit.
+   * Add param interface for LinearKalmanFilter
+   * Replace all ZYX with quaternion
+   * Remove incorrect initialization of lowPassLast_ in GmObserver::GmObserver
+   * Fix minor problem in LeggedModel
+   * Add GmObserverRos2
+   * Use size_t in some for loop
+   * Add LinearKalmanFilter
+   * Use shared_library
+   * Using SharedPtr = std::shared_ptr
+   * Add legged_estimation
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ aa07c3ae7f51c82ad890eb75f1ce0987554608ba 8335612 ros-humble-legged-estimation-dbgsym_1.1.0-2025.03.27.23.31_arm64.ddeb
+ f18a81a97c38080f2cfb29fc102e039ddfe7a89f 18406 ros-humble-legged-estimation_1.1.0-2025.03.27.23.31_arm64.buildinfo
+ 7f097021cd7b49da972ab283fdf60cd2ad57c6c2 86922 ros-humble-legged-estimation_1.1.0-2025.03.27.23.31_arm64.deb
+Checksums-Sha256:
+ c71ebfc534c54fd952d9b432bfe35c096fc00af3066d79245b6716b0511a372f 8335612 ros-humble-legged-estimation-dbgsym_1.1.0-2025.03.27.23.31_arm64.ddeb
+ 2bc6e9a6caef36023b5493a2e636f0497372b5a3bf99f385a02141252970523f 18406 ros-humble-legged-estimation_1.1.0-2025.03.27.23.31_arm64.buildinfo
+ 352770d132eb9de27920447eab7de236a29bb021a2af21dc0c16799f5f4d11af 86922 ros-humble-legged-estimation_1.1.0-2025.03.27.23.31_arm64.deb
+Files:
+ caa9b52b506154fd7e49f9f72121e9f9 8335612 debug optional ros-humble-legged-estimation-dbgsym_1.1.0-2025.03.27.23.31_arm64.ddeb
+ 626d19af2d20d189dfb749fc27df6ea1 18406 misc optional ros-humble-legged-estimation_1.1.0-2025.03.27.23.31_arm64.buildinfo
+ a4475ad22137abe506dffc4149235e07 86922 misc optional ros-humble-legged-estimation_1.1.0-2025.03.27.23.31_arm64.deb
