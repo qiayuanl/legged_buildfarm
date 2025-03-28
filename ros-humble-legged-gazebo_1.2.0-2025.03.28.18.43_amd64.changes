@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Fri, 28 Mar 2025 00:00:00 -0000
+Source: ros-humble-legged-gazebo
+Binary: ros-humble-legged-gazebo
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 1.2.0-2025.03.28.18.43
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-gazebo - Model of legged robot
+Changes:
+ ros-humble-legged-gazebo (1.2.0-2025.03.28.18.43) jammy; urgency=high
+Checksums-Sha1:
+ 318123fc2f63ff4618ae0c3958d66d2bfb5e646b 1480898 ros-humble-legged-gazebo-dbgsym_1.2.0-2025.03.28.18.43_amd64.ddeb
+ c9da362ad3328419af22bc12e5d5bbbacfcdcbfc 41679 ros-humble-legged-gazebo_1.2.0-2025.03.28.18.43_amd64.buildinfo
+ 35067337c28a2a81e2ed4a0a27ac8ca2f3fece0b 94886 ros-humble-legged-gazebo_1.2.0-2025.03.28.18.43_amd64.deb
+Checksums-Sha256:
+ 37f03a7c64f7b67ca7d45616a09d2e55730b20c45e1d7ff4270e3c7f71966c8d 1480898 ros-humble-legged-gazebo-dbgsym_1.2.0-2025.03.28.18.43_amd64.ddeb
+ 05aeed0fc58c0f565e9829119e9d5300ca22bc22216dfa3dab2a9f379e91181e 41679 ros-humble-legged-gazebo_1.2.0-2025.03.28.18.43_amd64.buildinfo
+ 21c15940dc8e06c122e8c93cf70fb9dff0d88982d87b9302883a2b22bb41497e 94886 ros-humble-legged-gazebo_1.2.0-2025.03.28.18.43_amd64.deb
+Files:
+ d9be959ac14083b609e766ee45c91af6 1480898 debug optional ros-humble-legged-gazebo-dbgsym_1.2.0-2025.03.28.18.43_amd64.ddeb
+ ffea44e75aa3599856f346384bfeba64 41679 misc optional ros-humble-legged-gazebo_1.2.0-2025.03.28.18.43_amd64.buildinfo
+ 621f30e2add8e6ac00d67c5584d5b308 94886 misc optional ros-humble-legged-gazebo_1.2.0-2025.03.28.18.43_amd64.deb
