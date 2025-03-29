@@ -1,0 +1,29 @@
+Format: 1.8
+Date: Fri, 28 Mar 2025 00:00:00 -0000
+Source: ros-humble-legged-control-base
+Binary: ros-humble-legged-control-base
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 1.2.0-2025.03.29.04.13
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-control-base - A package includes basic functionalities for legged_control.
+Changes:
+ ros-humble-legged-control-base (1.2.0-2025.03.29.04.13) jammy; urgency=high
+ .
+   * Add legged_control_base as variants
+   * Contributors: qiayuanl
+   * Add legged_control_base as variants
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ 96a5775edf64ed154d3ef161e4d1bdc052331584 9288 ros-humble-legged-control-base_1.2.0-2025.03.29.04.13_arm64.buildinfo
+ d858a02126a768dc586a105a08bbf9cfd71d517c 4806 ros-humble-legged-control-base_1.2.0-2025.03.29.04.13_arm64.deb
+Checksums-Sha256:
+ 0732443c07d8f430b4e0be2e99d421248c6b89d8b2dd12e9a1f5f96b16f340dd 9288 ros-humble-legged-control-base_1.2.0-2025.03.29.04.13_arm64.buildinfo
+ 9dbfbad99793fa247045bcc52cba54c363b09eea17457aed63fbb8acbddf04e0 4806 ros-humble-legged-control-base_1.2.0-2025.03.29.04.13_arm64.deb
+Files:
+ 3f1d99bde24fac1483be1e0e6c91219e 9288 misc optional ros-humble-legged-control-base_1.2.0-2025.03.29.04.13_arm64.buildinfo
+ 6df5545412881fec2b481bbb94ce3f52 4806 misc optional ros-humble-legged-control-base_1.2.0-2025.03.29.04.13_arm64.deb
