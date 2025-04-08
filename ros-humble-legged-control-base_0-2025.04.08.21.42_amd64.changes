@@ -1,0 +1,24 @@
+Format: 1.8
+Date: Wed, 02 Apr 2025 00:00:00 -0000
+Source: ros-humble-legged-control-base
+Binary: ros-humble-legged-control-base
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0-2025.04.08.21.42
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-control-base - A package includes basic functionalities for legged_control.
+Changes:
+ ros-humble-legged-control-base (0-2025.04.08.21.42) jammy; urgency=high
+Checksums-Sha1:
+ f32da8ede1ea22de4bd529e9a9328619b6bbbf8b 9273 ros-humble-legged-control-base_0-2025.04.08.21.42_amd64.buildinfo
+ 176f2db86c3265bfc767b60933eae92ec46b4569 4862 ros-humble-legged-control-base_0-2025.04.08.21.42_amd64.deb
+Checksums-Sha256:
+ 2ccf05c2ed118986e3dd95cda264456bdc67abbb792abb97ee33bf5ad23aa19d 9273 ros-humble-legged-control-base_0-2025.04.08.21.42_amd64.buildinfo
+ 3c395af4195f19d9b854afb82ab4d73777a82347aa5f143c373ead697b9657db 4862 ros-humble-legged-control-base_0-2025.04.08.21.42_amd64.deb
+Files:
+ 04cfdb8458724a694a4ac51eff06a4fd 9273 misc optional ros-humble-legged-control-base_0-2025.04.08.21.42_amd64.buildinfo
+ b0985c52079d7644126d865050644594 4862 misc optional ros-humble-legged-control-base_0-2025.04.08.21.42_amd64.deb

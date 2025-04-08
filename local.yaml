@@ -16,12 +16,6 @@ legged_model_ros2:
 legged_controllers:
   ubuntu:
   - ros-humble-legged-controllers
-mujoco_ros2_control:
-  ubuntu:
-  - ros-humble-mujoco-ros2-control
-mujoco_ros2_control_demos:
-  ubuntu:
-  - ros-humble-mujoco-ros2-control-demos
 onnxruntime_ament:
   ubuntu:
   - ros-humble-onnxruntime-ament
