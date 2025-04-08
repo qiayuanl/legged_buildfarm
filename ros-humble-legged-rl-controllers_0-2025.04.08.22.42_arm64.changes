@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Wed, 02 Apr 2025 00:00:00 -0000
+Source: ros-humble-legged-rl-controllers
+Binary: ros-humble-legged-rl-controllers
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 0-2025.04.08.22.42
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-rl-controllers - Model of legged robot
+Changes:
+ ros-humble-legged-rl-controllers (0-2025.04.08.22.42) jammy; urgency=high
+ .
+   * Merge branch 'feature/seprate_onnx_controller'
+   * Add Policy and OnnxController
+   * Rename OnnxController to RlController
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ a4f3b7b12ed6d578df5e72aa9b5d43297839f0af 3874740 ros-humble-legged-rl-controllers-dbgsym_0-2025.04.08.22.42_arm64.ddeb
+ 466d4814f271c97acbc598a179a755c71243b1aa 28216 ros-humble-legged-rl-controllers_0-2025.04.08.22.42_arm64.buildinfo
+ d6a3ede74941b079a2716cf249b28beaf51e5721 130840 ros-humble-legged-rl-controllers_0-2025.04.08.22.42_arm64.deb
+Checksums-Sha256:
+ 99e54f23b402e79a0e794d7d50cfb1756bb0998b1cd1c038c9237ba840979654 3874740 ros-humble-legged-rl-controllers-dbgsym_0-2025.04.08.22.42_arm64.ddeb
+ ab6731ebf2198d133696dbc85bb8f8d954e862d7adb2addaaaf60b27f2544fd4 28216 ros-humble-legged-rl-controllers_0-2025.04.08.22.42_arm64.buildinfo
+ edd5238c58542db956772cdc763b0df1a7b4250a5d69f4fde3d3a373d624e3a0 130840 ros-humble-legged-rl-controllers_0-2025.04.08.22.42_arm64.deb
+Files:
+ 7e40ba6caeaaa9cecd51f0caa6877ef0 3874740 debug optional ros-humble-legged-rl-controllers-dbgsym_0-2025.04.08.22.42_arm64.ddeb
+ 585e3fb07c6354ba1333ff38b2af62d6 28216 misc optional ros-humble-legged-rl-controllers_0-2025.04.08.22.42_arm64.buildinfo
+ cb41cff0bc8b77bd4aede3e8bcb2c228 130840 misc optional ros-humble-legged-rl-controllers_0-2025.04.08.22.42_arm64.deb
