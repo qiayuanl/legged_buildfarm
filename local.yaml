@@ -1,9 +1,6 @@
 legged_control_base:
   ubuntu:
   - ros-humble-legged-control-base
-legged_gazebo:
-  ubuntu:
-  - ros-humble-legged-gazebo
 legged_model:
   ubuntu:
   - ros-humble-legged-model

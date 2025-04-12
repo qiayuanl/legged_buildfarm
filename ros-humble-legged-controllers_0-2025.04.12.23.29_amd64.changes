@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Tue, 08 Apr 2025 00:00:00 -0000
+Source: ros-humble-legged-controllers
+Binary: ros-humble-legged-controllers
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0-2025.04.12.23.29
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-controllers - Model of legged robot
+Changes:
+ ros-humble-legged-controllers (0-2025.04.12.23.29) jammy; urgency=high
+Checksums-Sha1:
+ b517b2220a2b2434fd7219de8e61642677578952 6074896 ros-humble-legged-controllers-dbgsym_0-2025.04.12.23.29_amd64.ddeb
+ 227ef4bd4d25fb3cc3e16b91d5a45a08e62ddff4 23732 ros-humble-legged-controllers_0-2025.04.12.23.29_amd64.buildinfo
+ 611ea76163962dc972cd6adc8622ca1ac3bf32cf 197422 ros-humble-legged-controllers_0-2025.04.12.23.29_amd64.deb
+Checksums-Sha256:
+ e81cae2ab6c590e7541b75b5eb58004221d052f9e682a7ad0e75f0e081574ddb 6074896 ros-humble-legged-controllers-dbgsym_0-2025.04.12.23.29_amd64.ddeb
+ d00c0a6531b417c829384335e851ebe3148c767f9c315361fd685933723d8c39 23732 ros-humble-legged-controllers_0-2025.04.12.23.29_amd64.buildinfo
+ 2483bc38b1a1012979961a87f6c30709b4552a157faab423216c5d24b0896a28 197422 ros-humble-legged-controllers_0-2025.04.12.23.29_amd64.deb
+Files:
+ 922e12d7ba0acaa863427a91513fafcd 6074896 debug optional ros-humble-legged-controllers-dbgsym_0-2025.04.12.23.29_amd64.ddeb
+ d9f35e1c3418f509ecc72dba5543fe27 23732 misc optional ros-humble-legged-controllers_0-2025.04.12.23.29_amd64.buildinfo
+ 99812cd9e74e4b5b8b5cebe2a406c50d 197422 misc optional ros-humble-legged-controllers_0-2025.04.12.23.29_amd64.deb
