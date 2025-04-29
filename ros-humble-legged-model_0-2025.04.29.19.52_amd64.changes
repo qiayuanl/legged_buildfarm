@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Mon, 28 Apr 2025 00:00:00 -0000
+Source: ros-humble-legged-model
+Binary: ros-humble-legged-model
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0-2025.04.29.19.52
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-model - Model of legged robot
+Changes:
+ ros-humble-legged-model (0-2025.04.29.19.52) jammy; urgency=high
+ .
+   * Merge pull request #1 <https://github.com/qiayuanl/legged_control2/issues/1> from qiayuanl/fix/estimator
+     Fix/estimator
+   * Add ZMP visualization for LinearKalmanFilterVisualization
+   * Contributors: Qiayuan Liao, qiayuanl
+Checksums-Sha1:
+ 0746de81cd0b49263e6fee4afa55ee1ab74051ae 14948744 ros-humble-legged-model-dbgsym_0-2025.04.29.19.52_amd64.ddeb
+ 24e833649e6d8ad014c49f8ccf8594078a286670 18360 ros-humble-legged-model_0-2025.04.29.19.52_amd64.buildinfo
+ fce2c911def9097865c870bdc6ccb6bf62034b7a 160964 ros-humble-legged-model_0-2025.04.29.19.52_amd64.deb
+Checksums-Sha256:
+ 89c19e2bd847e55a52d14aa083c27143c5d85700995998cbaf4919e72919c9a8 14948744 ros-humble-legged-model-dbgsym_0-2025.04.29.19.52_amd64.ddeb
+ 831f1d2ebf755c88b227417304963c5d0d4a49d8be57ee12c3b693531ea9e825 18360 ros-humble-legged-model_0-2025.04.29.19.52_amd64.buildinfo
+ dac764e981db791e4dcf893cea5fbab7215471309e1de1d2b7802fb3af536b04 160964 ros-humble-legged-model_0-2025.04.29.19.52_amd64.deb
+Files:
+ 813c0e4550c15faaf5001fa66b9cd485 14948744 debug optional ros-humble-legged-model-dbgsym_0-2025.04.29.19.52_amd64.ddeb
+ b0f8c3a574404dcb36894aa96cd77946 18360 misc optional ros-humble-legged-model_0-2025.04.29.19.52_amd64.buildinfo
+ fc869e8e5dbc37d3b08a0514cb8e57f2 160964 misc optional ros-humble-legged-model_0-2025.04.29.19.52_amd64.deb
