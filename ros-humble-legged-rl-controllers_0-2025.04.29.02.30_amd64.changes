@@ -1,0 +1,35 @@
+Format: 1.8
+Date: Mon, 28 Apr 2025 00:00:00 -0000
+Source: ros-humble-legged-rl-controllers
+Binary: ros-humble-legged-rl-controllers
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0-2025.04.29.02.30
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-rl-controllers - Model of legged robot
+Changes:
+ ros-humble-legged-rl-controllers (0-2025.04.29.02.30) jammy; urgency=high
+ .
+   * Merge pull request #2 <https://github.com/qiayuanl/legged_control2/issues/2> from qiayuanl/feature/lio_fuse
+     Feature/lio fuse
+   * Correct the JointPositionsObservationTerm in new default position defination
+   * Adjust the RlController for new ControllerBase
+   * Adjust the RlController for new ControllerBase
+   * Correct the usage of linear velocity state estimation result!
+   * Contributors: Qiayuan Liao, qiayuanl
+Checksums-Sha1:
+ e921cea98c7ef728baf2ba84a5bf97cb59b322e3 3613354 ros-humble-legged-rl-controllers-dbgsym_0-2025.04.29.02.30_amd64.ddeb
+ 84943a9e8819a9ee7de5305a0d6ad5aa7d214c72 28247 ros-humble-legged-rl-controllers_0-2025.04.29.02.30_amd64.buildinfo
+ 9e2691dcad88074b09ecf0293f0645fea59c23c1 139624 ros-humble-legged-rl-controllers_0-2025.04.29.02.30_amd64.deb
+Checksums-Sha256:
+ debc67fef3d5739a4043647f8d56e6b42b064b05ed4a05ce6d7f36874a8deed7 3613354 ros-humble-legged-rl-controllers-dbgsym_0-2025.04.29.02.30_amd64.ddeb
+ ad0fd77654580b21a240032a238b28fe4ba4db8534e584fe68c41e4b88f91c22 28247 ros-humble-legged-rl-controllers_0-2025.04.29.02.30_amd64.buildinfo
+ 5b4950a70a437c85c4e226276402925d9497a99d89afd11ab75865dc641443e4 139624 ros-humble-legged-rl-controllers_0-2025.04.29.02.30_amd64.deb
+Files:
+ 83e6dfaa343489271e344cd0f910b227 3613354 debug optional ros-humble-legged-rl-controllers-dbgsym_0-2025.04.29.02.30_amd64.ddeb
+ c589c8dc5e4417663ccefd1b4710ff80 28247 misc optional ros-humble-legged-rl-controllers_0-2025.04.29.02.30_amd64.buildinfo
+ c08b2fe8ab8145a3b964002c80601cf3 139624 misc optional ros-humble-legged-rl-controllers_0-2025.04.29.02.30_amd64.deb

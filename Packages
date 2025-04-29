@@ -1,212 +1,176 @@
 Package: ros-humble-legged-control-base
 Architecture: amd64
-Version: 0-2025.04.12.23.23
+Version: 0-2025.04.29.02.24
 Priority: optional
 Section: misc
 Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
 Installed-Size: 40
-Depends: ros-humble-legged-controllers, ros-humble-legged-estimation, ros-humble-legged-model, ros-humble-legged-model-ros2, ros-humble-legged-rl-controllers
-Filename: ./ros-humble-legged-control-base_0-2025.04.12.23.23_amd64.deb
-Size: 4860
-MD5sum: 8eb046f567670bb453d1129ba35a3de8
-SHA1: 9dbddde2e012528908742aff1c9e5c65725f88d1
-SHA256: a47a5588a6edc5d036ac861cad01adcf6281416dd059734ec3c194efed241ada
-SHA512: b407fcdd000cc9baa3bd89defaa6469fe297e690dc307b6e1d146a59f95d8c9e7d623b1ae8fb8251d60f0ffbd5eaa9559934190e8d2281c2926db8a6ad3f72ce
+Depends: ros-humble-legged-controllers, ros-humble-legged-estimation, ros-humble-legged-model, ros-humble-legged-rl-controllers
+Filename: ./ros-humble-legged-control-base_0-2025.04.29.02.24_amd64.deb
+Size: 4852
+MD5sum: 418d50b7abc248a7903e3bdff2d408da
+SHA1: 192933c97c50167cf675a3f8c27ab01a4b5fcec9
+SHA256: e38b2df3b6dddd9e15c48ee1bd0a3f9c4d3f136aaba43d8c60c357a4074902ed
+SHA512: 2f49f0df4dcfebe177d7421406e9a0acde2dd3977694431627a801b7898bfd9800b4419c8b23efdadc28af8123804c0bfff70a222b5547db3143ca4c9ff7f59a
 Description: A package includes basic functionalities for legged_control.
 
 Package: ros-humble-legged-controllers-dbgsym
 Package-Type: ddeb
 Architecture: amd64
-Version: 0-2025.04.12.23.29
+Version: 0-2025.04.29.02.28
 Auto-Built-Package: debug-symbols
 Priority: optional
 Section: debug
 Source: ros-humble-legged-controllers
 Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
-Installed-Size: 6774
-Depends: ros-humble-legged-controllers (= 0-2025.04.12.23.29)
-Filename: ./ros-humble-legged-controllers-dbgsym_0-2025.04.12.23.29_amd64.ddeb
-Size: 6074896
-MD5sum: 922e12d7ba0acaa863427a91513fafcd
-SHA1: b517b2220a2b2434fd7219de8e61642677578952
-SHA256: e81cae2ab6c590e7541b75b5eb58004221d052f9e682a7ad0e75f0e081574ddb
-SHA512: 898b019efcb230a275ae2d9571a41de72652a706baf5b8760ddcc5bbcf30b6af3c01caee432616235be6fa5b2bc8e7b1d0623d1dac25031226cff8cbf1266c9f
+Installed-Size: 6613
+Depends: ros-humble-legged-controllers (= 0-2025.04.29.02.28)
+Filename: ./ros-humble-legged-controllers-dbgsym_0-2025.04.29.02.28_amd64.ddeb
+Size: 6184828
+MD5sum: 9e06aa839e8f08dde810b95b3a80a41b
+SHA1: 068f0e86a8dc3facdc2cb69c0d8427aa8d3f8076
+SHA256: edee05154d55caa9d2da3254580e34dcdd38e970bb21048a939583a62d4cb368
+SHA512: d8c103162e7f12e6a7f455bd1be143ccd56390db6a43f83e85279333dabe35d78191deeb9652320eb57e5e00cad16c70c6719458fc5a83671bc2b19a01e3b760
 Description: debug symbols for ros-humble-legged-controllers
-Build-Ids: dd0558e7b9a097bacf8a9b2ec3408b07254c81b7
+Build-Ids: 7b854256698a390cdb89907f89985b783c5cd86f edc2b3c2ee46707f0bc1ddb28f83d9fd5535cbb9
 
 Package: ros-humble-legged-controllers
 Architecture: amd64
-Version: 0-2025.04.12.23.29
+Version: 0-2025.04.29.02.28
 Priority: optional
 Section: misc
 Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
-Installed-Size: 980
-Depends: libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 11), ros-humble-controller-interface, ros-humble-controller-manager, ros-humble-geometry-msgs, ros-humble-joint-state-broadcaster, ros-humble-joy-linux, ros-humble-joy-teleop, ros-humble-legged-estimation, ros-humble-legged-model-ros2, ros-humble-nav-msgs, ros-humble-realtime-tools, ros-humble-robot-state-publisher, ros-humble-ros2controlcli, ros-humble-tf2-msgs, ros-humble-visualization-msgs
-Filename: ./ros-humble-legged-controllers_0-2025.04.12.23.29_amd64.deb
-Size: 197422
-MD5sum: 99812cd9e74e4b5b8b5cebe2a406c50d
-SHA1: 611ea76163962dc972cd6adc8622ca1ac3bf32cf
-SHA256: 2483bc38b1a1012979961a87f6c30709b4552a157faab423216c5d24b0896a28
-SHA512: 472c397296b3e8f43d788c6b3cf312ca7bcc9a1f6c91dac15f123d08ccb74fcbd953a91977c7d552186d717ded9d31eb3d4b279756132fd9027271e65cbd7590
+Installed-Size: 797
+Depends: libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 12), ros-humble-urdfdom, ros-humble-controller-interface, ros-humble-controller-manager, ros-humble-geometry-msgs, ros-humble-joint-state-broadcaster, ros-humble-joy-linux, ros-humble-joy-teleop, ros-humble-legged-estimation, ros-humble-nav-msgs, ros-humble-realtime-tools, ros-humble-robot-state-publisher, ros-humble-ros2controlcli, ros-humble-tf2-msgs, ros-humble-visualization-msgs
+Filename: ./ros-humble-legged-controllers_0-2025.04.29.02.28_amd64.deb
+Size: 186004
+MD5sum: c7a4fefd3bbec18fccc2e50266b0e562
+SHA1: 5fda95edbb56ffbb63fbd9141be016bf6568ca52
+SHA256: f617fc7ab07e8bb39868f5f6a2fb2ff9ffaa8eb1ca45981785f2e2d4656284bc
+SHA512: 26ed03f1a1b4df589566cbcd7fbf7d4dd1732a140bdfb5f9c5a7013f93dc2e85c25096cfaab0a264dcd85a95875a00c26dd41d3fab0440acc67e2901d4a1e0f3
 Description: Model of legged robot
 
 Package: ros-humble-legged-estimation-dbgsym
 Package-Type: ddeb
 Architecture: amd64
-Version: 0-2025.04.12.23.26
+Version: 0-2025.04.29.02.27
 Auto-Built-Package: debug-symbols
 Priority: optional
 Section: debug
 Source: ros-humble-legged-estimation
 Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
-Installed-Size: 8474
-Depends: ros-humble-legged-estimation (= 0-2025.04.12.23.26)
-Filename: ./ros-humble-legged-estimation-dbgsym_0-2025.04.12.23.26_amd64.ddeb
-Size: 8437256
-MD5sum: 3d4c86109995a9fbb6f86b9b435a9da0
-SHA1: 120f64b32684bbc7f1efdee3d759cf28dda2ecb1
-SHA256: 42bf6214c9d471776dfd27e408513bd29a0654cdadc07fa5aba8954a4e9d9785
-SHA512: 8081095a1912b2b0711fa6bbe06c80427200e68a6e4725f3ad37c0b16bca64fb3f33e13f4be4248ded322c8e6971fd3960c4b0a1b72962944794603bc27a1049
+Installed-Size: 3635
+Depends: ros-humble-legged-estimation (= 0-2025.04.29.02.27)
+Filename: ./ros-humble-legged-estimation-dbgsym_0-2025.04.29.02.27_amd64.ddeb
+Size: 3658570
+MD5sum: 1c0f7949b76616dfa5752bf9c1a15136
+SHA1: 4bf900a710432822771065ed6076431046fcd2e7
+SHA256: b5cb0b72d07a09af46f37e3c5fabe910f96b70c02f157e290caaba37a6b9810d
+SHA512: 6feca0abbf53694cb328c6d919f60bfb4fbc98fe1ef07127bb0f3d317d4c37f0487614548c6d646db7d4c572c13a234981660d744528f65eb5f000710ccc6052
 Description: debug symbols for ros-humble-legged-estimation
-Build-Ids: 93cf52097acd832fa55aeb786d1c186dff61a8a5
+Build-Ids: f0dfb0ee3e9b0af1e79cf8da46ec2b25dfa00b1d
 
 Package: ros-humble-legged-estimation
 Architecture: amd64
-Version: 0-2025.04.12.23.26
+Version: 0-2025.04.29.02.27
 Priority: optional
 Section: misc
 Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
-Installed-Size: 315
-Depends: libc6 (>= 2.32), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 11), ros-humble-urdfdom, ros-humble-legged-model
-Filename: ./ros-humble-legged-estimation_0-2025.04.12.23.26_amd64.deb
-Size: 95464
-MD5sum: 21719f7f1cf09ed3e95cf2f833a3ed13
-SHA1: 68972101633ae51fb93fa7ebf8daaf97000ed719
-SHA256: aff44fa5489c51d45c8b8449de711ab5d0e7d7dd68873430c0ced1c44387ddf0
-SHA512: 880471f76442fd1a5e10eb3ac760a043ce38f610e396c931c39eb1a645cf9195c13e885a411e5d12e3cc948cb35fc824154c5ed48b9a5c51dc0b9af4c77983ef
+Installed-Size: 171
+Depends: libc6 (>= 2.32), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 5), ros-humble-urdfdom, ros-humble-legged-model
+Filename: ./ros-humble-legged-estimation_0-2025.04.29.02.27_amd64.deb
+Size: 57216
+MD5sum: e7e70de7001af3d0b8219c267e0ddbbf
+SHA1: 77b9fea1c916b968156127479f65cc8f23fcd073
+SHA256: 9f250bab23ca571ff090bad3b31ce73d045e4b56d144f4fa42d71f548f1939e3
+SHA512: 6b6fd0f551d0e1cad78adb136534ee651ff3f087c16cf2af4c7f5fe1628f3d9e57afeb3af474c13d1606e08206671e6c248315fc41bb086a65a4ee58711f26e1
 Description: State estimation of legged robot
 
 Package: ros-humble-legged-model-dbgsym
 Package-Type: ddeb
 Architecture: amd64
-Version: 0-2025.04.12.23.24
+Version: 0-2025.04.29.02.24
 Auto-Built-Package: debug-symbols
 Priority: optional
 Section: debug
 Source: ros-humble-legged-model
 Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
 Installed-Size: 15126
-Depends: ros-humble-legged-model (= 0-2025.04.12.23.24)
-Filename: ./ros-humble-legged-model-dbgsym_0-2025.04.12.23.24_amd64.ddeb
-Size: 14948574
-MD5sum: 497e6320c85de382cad31eb37ac31b6f
-SHA1: e5f32042765e1ad323bbbcc993045d6ec1bb65ab
-SHA256: 6f0e29795a2ef379794942432562c9ed754fd278e7a63599ff8a2107f32ec183
-SHA512: bf673987db2aa1b24c2f2711616045a4b6b2837e6c9a21a19acc8d7c550d1711f3b5824f7daa59b61460844881b08941fdce464c9a74c63517c452629d6bfece
+Depends: ros-humble-legged-model (= 0-2025.04.29.02.24)
+Filename: ./ros-humble-legged-model-dbgsym_0-2025.04.29.02.24_amd64.ddeb
+Size: 14948744
+MD5sum: 06d136c96ce05b0afa49a43e6aba729b
+SHA1: c4b54a6203ced2a625f43409a82bec23ba21f24c
+SHA256: 4505f94499003729b8866cc00af1cf634bf30391b2c45d8bc64f96ddbb614268
+SHA512: 33457e5a9b33f62dc08b5482426f6bef3e798f90e6129b595b19165f9af92661ec5451a1bf66321e7e188db6b704c4ae7eb4af9ba22b6acd64017bc4a5f2df8e
 Description: debug symbols for ros-humble-legged-model
-Build-Ids: ded8e0cd53fa8e02fd2c1e36a6b93fea54f2f7ea
-
-Package: ros-humble-legged-model-ros2-dbgsym
-Package-Type: ddeb
-Architecture: amd64
-Version: 0-2025.04.12.23.28
-Auto-Built-Package: debug-symbols
-Priority: optional
-Section: debug
-Source: ros-humble-legged-model-ros2
-Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
-Installed-Size: 937
-Depends: ros-humble-legged-model-ros2 (= 0-2025.04.12.23.28)
-Filename: ./ros-humble-legged-model-ros2-dbgsym_0-2025.04.12.23.28_amd64.ddeb
-Size: 924600
-MD5sum: 85ffbcad096465398816214c5d357da4
-SHA1: 20da73af9fd14299f7e19077f374737ba17ce3a8
-SHA256: 9621a59848a20f3cb1b6d6b9157b9361972c06a1909aad06b41453872ff7309e
-SHA512: 8880cef9e7e1a49a7d637dabed3a8a03945eacefc62170c3a495216febffde3a1d1385d650f22e6b8d2ed48850293fe19eb310cb8be9ed097ae95a26476e8ec6
-Description: debug symbols for ros-humble-legged-model-ros2
-Build-Ids: 8fbcf5980736e2c46a3590a4a548b0bd8bfede99
-
-Package: ros-humble-legged-model-ros2
-Architecture: amd64
-Version: 0-2025.04.12.23.28
-Priority: optional
-Section: misc
-Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
-Installed-Size: 104
-Depends: libc6 (>= 2.32), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 11), ros-humble-urdfdom, ros-humble-controller-interface, ros-humble-legged-model, ros-humble-xacro
-Filename: ./ros-humble-legged-model-ros2_0-2025.04.12.23.28_amd64.deb
-Size: 23654
-MD5sum: d3eefb289a307cce32bfac1709292c59
-SHA1: 8afa694c7b2e4e91f56cf251cf4bf6bc53c013a8
-SHA256: 7ea6e60e696dd089c0038bec9271134a8d7599bc656325be4b95ad5bf8f756a6
-SHA512: bd852987b0abf339814beeaa3e458e1803a13730d22e5f3d751c1388ee5bb8a9ca30343580323a2b2c60a4b2b130f8371daaf44e63aa48e391dddeb02e46727f
-Description: Model of legged robot
+Build-Ids: 3fa0f6de34193aaebb5f20c442d5c9adca553ad9
 
 Package: ros-humble-legged-model
 Architecture: amd64
-Version: 0-2025.04.12.23.24
+Version: 0-2025.04.29.02.24
 Priority: optional
 Section: misc
 Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
 Installed-Size: 664
 Depends: libc6 (>= 2.32), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 11), ros-humble-pinocchio, ros-humble-urdfdom
-Filename: ./ros-humble-legged-model_0-2025.04.12.23.24_amd64.deb
-Size: 160834
-MD5sum: 653e3b2b6c7f8ea2ef78bdc79bce547a
-SHA1: d768f68603e00348f33bf42c55873ab3910ffd41
-SHA256: 752490c9cd9449f69b02b99d14c22358bcacb4e033e8e96bc4109376b527cd22
-SHA512: b1800820858f5078b95f4a420afd3bded29de2b2c67c97b733b1cdff09e82de5e93bfd02086e234b45be5280d7e3121b41bccd01b8d7001faadfaae07c5c6056
+Filename: ./ros-humble-legged-model_0-2025.04.29.02.24_amd64.deb
+Size: 160958
+MD5sum: ba2981e73fa0a983779e84674d88b35a
+SHA1: d694b67a7528a0a26dfde092529dc540b7bcca29
+SHA256: 03413fec0131fcb51b38cf42030057a885d96816bf1ab153f5434707c0697691
+SHA512: f1d692cf089cdfce94a9ffc8986eb03d3120c9a437d60e6a6bf61701c726281f3d53a4a668e28ef93bfd24963802abacd8843bb6f32691f346b01d39df0db55a
 Description: Model of legged robot
 
 Package: ros-humble-legged-rl-controllers-dbgsym
 Package-Type: ddeb
 Architecture: amd64
-Version: 0-2025.04.12.23.32
+Version: 0-2025.04.29.02.30
 Auto-Built-Package: debug-symbols
 Priority: optional
 Section: debug
 Source: ros-humble-legged-rl-controllers
 Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
-Installed-Size: 4306
-Depends: ros-humble-legged-rl-controllers (= 0-2025.04.12.23.32)
-Filename: ./ros-humble-legged-rl-controllers-dbgsym_0-2025.04.12.23.32_amd64.ddeb
-Size: 3936070
-MD5sum: 96c03756aeaf53eedbd84fc997602dce
-SHA1: 7593dffd6f6d25ad3b22877ab24e8cf5d6965bea
-SHA256: d9d0e23bb0f36084c0e5f9aee5abe83535de48d1492fe8263ca72eb613a7c616
-SHA512: 15234fb49ec68a07ab730d7180479a9f2e5f7b49b502064c45b8c399cb91dde06b91334ff577d43e8cfafb3f43a4606accc5a90c2d3cbbc0501bd8fa91cf63bd
+Installed-Size: 3987
+Depends: ros-humble-legged-rl-controllers (= 0-2025.04.29.02.30)
+Filename: ./ros-humble-legged-rl-controllers-dbgsym_0-2025.04.29.02.30_amd64.ddeb
+Size: 3613354
+MD5sum: 83e6dfaa343489271e344cd0f910b227
+SHA1: e921cea98c7ef728baf2ba84a5bf97cb59b322e3
+SHA256: debc67fef3d5739a4043647f8d56e6b42b064b05ed4a05ce6d7f36874a8deed7
+SHA512: d9eeacb335643c558615c879b37f272409793f1a7b99f8dd7447127d33da2420f0689919e1b7ac724fdbb998ddccbab86aa4c7a90a460978dfb46d0329953d2e
 Description: debug symbols for ros-humble-legged-rl-controllers
-Build-Ids: 9c4356c88c91585da80d3d23778928f102f828d2
+Build-Ids: 9f0d471e2f036b669723f5241e40a3f340a823cf
 
 Package: ros-humble-legged-rl-controllers
 Architecture: amd64
-Version: 0-2025.04.12.23.32
+Version: 0-2025.04.29.02.30
 Priority: optional
 Section: misc
 Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
-Installed-Size: 632
-Depends: libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 11), ros-humble-onnxruntime-ament, ros-humble-urdfdom, ros-humble-legged-controllers
-Filename: ./ros-humble-legged-rl-controllers_0-2025.04.12.23.32_amd64.deb
-Size: 141444
-MD5sum: 166070b04fbb5cda7d75f3e0affd5269
-SHA1: e387b2001f473186735309fa1600fb9de7534b72
-SHA256: bfae138fa6d141b7bb4472435d7ca8364205b324e8c293a28f71a50bf34da902
-SHA512: ded0840b9196486b7d23262138ea0516374058c36b097a5a4da70063433cccb95a37feb3bd319dbddf90528828840f4dfa73fa6b3cc6449c03b0f14db66464bb
+Installed-Size: 630
+Depends: libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 12), ros-humble-onnxruntime-ament, ros-humble-legged-controllers
+Filename: ./ros-humble-legged-rl-controllers_0-2025.04.29.02.30_amd64.deb
+Size: 139624
+MD5sum: c08b2fe8ab8145a3b964002c80601cf3
+SHA1: 9e2691dcad88074b09ecf0293f0645fea59c23c1
+SHA256: 5b4950a70a437c85c4e226276402925d9497a99d89afd11ab75865dc641443e4
+SHA512: e90677d456db3e5dceb387942c30effa9409749c81dedc9ddc9596df335d4dab3db4da3fcd1d55b9e017170ccda7f4527fc2df6f0ec02b8747176630cc8a6619
 Description: Model of legged robot
 
 Package: ros-humble-onnxruntime-ament
 Architecture: amd64
-Version: 0-2025.04.12.23.31
+Version: 0-2025.04.29.02.30
 Priority: optional
 Section: misc
 Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
 Installed-Size: 15170
 Depends: libc6 (>= 2.14), libgcc-s1 (>= 4.0), libstdc++6 (>= 4.8)
-Filename: ./ros-humble-onnxruntime-ament_0-2025.04.12.23.31_amd64.deb
-Size: 4354192
-MD5sum: 5fadf0cf94d772bd46476bb476efdd23
-SHA1: 7dbe4cd9b8be175b666ce32ed92ada278390a92f
-SHA256: 61bddf64565113bf0d18d75c1288c9bc20920a0132711938c7eeb9066c262a61
-SHA512: 3f4aaf78f1dc427e36a50584f6d9b952edcbcdeb99a1e82ba90a9f7469c26f2d6a2a545b39e373e0a6b775dd36fd959bc6683ec6d2e6674f85a10355503dc9ea
+Filename: ./ros-humble-onnxruntime-ament_0-2025.04.29.02.30_amd64.deb
+Size: 4354186
+MD5sum: 207b2a59626e06da5acc6c33f979fb16
+SHA1: e4143eab0a6989ce18aae3240c355f453c086b80
+SHA256: 2a92d082271a0c19b1e95d5f40dce4b2ae5a1ef735069a85c9416a9b1bc3b92a
+SHA512: bfe19689a879cc365ff9d575500a32ed68a8ff1a5fb1d83d39d50556bc03b28e2ae420d5dcfa829ce4aa2690b5804a4a80181053f1e1d5d68f823821c91a3f28
 Description: Model of legged robot
 
