@@ -7,9 +7,6 @@ legged_model:
 legged_estimation:
   ubuntu:
   - ros-humble-legged-estimation
-legged_model_ros2:
-  ubuntu:
-  - ros-humble-legged-model-ros2
 legged_controllers:
   ubuntu:
   - ros-humble-legged-controllers
