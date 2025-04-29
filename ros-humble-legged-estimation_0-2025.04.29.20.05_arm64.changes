@@ -1,0 +1,45 @@
+Format: 1.8
+Date: Mon, 28 Apr 2025 00:00:00 -0000
+Source: ros-humble-legged-estimation
+Binary: ros-humble-legged-estimation
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 0-2025.04.29.20.05
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-estimation - State estimation of legged robot
+Changes:
+ ros-humble-legged-estimation (0-2025.04.29.20.05) jammy; urgency=high
+ .
+   * Merge pull request #2 <https://github.com/qiayuanl/legged_control2/issues/2> from qiayuanl/feature/lio_fuse
+     Feature/lio fuse
+   * Merge pull request #1 <https://github.com/qiayuanl/legged_control2/issues/1> from qiayuanl/fix/estimator
+     Fix/estimator
+   * Move the position sensor topic from LinearKalmanFilterRos2 to StateEstimator.
+   * Add LinearKalmanFilter::updatePositionMeasurement
+   * Separate LinearKalmanFilter::update() to LinearKalmanFilter::updateImuProcess() and LinearKalmanFilter::updateContactsMeasurement()
+   * Add configuration for contact probabilities of LinearKalmanFilter
+   * Add acceleration bias estimation
+   * Add ZMP visualization for LinearKalmanFilterVisualization
+   * Add LinearKalmanFilter::updateContactProbabilities, use force threshold and ZMP to determine the probability
+   * Set kalman gain to zero for foot not in contact
+   * Add LinearKalmanFilter::reset
+   * Add LinearKalmanFilter::getImuProcessNoiseCovariance
+   * Remove foot velocity measurement from  LinearKalmanFilter
+   * Correct the usage of linear velocity state estimation result!
+   * Contributors: Qiayuan Liao, qiayuanl
+Checksums-Sha1:
+ 90accea571180c1101f108ca4406c30ea2eebf41 3646090 ros-humble-legged-estimation-dbgsym_0-2025.04.29.20.05_arm64.ddeb
+ d54e0f7c5587a013a778a31cdece7a446fdab9d7 18375 ros-humble-legged-estimation_0-2025.04.29.20.05_arm64.buildinfo
+ c16c4dbf9bc7a280c2567aa3c04bc5f537e0681a 51668 ros-humble-legged-estimation_0-2025.04.29.20.05_arm64.deb
+Checksums-Sha256:
+ f76162e9372e7138dd6c51a6e1e7f3a8cfa20bae1c57301bb2569e18c16a9ba3 3646090 ros-humble-legged-estimation-dbgsym_0-2025.04.29.20.05_arm64.ddeb
+ 187c02c220a28e58f2fd7f19ffc7b915fb19d258217473e757a3caf7ecbfc510 18375 ros-humble-legged-estimation_0-2025.04.29.20.05_arm64.buildinfo
+ ff32c1098b654cec8f6302e00636dd721e7a6612456fd2c13fe72a637261f101 51668 ros-humble-legged-estimation_0-2025.04.29.20.05_arm64.deb
+Files:
+ 5f31329e9cd873987fbd94a1113f9257 3646090 debug optional ros-humble-legged-estimation-dbgsym_0-2025.04.29.20.05_arm64.ddeb
+ 338af75b2b77086da49343bb90268492 18375 misc optional ros-humble-legged-estimation_0-2025.04.29.20.05_arm64.buildinfo
+ 55b1704fbd2cb98980cfa18c99a91f54 51668 misc optional ros-humble-legged-estimation_0-2025.04.29.20.05_arm64.deb

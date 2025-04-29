@@ -1,0 +1,55 @@
+Format: 1.8
+Date: Mon, 28 Apr 2025 00:00:00 -0000
+Source: ros-humble-legged-controllers
+Binary: ros-humble-legged-controllers
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 0-2025.04.29.20.11
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-controllers - Model of legged robot
+Changes:
+ ros-humble-legged-controllers (0-2025.04.29.20.11) jammy; urgency=high
+ .
+   * Merge pull request #2 <https://github.com/qiayuanl/legged_control2/issues/2> from qiayuanl/feature/lio_fuse
+     Feature/lio fuse
+   * Merge pull request #1 <https://github.com/qiayuanl/legged_control2/issues/1> from qiayuanl/fix/estimator
+     Fix/estimator
+   * Move TF publication to StateEstimation and add odom_lio frame
+   * Add low pass filter for world-to-map in StateEstimator
+   * Map LIO information in world frame instead of overwriting everything to map frame
+   * Move the position sensor topic from LinearKalmanFilterRos2 to StateEstimator.
+   * Support position sensor from any frame on the robot
+   * Remove MoCap and call updatePositionMeasurement() in LinearKalmanFilterRos2
+   * Separate LinearKalmanFilter::update() to LinearKalmanFilter::updateImuProcess() and LinearKalmanFilter::updateContactsMeasurement()
+   * Separate chainable controllers from legged_controllers
+   * Correct joint order of StandbyController
+   * Adjust the RlController for new ControllerBase
+   * Change StateEstimator to ChainableController, so that all other controllers share the same state estimator. legged_controllers work, but legged_rl_controller still not.
+   * Add configuration for contact probabilities of LinearKalmanFilter
+   * Add acceleration bias estimation
+   * Override the xHat correctly in MoCap
+   * Add ZMP visualization for LinearKalmanFilterVisualization
+   * Add LinearKalmanFilter::updateContactProbabilities, use force threshold and ZMP to determine the probability
+   * Correct LinearKalmanFilterVisualization
+   * Add LinearKalmanFilter::reset
+   * Add LinearKalmanFilter::getImuProcessNoiseCovariance
+   * Remove foot velocity measurement from  LinearKalmanFilter
+   * Add visualization for LinearKalmanFilterRos2
+   * Add visualization_helpers
+   * Contributors: Qiayuan Liao, qiayuanl
+Checksums-Sha1:
+ 6adaacd512557d40bb86c39fdce96d8f5ea4501a 6091962 ros-humble-legged-controllers-dbgsym_0-2025.04.29.20.11_arm64.ddeb
+ dec5cca806b0a5c8e741ee5f844d96da074a8255 23518 ros-humble-legged-controllers_0-2025.04.29.20.11_arm64.buildinfo
+ 337f3d8dd70def3001acf85dc9fa4c1dde79b6f0 170818 ros-humble-legged-controllers_0-2025.04.29.20.11_arm64.deb
+Checksums-Sha256:
+ 023fc0c5133aa2f2b5cc889e249955bf0b9354f206d15dd20da6f0e144c12232 6091962 ros-humble-legged-controllers-dbgsym_0-2025.04.29.20.11_arm64.ddeb
+ 8e2663b979f0dc8c31eecd399bee476bd950006bdac1f871d3ee756be2aa06e6 23518 ros-humble-legged-controllers_0-2025.04.29.20.11_arm64.buildinfo
+ 18a50c3489a2b18008229c69008aec5e124f45af57dec7d1124d586e951b7b58 170818 ros-humble-legged-controllers_0-2025.04.29.20.11_arm64.deb
+Files:
+ 86f0a3d6f7a0a804b135a338aaf43557 6091962 debug optional ros-humble-legged-controllers-dbgsym_0-2025.04.29.20.11_arm64.ddeb
+ 4f16b8e2eff5b08887783370f54fb64c 23518 misc optional ros-humble-legged-controllers_0-2025.04.29.20.11_arm64.buildinfo
+ 2f961a07b3346ab4616198134ce6f4ee 170818 misc optional ros-humble-legged-controllers_0-2025.04.29.20.11_arm64.deb
