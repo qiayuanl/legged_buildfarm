@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Thu, 01 May 2025 00:00:00 -0000
+Source: ros-humble-legged-estimation
+Binary: ros-humble-legged-estimation
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.1.1-2025.05.11.08.34
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-estimation - State estimation of legged robot
+Changes:
+ ros-humble-legged-estimation (2.1.1-2025.05.11.08.34) jammy; urgency=high
+ .
+   * Merge branch 'refs/heads/master' into feature/lio_fuse
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ 27f166d0b75b336b653e3b9120a41e9422ccacd3 3658614 ros-humble-legged-estimation-dbgsym_2.1.1-2025.05.11.08.34_amd64.ddeb
+ 9ff4bcd8b177da61f37d59d4fe5588feaec982b1 18480 ros-humble-legged-estimation_2.1.1-2025.05.11.08.34_amd64.buildinfo
+ 25d56d466d6c47dcda47591e42fca2aa3b421dc5 57266 ros-humble-legged-estimation_2.1.1-2025.05.11.08.34_amd64.deb
+Checksums-Sha256:
+ c6b734d1f7cb781d13187327ae1238c314547c2b3600777e7f35485ca5812070 3658614 ros-humble-legged-estimation-dbgsym_2.1.1-2025.05.11.08.34_amd64.ddeb
+ ceeef5d69543f6ab1f420d7f396ecd1afc1c007e43b49915cf6ef4d07fa322c9 18480 ros-humble-legged-estimation_2.1.1-2025.05.11.08.34_amd64.buildinfo
+ f02a2d90ee5db44dc89c14f7085f6e758593403ad3b6ea0fd3757ef3ed1de6e0 57266 ros-humble-legged-estimation_2.1.1-2025.05.11.08.34_amd64.deb
+Files:
+ fa20fb9409fa6eab6a8aabb01c4e9b75 3658614 debug optional ros-humble-legged-estimation-dbgsym_2.1.1-2025.05.11.08.34_amd64.ddeb
+ 8053785b427c5e01ec32625976a21caf 18480 misc optional ros-humble-legged-estimation_2.1.1-2025.05.11.08.34_amd64.buildinfo
+ e6f958ef13bb378de1e00667309e43bc 57266 misc optional ros-humble-legged-estimation_2.1.1-2025.05.11.08.34_amd64.deb
