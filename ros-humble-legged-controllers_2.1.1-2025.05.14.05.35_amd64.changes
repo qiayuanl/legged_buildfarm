@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Thu, 01 May 2025 00:00:00 -0000
+Source: ros-humble-legged-controllers
+Binary: ros-humble-legged-controllers
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.1.1-2025.05.14.05.35
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-controllers - Model of legged robot
+Changes:
+ ros-humble-legged-controllers (2.1.1-2025.05.14.05.35) jammy; urgency=high
+ .
+   * Merge pull request #3 <https://github.com/qiayuanl/legged_control2/issues/3> from qiayuanl/feature/lio_fuse
+     Feature/lio fuse
+   * Merge branch 'refs/heads/master' into feature/lio_fuse
+   * Force worldToMap_ to be only rotated along z axis in StateEstimator
+   * Contributors: Qiayuan Liao, qiayuanl
+Checksums-Sha1:
+ 6a4b52d4192bbafdf42303bcae4e6ee952c479f0 6208768 ros-humble-legged-controllers-dbgsym_2.1.1-2025.05.14.05.35_amd64.ddeb
+ 12768bab0ab1b7712dc3fc6f9363460678a9128a 23627 ros-humble-legged-controllers_2.1.1-2025.05.14.05.35_amd64.buildinfo
+ 23614d60c8d61f40a3f105f3f62ccf620f6ac3d8 186446 ros-humble-legged-controllers_2.1.1-2025.05.14.05.35_amd64.deb
+Checksums-Sha256:
+ d1800b7392014a12320de991c29c9e178ee9c75423e7d62904d144fe8c53e856 6208768 ros-humble-legged-controllers-dbgsym_2.1.1-2025.05.14.05.35_amd64.ddeb
+ 7eeb7dc09a74dd42cc946c6725a83d6df515cbdec99072c172e49ca48c59ed6d 23627 ros-humble-legged-controllers_2.1.1-2025.05.14.05.35_amd64.buildinfo
+ 7e16e60388f0693c28b48af2010207783e969b03331d7b9371a098711704ef73 186446 ros-humble-legged-controllers_2.1.1-2025.05.14.05.35_amd64.deb
+Files:
+ 4079f2326bd70003ae9ed7e63eb07bbe 6208768 debug optional ros-humble-legged-controllers-dbgsym_2.1.1-2025.05.14.05.35_amd64.ddeb
+ 382a78f575268c09d390068b2603eb41 23627 misc optional ros-humble-legged-controllers_2.1.1-2025.05.14.05.35_amd64.buildinfo
+ 1abb0e804ddbb440e55b75f2776cce84 186446 misc optional ros-humble-legged-controllers_2.1.1-2025.05.14.05.35_amd64.deb
