@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Thu, 01 May 2025 00:00:00 -0000
+Source: ros-humble-legged-model
+Binary: ros-humble-legged-model
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.1.1-2025.05.19.04.02
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-model - Model of legged robot
+Changes:
+ ros-humble-legged-model (2.1.1-2025.05.19.04.02) jammy; urgency=high
+ .
+   * Merge branch 'refs/heads/master' into feature/lio_fuse
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ 27f60a23e4c77f5aa0562e5c8e44e3744433cbb2 18256182 ros-humble-legged-model-dbgsym_2.1.1-2025.05.19.04.02_amd64.ddeb
+ ab8852cbcba44ca5b9c35299585f332d4483653d 18388 ros-humble-legged-model_2.1.1-2025.05.19.04.02_amd64.buildinfo
+ c06560eea6437be040bfead85cd1d42eb192cff5 196480 ros-humble-legged-model_2.1.1-2025.05.19.04.02_amd64.deb
+Checksums-Sha256:
+ 7bd7aaf187aa3ce7589720342aafbbc12fff90275779fb1a3a1a85eb3e098f50 18256182 ros-humble-legged-model-dbgsym_2.1.1-2025.05.19.04.02_amd64.ddeb
+ 11fcd0f2998fc73aad68cf0ffa0a133118ea46c75c7bf166bb219fc1da91673d 18388 ros-humble-legged-model_2.1.1-2025.05.19.04.02_amd64.buildinfo
+ 67decfb90855cc5894c0b2e294f8e045173b29409123464dddd4cd2e631b9b83 196480 ros-humble-legged-model_2.1.1-2025.05.19.04.02_amd64.deb
+Files:
+ b626ecec621b20e4b4c33d87b6e82804 18256182 debug optional ros-humble-legged-model-dbgsym_2.1.1-2025.05.19.04.02_amd64.ddeb
+ 3a229f1232799b7747bc183c0e89a353 18388 misc optional ros-humble-legged-model_2.1.1-2025.05.19.04.02_amd64.buildinfo
+ a6e9b0891a2b341a889a3bbfa7349901 196480 misc optional ros-humble-legged-model_2.1.1-2025.05.19.04.02_amd64.deb

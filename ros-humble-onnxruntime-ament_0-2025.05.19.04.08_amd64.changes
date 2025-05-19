@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Wed, 26 Mar 2025 00:00:00 -0000
+Source: ros-humble-onnxruntime-ament
+Binary: ros-humble-onnxruntime-ament
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0-2025.05.19.04.08
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-onnxruntime-ament - Model of legged robot
+Changes:
+ ros-humble-onnxruntime-ament (0-2025.05.19.04.08) jammy; urgency=high
+ .
+   * Cleanup the CMakeLists.txt
+   * Remove useless variable
+   * Add arm support
+   * First success
+   * First commit
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ 6305e8880b78485407693e860fc5d12bb679183d 9673 ros-humble-onnxruntime-ament_0-2025.05.19.04.08_amd64.buildinfo
+ ec15e1ab10e42de2e8425bf5be6f7eb2b2451fba 4354196 ros-humble-onnxruntime-ament_0-2025.05.19.04.08_amd64.deb
+Checksums-Sha256:
+ ba3901c148feb2e1e17f399db65c07dc9e6a32fa69e269a18013e8b80ec61b50 9673 ros-humble-onnxruntime-ament_0-2025.05.19.04.08_amd64.buildinfo
+ 7412227f69ce9fbaab8b76a112fac6244a6ad21353c3fb09f2a831c49ec741e1 4354196 ros-humble-onnxruntime-ament_0-2025.05.19.04.08_amd64.deb
+Files:
+ c890b24e167a2ed76d3ed493ebcbd831 9673 misc optional ros-humble-onnxruntime-ament_0-2025.05.19.04.08_amd64.buildinfo
+ 2a059dd7aada7e8bcd8a2bf86f77d705 4354196 misc optional ros-humble-onnxruntime-ament_0-2025.05.19.04.08_amd64.deb
