@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Mon, 02 Jun 2025 00:00:00 -0000
+Source: ros-humble-legged-controllers
+Binary: ros-humble-legged-controllers
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 2.3.1-2025.06.02.13.03
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-controllers - Model of legged robot
+Changes:
+ ros-humble-legged-controllers (2.3.1-2025.06.02.13.03) jammy; urgency=high
+ .
+   * Merge pull request #5 <https://github.com/qiayuanl/legged_control2/issues/5> from qiayuanl/fix/estimation_position_default
+     Fix the behavior when estimation.position.topic and estimation.positi…
+   * Fix the behavior when estimation.position.topic and estimation.position.frame_id is empty
+   * Contributors: Qiayuan Liao, qiayuanl
+Checksums-Sha1:
+ d7447e2d4da42077e836d8e0e2ac2800fc6fef42 6730232 ros-humble-legged-controllers-dbgsym_2.3.1-2025.06.02.13.03_arm64.ddeb
+ 32fe0ed3f162537acabdea3453f6e91a999c6638 23561 ros-humble-legged-controllers_2.3.1-2025.06.02.13.03_arm64.buildinfo
+ cae9f60b9d0be6df0cfcebaaebd1495aa92fd0e9 180712 ros-humble-legged-controllers_2.3.1-2025.06.02.13.03_arm64.deb
+Checksums-Sha256:
+ 9f6610253204b6a974ddd55f033616f3fed06907ade721b72872b2f18cc0f7f0 6730232 ros-humble-legged-controllers-dbgsym_2.3.1-2025.06.02.13.03_arm64.ddeb
+ 13edc6d3ded55378e8b1a3cc960469cde762c9d3c3dafbc7b056ae28491ec9d7 23561 ros-humble-legged-controllers_2.3.1-2025.06.02.13.03_arm64.buildinfo
+ db30a995abf8ea15caf5d35fe00ebdaea89ca2f53ac29aafe1299fc1d35dd679 180712 ros-humble-legged-controllers_2.3.1-2025.06.02.13.03_arm64.deb
+Files:
+ aaa32adad08d8582baf949badecf7dac 6730232 debug optional ros-humble-legged-controllers-dbgsym_2.3.1-2025.06.02.13.03_arm64.ddeb
+ 63214dc78cbd8103b813037e5e056fed 23561 misc optional ros-humble-legged-controllers_2.3.1-2025.06.02.13.03_arm64.buildinfo
+ f516a42c54160dc08fafdc467a6d678d 180712 misc optional ros-humble-legged-controllers_2.3.1-2025.06.02.13.03_arm64.deb
