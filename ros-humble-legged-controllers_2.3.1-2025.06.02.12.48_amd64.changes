@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Mon, 02 Jun 2025 00:00:00 -0000
+Source: ros-humble-legged-controllers
+Binary: ros-humble-legged-controllers
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.3.1-2025.06.02.12.48
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-controllers - Model of legged robot
+Changes:
+ ros-humble-legged-controllers (2.3.1-2025.06.02.12.48) jammy; urgency=high
+ .
+   * Merge pull request #5 <https://github.com/qiayuanl/legged_control2/issues/5> from qiayuanl/fix/estimation_position_default
+     Fix the behavior when estimation.position.topic and estimation.positi…
+   * Fix the behavior when estimation.position.topic and estimation.position.frame_id is empty
+   * Contributors: Qiayuan Liao, qiayuanl
+Checksums-Sha1:
+ fae011500f6e8fe529855ba5dae1f8f294764cfa 6822200 ros-humble-legged-controllers-dbgsym_2.3.1-2025.06.02.12.48_amd64.ddeb
+ d757ebef5589bc41239638bf53692b1967e2f07c 23634 ros-humble-legged-controllers_2.3.1-2025.06.02.12.48_amd64.buildinfo
+ 92bffdb4f1ab13ef41f7d0eef7e3fdd1c7c64173 195998 ros-humble-legged-controllers_2.3.1-2025.06.02.12.48_amd64.deb
+Checksums-Sha256:
+ 4ecc70be00dcdebd22acc97ca9594c08c5dc2d63262ed1b97ca5f7455109d0d3 6822200 ros-humble-legged-controllers-dbgsym_2.3.1-2025.06.02.12.48_amd64.ddeb
+ b38f8c98ed341d074bfb57a3b1eefcbf332d4e5ca03c340ed46d69b1a3cbb809 23634 ros-humble-legged-controllers_2.3.1-2025.06.02.12.48_amd64.buildinfo
+ e3f7f78c1fd2433492fddf9d7c2628404f6c65ba4f0504a1a0c90e3443f1053c 195998 ros-humble-legged-controllers_2.3.1-2025.06.02.12.48_amd64.deb
+Files:
+ 4bd29dc614efba80717346ef63a3e0be 6822200 debug optional ros-humble-legged-controllers-dbgsym_2.3.1-2025.06.02.12.48_amd64.ddeb
+ be0e33d0efd97057fe621b0c74b694b6 23634 misc optional ros-humble-legged-controllers_2.3.1-2025.06.02.12.48_amd64.buildinfo
+ 309e3295083352957b9d3d1bfaa975d7 195998 misc optional ros-humble-legged-controllers_2.3.1-2025.06.02.12.48_amd64.deb
