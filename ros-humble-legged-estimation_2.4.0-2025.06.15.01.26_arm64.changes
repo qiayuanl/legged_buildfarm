@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Sat, 14 Jun 2025 00:00:00 -0000
+Source: ros-humble-legged-estimation
+Binary: ros-humble-legged-estimation
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 2.4.0-2025.06.15.01.26
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-estimation - State estimation of legged robot
+Changes:
+ ros-humble-legged-estimation (2.4.0-2025.06.15.01.26) jammy; urgency=high
+Checksums-Sha1:
+ 60595b7862b778750c28ca1b9510c7a469fc1170 3800838 ros-humble-legged-estimation-dbgsym_2.4.0-2025.06.15.01.26_arm64.ddeb
+ f2c1ad197b4f0666cf41c6f92136adfa8e4a1486 18413 ros-humble-legged-estimation_2.4.0-2025.06.15.01.26_arm64.buildinfo
+ ed1d79b1791560c21ad039e8d3e9cb0246863b1d 51760 ros-humble-legged-estimation_2.4.0-2025.06.15.01.26_arm64.deb
+Checksums-Sha256:
+ 9bd7b66f62428fbc0eb7e194e722e6b840dba59114225853f9bc357fa87df7fc 3800838 ros-humble-legged-estimation-dbgsym_2.4.0-2025.06.15.01.26_arm64.ddeb
+ 18e0f2ab3fd12a1c2401ecb4310be16807d5f51c3918bf68b14ac3f09533261b 18413 ros-humble-legged-estimation_2.4.0-2025.06.15.01.26_arm64.buildinfo
+ 737510feb3aa46330e45c2c88896101adfc29f6ea5acfdb46b8ac011a3fccbdd 51760 ros-humble-legged-estimation_2.4.0-2025.06.15.01.26_arm64.deb
+Files:
+ 8647960d7ca29e8a6f662d9b864033a6 3800838 debug optional ros-humble-legged-estimation-dbgsym_2.4.0-2025.06.15.01.26_arm64.ddeb
+ 85c20071a604ea8bd4850efc71b2915e 18413 misc optional ros-humble-legged-estimation_2.4.0-2025.06.15.01.26_arm64.buildinfo
+ 21b2f8793c23a471717567091909990b 51760 misc optional ros-humble-legged-estimation_2.4.0-2025.06.15.01.26_arm64.deb

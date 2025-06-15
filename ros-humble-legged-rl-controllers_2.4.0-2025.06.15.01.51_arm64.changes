@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Sat, 14 Jun 2025 00:00:00 -0000
+Source: ros-humble-legged-rl-controllers
+Binary: ros-humble-legged-rl-controllers
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 2.4.0-2025.06.15.01.51
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-rl-controllers - Model of legged robot
+Changes:
+ ros-humble-legged-rl-controllers (2.4.0-2025.06.15.01.51) jammy; urgency=high
+ .
+   * Merge pull request #6 <https://github.com/qiayuanl/legged_control2/issues/6> from qiayuanl/feature/mimo_onnx
+     Refactor Policy and OnnxPolicy to support multi-input multi-output
+   * Refactor Policy and OnnxPolicy to support multi-input multi-output
+   * Contributors: Qiayuan Liao, qiayuanl
+Checksums-Sha1:
+ 73e187cc6cccacc1900adbca70827750c15f41f1 3983604 ros-humble-legged-rl-controllers-dbgsym_2.4.0-2025.06.15.01.51_arm64.ddeb
+ 9c3b7ea786f41ac4f314d1d541d06f7e9fc7f1a2 27547 ros-humble-legged-rl-controllers_2.4.0-2025.06.15.01.51_arm64.buildinfo
+ e9e7f9d75abce2f5205bb125c58ceee9dda19054 134378 ros-humble-legged-rl-controllers_2.4.0-2025.06.15.01.51_arm64.deb
+Checksums-Sha256:
+ b9d4c2b1bfdb605c44edb26525d0001616ed1364b382393e05746a3572701943 3983604 ros-humble-legged-rl-controllers-dbgsym_2.4.0-2025.06.15.01.51_arm64.ddeb
+ 3ae6f66a845d630a3370b52bfe64d46266d1efd5c054aa32ad70a4aac3f0c6d0 27547 ros-humble-legged-rl-controllers_2.4.0-2025.06.15.01.51_arm64.buildinfo
+ 874bb7e0a294c89c0d4b5a42188feddbe4f08849011d8c89e2d7ae748e41be4f 134378 ros-humble-legged-rl-controllers_2.4.0-2025.06.15.01.51_arm64.deb
+Files:
+ e3a1f4f548ebb0624285a94724d0ae40 3983604 debug optional ros-humble-legged-rl-controllers-dbgsym_2.4.0-2025.06.15.01.51_arm64.ddeb
+ 176923519bc351553b55977b89c5026f 27547 misc optional ros-humble-legged-rl-controllers_2.4.0-2025.06.15.01.51_arm64.buildinfo
+ 9a0f7647d7257066a62f6d2d8c1c9faf 134378 misc optional ros-humble-legged-rl-controllers_2.4.0-2025.06.15.01.51_arm64.deb
