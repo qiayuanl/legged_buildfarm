@@ -1,0 +1,38 @@
+Format: 1.8
+Date: Tue, 17 Jun 2025 00:00:00 -0000
+Source: ros-humble-legged-rl-controllers
+Binary: ros-humble-legged-rl-controllers
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.7.0-2025.06.18.01.02
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-rl-controllers - Model of legged robot
+Changes:
+ ros-humble-legged-rl-controllers (2.7.0-2025.06.18.01.02) jammy; urgency=high
+ .
+   * Merge pull request #8 <https://github.com/qiayuanl/legged_control2/issues/8> from qiayuanl/feature/async
+     Feature/async
+   * Merge branch 'master' into feature/async
+     # Conflicts:
+     #     legged_rl_controllers/src/RlController.cpp
+   * Merge branch 'master' into feature/async
+   * Merge branch 'master' into feature/async
+   * Add async parameter
+   * Add parallel policy inference
+   * Contributors: Qiayuan Liao, qiayuanl
+Checksums-Sha1:
+ b785ebe060d84e6ada1a6d5a71b5210203379918 4196450 ros-humble-legged-rl-controllers-dbgsym_2.7.0-2025.06.18.01.02_amd64.ddeb
+ 38e80069225279d01d4657bb0c21eafb9a8108ba 27627 ros-humble-legged-rl-controllers_2.7.0-2025.06.18.01.02_amd64.buildinfo
+ 50bf340bebbe65817f913fd4afa966fb43291d72 153290 ros-humble-legged-rl-controllers_2.7.0-2025.06.18.01.02_amd64.deb
+Checksums-Sha256:
+ 390113818a14ee16a7fbaf5e4aeb044012b1bcfeca4eed63b1a3b176ec3cf4da 4196450 ros-humble-legged-rl-controllers-dbgsym_2.7.0-2025.06.18.01.02_amd64.ddeb
+ 34ec784f56af9cd72b5124cd534cdcbaf97d64eb92fdabf646f17f418317bb6b 27627 ros-humble-legged-rl-controllers_2.7.0-2025.06.18.01.02_amd64.buildinfo
+ b0d404d69268f02de0f3e7ac5f9cad01cff1a3df0082e7471c6399fa4c4dd6eb 153290 ros-humble-legged-rl-controllers_2.7.0-2025.06.18.01.02_amd64.deb
+Files:
+ 9e2dc50ef20f2ba983f4cfa2a5e77e01 4196450 debug optional ros-humble-legged-rl-controllers-dbgsym_2.7.0-2025.06.18.01.02_amd64.ddeb
+ 33c5778b8dace3b5517fad2a5a7ca79d 27627 misc optional ros-humble-legged-rl-controllers_2.7.0-2025.06.18.01.02_amd64.buildinfo
+ b09f014fa931662265d29fd18c1dcd4d 153290 misc optional ros-humble-legged-rl-controllers_2.7.0-2025.06.18.01.02_amd64.deb
