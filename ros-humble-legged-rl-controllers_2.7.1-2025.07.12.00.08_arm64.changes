@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Fri, 11 Jul 2025 00:00:00 -0000
+Source: ros-humble-legged-rl-controllers
+Binary: ros-humble-legged-rl-controllers
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 2.7.1-2025.07.12.00.08
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-rl-controllers - Model of legged robot
+Changes:
+ ros-humble-legged-rl-controllers (2.7.1-2025.07.12.00.08) jammy; urgency=high
+ .
+   * Add verbose for getMetadataVector
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ e14515d5843c142e38f3873a8d522f1a5ea3360b 4128204 ros-humble-legged-rl-controllers-dbgsym_2.7.1-2025.07.12.00.08_arm64.ddeb
+ bec3a47ebc3561152a44a57f45f113ff219d34b8 27554 ros-humble-legged-rl-controllers_2.7.1-2025.07.12.00.08_arm64.buildinfo
+ f5c21705887331f3132f30d10dd80f088d2e050c 144464 ros-humble-legged-rl-controllers_2.7.1-2025.07.12.00.08_arm64.deb
+Checksums-Sha256:
+ 20b21bd076eb70ddddec31e05f71770db9ae3ea9cc79fec5b7e37bd0d0a6b387 4128204 ros-humble-legged-rl-controllers-dbgsym_2.7.1-2025.07.12.00.08_arm64.ddeb
+ 128cb16957c08851ee68125d6af277f9b4d8113bb3c62586a8138c19b287678e 27554 ros-humble-legged-rl-controllers_2.7.1-2025.07.12.00.08_arm64.buildinfo
+ d129eff1ead42247ee8042c58d33b7965dddf8ba29c410beb18d9af75b1a6281 144464 ros-humble-legged-rl-controllers_2.7.1-2025.07.12.00.08_arm64.deb
+Files:
+ 3d93081176f11e0f1aa6ee621155447d 4128204 debug optional ros-humble-legged-rl-controllers-dbgsym_2.7.1-2025.07.12.00.08_arm64.ddeb
+ 8096f9fffcc6d56913852a753f07077a 27554 misc optional ros-humble-legged-rl-controllers_2.7.1-2025.07.12.00.08_arm64.buildinfo
+ be2bb2bce2e9d7694fafd52de4d00582 144464 misc optional ros-humble-legged-rl-controllers_2.7.1-2025.07.12.00.08_arm64.deb
