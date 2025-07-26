@@ -1,0 +1,36 @@
+Format: 1.8
+Date: Mon, 21 Jul 2025 00:00:00 -0000
+Source: ros-humble-legged-rl-controllers
+Binary: ros-humble-legged-rl-controllers
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.7.2-2025.07.26.04.14
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-rl-controllers - Model of legged robot
+Changes:
+ ros-humble-legged-rl-controllers (2.7.2-2025.07.26.04.14) jammy; urgency=high
+ .
+   * Update CHANGELOG.rst
+   * Refactor action scale handling to support vector_t type
+   * Contributors: qiayuanl
+   * Update CHANGELOG.rst
+   * Refactor action scale handling to support vector_t type
+   * Contributors: qiayuanl
+   * Refactor action scale handling to support vector_t type
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ 38312ae9f63aeb8bfac61d9d1f1485f1e74f86af 4199458 ros-humble-legged-rl-controllers-dbgsym_2.7.2-2025.07.26.04.14_amd64.ddeb
+ 35b1a30291e7d0996faac98a90a5fdc61a08b2ac 27633 ros-humble-legged-rl-controllers_2.7.2-2025.07.26.04.14_amd64.buildinfo
+ 1ac3cae50dbb34da61a75efb4a24da4d68d615e4 154662 ros-humble-legged-rl-controllers_2.7.2-2025.07.26.04.14_amd64.deb
+Checksums-Sha256:
+ 40ae4e019fbf58a3c3c0412a7a5934285ddb5698156b3215bd40afafc1336b9e 4199458 ros-humble-legged-rl-controllers-dbgsym_2.7.2-2025.07.26.04.14_amd64.ddeb
+ e8d7364dd011d61c4cc73022668a6702d4d77067ba97c014da45905b07eb04e3 27633 ros-humble-legged-rl-controllers_2.7.2-2025.07.26.04.14_amd64.buildinfo
+ 3c19d2561fefd32506a0980eb5d36fd6e869685a871794f631309cec7ee7e647 154662 ros-humble-legged-rl-controllers_2.7.2-2025.07.26.04.14_amd64.deb
+Files:
+ 4a779251dfab6b8bff9019ee04c7f192 4199458 debug optional ros-humble-legged-rl-controllers-dbgsym_2.7.2-2025.07.26.04.14_amd64.ddeb
+ 3b0cdf8d3fe7bd3e43285fb5a5fa7136 27633 misc optional ros-humble-legged-rl-controllers_2.7.2-2025.07.26.04.14_amd64.buildinfo
+ e561b89144476b6e64b1a85b7cf271b9 154662 misc optional ros-humble-legged-rl-controllers_2.7.2-2025.07.26.04.14_amd64.deb
