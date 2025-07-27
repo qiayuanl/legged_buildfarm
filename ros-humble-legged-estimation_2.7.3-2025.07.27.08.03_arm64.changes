@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Sun, 27 Jul 2025 00:00:00 -0000
+Source: ros-humble-legged-estimation
+Binary: ros-humble-legged-estimation
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 2.7.3-2025.07.27.08.03
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-estimation - State estimation of legged robot
+Changes:
+ ros-humble-legged-estimation (2.7.3-2025.07.27.08.03) jammy; urgency=high
+ .
+   * Fix the center of pressure computation!
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ 4ac7da0c62626e97cb10a16258d66bea82d44f5c 3834928 ros-humble-legged-estimation-dbgsym_2.7.3-2025.07.27.08.03_arm64.ddeb
+ cddac99312b81b0a441cbd326e512224c0435e38 18420 ros-humble-legged-estimation_2.7.3-2025.07.27.08.03_arm64.buildinfo
+ 9ca84879037f9a89368dfd3ea8cfafabce8c0c67 51882 ros-humble-legged-estimation_2.7.3-2025.07.27.08.03_arm64.deb
+Checksums-Sha256:
+ 556c3143d8d88e5abb78f52179877a97c8d55927216267dcaf04396efe87050e 3834928 ros-humble-legged-estimation-dbgsym_2.7.3-2025.07.27.08.03_arm64.ddeb
+ 3b883572ad6a3b6e2f3ae6f74836d32d4004ad1aa3b7249be8d65eb555819ece 18420 ros-humble-legged-estimation_2.7.3-2025.07.27.08.03_arm64.buildinfo
+ 886699a2e98fab905f975134aa15d30e3a1e44210e33eb29b0ebcd83da0d7654 51882 ros-humble-legged-estimation_2.7.3-2025.07.27.08.03_arm64.deb
+Files:
+ f3e08e3fcf05c4c56698971b1e788233 3834928 debug optional ros-humble-legged-estimation-dbgsym_2.7.3-2025.07.27.08.03_arm64.ddeb
+ 8961e87d7719bb99a76d0730c602364a 18420 misc optional ros-humble-legged-estimation_2.7.3-2025.07.27.08.03_arm64.buildinfo
+ 50eace1399773b704fcb4610275e81e0 51882 misc optional ros-humble-legged-estimation_2.7.3-2025.07.27.08.03_arm64.deb
