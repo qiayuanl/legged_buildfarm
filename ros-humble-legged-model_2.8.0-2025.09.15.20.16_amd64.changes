@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Mon, 15 Sep 2025 00:00:00 -0000
+Source: ros-humble-legged-model
+Binary: ros-humble-legged-model
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 2.8.0-2025.09.15.20.16
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-model - Model of legged robot
+Changes:
+ ros-humble-legged-model (2.8.0-2025.09.15.20.16) jammy; urgency=high
+Checksums-Sha1:
+ 0be0f72894210a6d73e4b9897e8d98cfb152d67c 18250770 ros-humble-legged-model-dbgsym_2.8.0-2025.09.15.20.16_amd64.ddeb
+ 253f5b56f7ee79546cf84c58ff1e0bc9e659943f 18474 ros-humble-legged-model_2.8.0-2025.09.15.20.16_amd64.buildinfo
+ c645c9a5be0b731f963884935a3d85a606f417ce 197168 ros-humble-legged-model_2.8.0-2025.09.15.20.16_amd64.deb
+Checksums-Sha256:
+ 84eb300d02ec5a36fda6618785a6629e9d94aca2ba72bd278a39d57dbf172899 18250770 ros-humble-legged-model-dbgsym_2.8.0-2025.09.15.20.16_amd64.ddeb
+ 51461b90712afc672ebcce620de084e5bae78e2a5c276f59193e184cf7b08e66 18474 ros-humble-legged-model_2.8.0-2025.09.15.20.16_amd64.buildinfo
+ 4f71f3372d38327b988460dbd6f268ffeb86f9510a30c4934e8e3b49a84f15ee 197168 ros-humble-legged-model_2.8.0-2025.09.15.20.16_amd64.deb
+Files:
+ 4e18cc9efdb1f9faf5a105321dfd60cc 18250770 debug optional ros-humble-legged-model-dbgsym_2.8.0-2025.09.15.20.16_amd64.ddeb
+ 8c499cb8ec64238f83d8c313a7b22a70 18474 misc optional ros-humble-legged-model_2.8.0-2025.09.15.20.16_amd64.buildinfo
+ ca1f47fb0efcd2043d146ebbc914be6d 197168 misc optional ros-humble-legged-model_2.8.0-2025.09.15.20.16_amd64.deb
