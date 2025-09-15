@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Mon, 15 Sep 2025 00:00:00 -0000
+Source: ros-humble-legged-controllers
+Binary: ros-humble-legged-controllers
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 2.8.0-2025.09.15.20.47
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-controllers - Model of legged robot
+Changes:
+ ros-humble-legged-controllers (2.8.0-2025.09.15.20.47) jammy; urgency=high
+ .
+   * Add on_init method to StandbyController and StateEstimator for parameter declaration
+   * Handle zero duration in update_and_write_commands to prevent division by zero
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ a21c02140c213de19caddaf2151f33540cabb15f 6796548 ros-humble-legged-controllers-dbgsym_2.8.0-2025.09.15.20.47_arm64.ddeb
+ e6255407f38800dc48f5b744955886e451381c00 23614 ros-humble-legged-controllers_2.8.0-2025.09.15.20.47_arm64.buildinfo
+ fec60fd775ed6c3575cb675bf328d7ace60cb5ec 186838 ros-humble-legged-controllers_2.8.0-2025.09.15.20.47_arm64.deb
+Checksums-Sha256:
+ fc73c98d8608b2afd0fb787ff6785da8c484c5a31cb99006539e894d99d2c3ab 6796548 ros-humble-legged-controllers-dbgsym_2.8.0-2025.09.15.20.47_arm64.ddeb
+ 64cf7fa8f241c4de57a9ce2544dfc0d87b865cc1d46875f1b23c4a87fc376b37 23614 ros-humble-legged-controllers_2.8.0-2025.09.15.20.47_arm64.buildinfo
+ c469760787d008f82410f268694e1eba6bd0e8e8c44510405631f649eb3c8e78 186838 ros-humble-legged-controllers_2.8.0-2025.09.15.20.47_arm64.deb
+Files:
+ c72994c93b88af063a045b1e44be822f 6796548 debug optional ros-humble-legged-controllers-dbgsym_2.8.0-2025.09.15.20.47_arm64.ddeb
+ 93b05a859002e45311bfc9942c1e5c39 23614 misc optional ros-humble-legged-controllers_2.8.0-2025.09.15.20.47_arm64.buildinfo
+ 9024b13f5907c50fe96c06007219b6d4 186838 misc optional ros-humble-legged-controllers_2.8.0-2025.09.15.20.47_arm64.deb
