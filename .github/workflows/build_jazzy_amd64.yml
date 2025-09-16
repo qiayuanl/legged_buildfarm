@@ -1,0 +1,32 @@
+name: Builder Jazzy amd64
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ros2.repos
+jobs:
+  build_testing:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: qiayuanl/legged_control2
+          token: ${{ secrets.GH_PAT }}
+          path: 'src/legged_control2'
+          ref: 'jazzy'
+          fetch-tags: true
+      - uses: actions/checkout@v4
+        with:
+          repository: qiayuanl/onnxruntime_ament
+          token: ${{ secrets.GH_PAT }}
+          path: 'src/onnxruntime_ament'
+          fetch-tags: true
+      - uses: qiayuanl/ros-deb-builder-action@main
+        with:
+          DEB_DISTRO: noble
+          ROS_DISTRO: jazzy
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SQUASH_HISTORY: true
+          SKIP_CHECKOUT: true
