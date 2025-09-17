@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Tue, 16 Sep 2025 00:00:00 -0000
+Source: ros-jazzy-legged-rl-controllers
+Binary: ros-jazzy-legged-rl-controllers
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 3.0.0-2025.09.17.06.32
+Distribution: noble
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-jazzy-legged-rl-controllers - Model of legged robot
+Changes:
+ ros-jazzy-legged-rl-controllers (3.0.0-2025.09.17.06.32) noble; urgency=high
+ .
+   * Upgrade to jazzy: change the interface and remove custom update_rate/async support
+   * Implement on_init method and update parameter handling in RlController
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ d7bac2cca3b42d77c0cb72289e4e514fd9db0731 4104290 ros-jazzy-legged-rl-controllers-dbgsym_3.0.0-2025.09.17.06.32_arm64.ddeb
+ 9e81b8c841a0904074d5d51cb33f5a5be265589f 31960 ros-jazzy-legged-rl-controllers_3.0.0-2025.09.17.06.32_arm64.buildinfo
+ 678f754432dd23cb1f0906b2f484642e6150c0ac 152716 ros-jazzy-legged-rl-controllers_3.0.0-2025.09.17.06.32_arm64.deb
+Checksums-Sha256:
+ fa27483cffd31d400ef1b3e797bbc07fe74d2b2a2a978313064f487a1e8091d5 4104290 ros-jazzy-legged-rl-controllers-dbgsym_3.0.0-2025.09.17.06.32_arm64.ddeb
+ 13c47929a647555f1e43e852c0ef44ada55324598520a0949ae2f74966808c51 31960 ros-jazzy-legged-rl-controllers_3.0.0-2025.09.17.06.32_arm64.buildinfo
+ 933e00495875a89e348698f23d216c2df2f224a104a11ad84dc47ee7bea126ad 152716 ros-jazzy-legged-rl-controllers_3.0.0-2025.09.17.06.32_arm64.deb
+Files:
+ 08c57db42078b265d54427b04a2f886e 4104290 debug optional ros-jazzy-legged-rl-controllers-dbgsym_3.0.0-2025.09.17.06.32_arm64.ddeb
+ da15bdabbb2be2205167a7ba5441bc8c 31960 misc optional ros-jazzy-legged-rl-controllers_3.0.0-2025.09.17.06.32_arm64.buildinfo
+ e7a04ddc82f0e48eb91f21dc7a243512 152716 misc optional ros-jazzy-legged-rl-controllers_3.0.0-2025.09.17.06.32_arm64.deb
