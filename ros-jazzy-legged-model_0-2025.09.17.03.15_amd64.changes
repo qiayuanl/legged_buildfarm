@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Mon, 15 Sep 2025 00:00:00 -0000
+Source: ros-jazzy-legged-model
+Binary: ros-jazzy-legged-model
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0-2025.09.17.03.15
+Distribution: noble
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-jazzy-legged-model - Model of legged robot
+Changes:
+ ros-jazzy-legged-model (0-2025.09.17.03.15) noble; urgency=high
+Checksums-Sha1:
+ 165fb8a8288f447369f719a514bf0f73e145b7b7 17616606 ros-jazzy-legged-model-dbgsym_0-2025.09.17.03.15_amd64.ddeb
+ e2bd0609f369ee42c59ec212945a934ecb3a7385 19310 ros-jazzy-legged-model_0-2025.09.17.03.15_amd64.buildinfo
+ 063024b08d8a62116102cffa82b5f66ae951ff67 196230 ros-jazzy-legged-model_0-2025.09.17.03.15_amd64.deb
+Checksums-Sha256:
+ 3f185f27f590b1b98c2a44d7b5c19ef74d46cccd357d2c18a27a9e65168381e1 17616606 ros-jazzy-legged-model-dbgsym_0-2025.09.17.03.15_amd64.ddeb
+ 7ddb567648774f26b18aafd7dd7337cf0a66923e6adcf2054ec7085c74baa0f4 19310 ros-jazzy-legged-model_0-2025.09.17.03.15_amd64.buildinfo
+ 02c690378c0e2119f820a11de5f212bdca549ada382d9a2f962b08c9fb63f233 196230 ros-jazzy-legged-model_0-2025.09.17.03.15_amd64.deb
+Files:
+ d419ed143a2267b88708320552073cba 17616606 debug optional ros-jazzy-legged-model-dbgsym_0-2025.09.17.03.15_amd64.ddeb
+ a7266d210b0dc535d4c28bfa3cb27a75 19310 misc optional ros-jazzy-legged-model_0-2025.09.17.03.15_amd64.buildinfo
+ 0468ad47da061fad8a78793d8b311a95 196230 misc optional ros-jazzy-legged-model_0-2025.09.17.03.15_amd64.deb

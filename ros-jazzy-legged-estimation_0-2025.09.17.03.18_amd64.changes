@@ -1,0 +1,30 @@
+Format: 1.8
+Date: Mon, 15 Sep 2025 00:00:00 -0000
+Source: ros-jazzy-legged-estimation
+Binary: ros-jazzy-legged-estimation
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0-2025.09.17.03.18
+Distribution: noble
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-jazzy-legged-estimation - State estimation of legged robot
+Changes:
+ ros-jazzy-legged-estimation (0-2025.09.17.03.18) noble; urgency=high
+ .
+   * Initialize contact wrenches with zero vectors
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ c329719a995080996bf7d7cbaf237913fa7311ea 3856826 ros-jazzy-legged-estimation-dbgsym_0-2025.09.17.03.18_amd64.ddeb
+ 00d184ca3c2781f42ee464a16841806b1eae6325 19397 ros-jazzy-legged-estimation_0-2025.09.17.03.18_amd64.buildinfo
+ eb555031c5da6083cf93544946b14bc5108e9c26 60700 ros-jazzy-legged-estimation_0-2025.09.17.03.18_amd64.deb
+Checksums-Sha256:
+ be637168949bc07113ab32833137ad27cd1abf18bc79eb2f433967598c2cb912 3856826 ros-jazzy-legged-estimation-dbgsym_0-2025.09.17.03.18_amd64.ddeb
+ 13ef981d338549670044e46153bbfe0aab1e2e843868e8112dce853436893980 19397 ros-jazzy-legged-estimation_0-2025.09.17.03.18_amd64.buildinfo
+ bfb6449ac461b9d6900e319f81784bdcb76646108c91810f4577b64b1bfdd9b3 60700 ros-jazzy-legged-estimation_0-2025.09.17.03.18_amd64.deb
+Files:
+ ef5521925574988feb883ca7b952bccd 3856826 debug optional ros-jazzy-legged-estimation-dbgsym_0-2025.09.17.03.18_amd64.ddeb
+ 0e10e5736428de082e784c441535cfde 19397 misc optional ros-jazzy-legged-estimation_0-2025.09.17.03.18_amd64.buildinfo
+ f5aaadb22091c890936a8c4861735543 60700 misc optional ros-jazzy-legged-estimation_0-2025.09.17.03.18_amd64.deb

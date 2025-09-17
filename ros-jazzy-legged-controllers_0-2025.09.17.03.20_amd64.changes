@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Mon, 15 Sep 2025 00:00:00 -0000
+Source: ros-jazzy-legged-controllers
+Binary: ros-jazzy-legged-controllers
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0-2025.09.17.03.20
+Distribution: noble
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-jazzy-legged-controllers - Model of legged robot
+Changes:
+ ros-jazzy-legged-controllers (0-2025.09.17.03.20) noble; urgency=high
+ .
+   * Add on_init method to StandbyController and StateEstimator for parameter declaration
+   * Handle zero duration in update_and_write_commands to prevent division by zero
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ 18d1bb6a621f1a5259f4513121d92238855444e3 7406272 ros-jazzy-legged-controllers-dbgsym_0-2025.09.17.03.20_amd64.ddeb
+ 045176e762028d0d1cc30536e8fec84eed27157d 27957 ros-jazzy-legged-controllers_0-2025.09.17.03.20_amd64.buildinfo
+ 7df1eb83b78b5297bf76d8e66a309b2dda5ebcda 222576 ros-jazzy-legged-controllers_0-2025.09.17.03.20_amd64.deb
+Checksums-Sha256:
+ f5493d3d535c3d7c0ed27fb354d40ff85841251be485cff54bf713e84e5b0fcd 7406272 ros-jazzy-legged-controllers-dbgsym_0-2025.09.17.03.20_amd64.ddeb
+ bf5707e573fd61ac092ab349dbb597fa54ad451203a7f2baf1b504bee9916b67 27957 ros-jazzy-legged-controllers_0-2025.09.17.03.20_amd64.buildinfo
+ fb052f05a0068d9c9d45f0c7e6ceffdd0a4bce62c0aac75df8411c7600e84d85 222576 ros-jazzy-legged-controllers_0-2025.09.17.03.20_amd64.deb
+Files:
+ 1ec0f9d0fae4e5290d5734061ff9dd93 7406272 debug optional ros-jazzy-legged-controllers-dbgsym_0-2025.09.17.03.20_amd64.ddeb
+ d22ddc9168b7295c5b4895a0334f2c5b 27957 misc optional ros-jazzy-legged-controllers_0-2025.09.17.03.20_amd64.buildinfo
+ 7a020e9b860f5db1f0d83b9e9d3aba86 222576 misc optional ros-jazzy-legged-controllers_0-2025.09.17.03.20_amd64.deb

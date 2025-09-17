@@ -1,0 +1,18 @@
+legged_control_base:
+  ubuntu:
+  - ros-jazzy-legged-control-base
+legged_model:
+  ubuntu:
+  - ros-jazzy-legged-model
+legged_estimation:
+  ubuntu:
+  - ros-jazzy-legged-estimation
+legged_controllers:
+  ubuntu:
+  - ros-jazzy-legged-controllers
+onnxruntime_ament:
+  ubuntu:
+  - ros-jazzy-onnxruntime-ament
+legged_rl_controllers:
+  ubuntu:
+  - ros-jazzy-legged-rl-controllers
