@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Sat, 31 May 2025 00:00:00 -0000
+Source: ros-jazzy-onnxruntime-ament
+Binary: ros-jazzy-onnxruntime-ament
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 0-2025.09.17.04.01
+Distribution: noble
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-jazzy-onnxruntime-ament - Model of legged robot
+Changes:
+ ros-jazzy-onnxruntime-ament (0-2025.09.17.04.01) noble; urgency=high
+ .
+   * Update onnxruntime to v1.20.0
+   * Update onnxruntime to v1.12.1
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ 6e35274c14c0d4fa495009e00ea4565d80cc8f1a 9831 ros-jazzy-onnxruntime-ament_0-2025.09.17.04.01_amd64.buildinfo
+ 5b60f0f87ab488a5e4decb164698b17926bb371a 4847586 ros-jazzy-onnxruntime-ament_0-2025.09.17.04.01_amd64.deb
+Checksums-Sha256:
+ 6240e5c29b3fe0239b651e9f074526ddbbcb97c7db5f919e469f5c1727ff811e 9831 ros-jazzy-onnxruntime-ament_0-2025.09.17.04.01_amd64.buildinfo
+ ead59b330b050ce69e02ef5c38facfbe07e1a1771a73999729f09732b7ab3e6e 4847586 ros-jazzy-onnxruntime-ament_0-2025.09.17.04.01_amd64.deb
+Files:
+ 0cdd1d3060dfefdcc1b223de1430026c 9831 misc optional ros-jazzy-onnxruntime-ament_0-2025.09.17.04.01_amd64.buildinfo
+ 732a8e7e7ba9c4f0a632c185230faaa8 4847586 misc optional ros-jazzy-onnxruntime-ament_0-2025.09.17.04.01_amd64.deb
