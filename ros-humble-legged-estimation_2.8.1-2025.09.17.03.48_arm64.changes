@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Tue, 16 Sep 2025 00:00:00 -0000
+Source: ros-humble-legged-estimation
+Binary: ros-humble-legged-estimation
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 2.8.1-2025.09.17.03.48
+Distribution: jammy
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-humble-legged-estimation - State estimation of legged robot
+Changes:
+ ros-humble-legged-estimation (2.8.1-2025.09.17.03.48) jammy; urgency=high
+Checksums-Sha1:
+ 7c475aa1a364f20a8a7c17280d307d65999c06b0 3838638 ros-humble-legged-estimation-dbgsym_2.8.1-2025.09.17.03.48_arm64.ddeb
+ 1e94fac1c75b009d4e2d8bc5d6c744d69f1c5e8e 18493 ros-humble-legged-estimation_2.8.1-2025.09.17.03.48_arm64.buildinfo
+ d07bfd69dc24dc62022906ca3eb9aefad5a7b95d 51810 ros-humble-legged-estimation_2.8.1-2025.09.17.03.48_arm64.deb
+Checksums-Sha256:
+ 77eee1c944ddce068fbd3a51c5f143e1218f4c6642e22673507cfc2dc1f45235 3838638 ros-humble-legged-estimation-dbgsym_2.8.1-2025.09.17.03.48_arm64.ddeb
+ 869943ffed30b1e906530367f492f955d8f8d057b8ccfb1083f161c3ae27fa8d 18493 ros-humble-legged-estimation_2.8.1-2025.09.17.03.48_arm64.buildinfo
+ 2bedf991e31d849caacd032367bb83b14e3d56db6e6f9271c1edd9ca9b7546ee 51810 ros-humble-legged-estimation_2.8.1-2025.09.17.03.48_arm64.deb
+Files:
+ 188877f56898fa7aded4d989f16bbcae 3838638 debug optional ros-humble-legged-estimation-dbgsym_2.8.1-2025.09.17.03.48_arm64.ddeb
+ 2b0a9704d48241556f126eaa82357db1 18493 misc optional ros-humble-legged-estimation_2.8.1-2025.09.17.03.48_arm64.buildinfo
+ c8f40b5e2a77bdfba5372e9e18aa431b 51810 misc optional ros-humble-legged-estimation_2.8.1-2025.09.17.03.48_arm64.deb
