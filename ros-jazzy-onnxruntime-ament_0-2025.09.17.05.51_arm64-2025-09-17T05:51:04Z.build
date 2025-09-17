@@ -1,0 +1,1502 @@
+sbuild (Debian sbuild) 0.84.2~ubuntu2204+3 (28 December 2022) on runnervmyfcvg.zrmaal2pbohupgkitq0opsvvsh.ex.internal.cloudapp.net
+
++========================================================================================+
+| ros-jazzy-onnxruntime-ament 0-2025.09.17.05.51 (arm64) Wed, 17 Sep 2025 05:51:04 +0000 |
++========================================================================================+
+
+Package: ros-jazzy-onnxruntime-ament
+Version: 0-2025.09.17.05.51
+Source Version: 0-2025.09.17.05.51
+Distribution: noble
+Machine Architecture: amd64
+Host Architecture: arm64
+Build Architecture: arm64
+Build Type: binary
+
+Unpacking /home/runner/.cache/sbuild/noble-arm64.tar to /tmp/tmp.sbuild.LZtaKSnr6_...
+configuration error - unknown item 'NONEXISTENT' (notify administrator)
+configuration error - unknown item 'NONEXISTENT' (notify administrator)
+configuration error - unknown item 'NONEXISTENT' (notify administrator)
+I: NOTICE: Log filtering will replace 'sbuild-unshare-dummy-location' with '<<CHROOT>>'
+I: NOTICE: Log filtering will replace 'build/package//resolver-KGFi2P' with '<<RESOLVERDIR>>'
+
++------------------------------------------------------------------------------+
+| Update chroot                                                                |
++------------------------------------------------------------------------------+
+
+Get:1 file:/build/package//resolver-9g5lA2/apt_archive ./ InRelease
+Ign:1 file:/build/package//resolver-9g5lA2/apt_archive ./ InRelease
+Get:2 file:/build/package//resolver-9g5lA2/apt_archive ./ Release [577 B]
+Get:2 file:/build/package//resolver-9g5lA2/apt_archive ./ Release [577 B]
+Get:3 file:/build/package//resolver-9g5lA2/apt_archive ./ Release.gpg
+Ign:3 file:/build/package//resolver-9g5lA2/apt_archive ./ Release.gpg
+Get:4 file:/build/package//resolver-9g5lA2/apt_archive ./ Packages [2689 B]
+Get:5 http://ports.ubuntu.com/ubuntu-ports noble InRelease [256 kB]
+Get:6 http://ports.ubuntu.com/ubuntu-ports noble-updates InRelease [126 kB]
+Get:7 http://ports.ubuntu.com/ubuntu-ports noble-security InRelease [126 kB]
+Get:8 http://packages.ros.org/ros2/ubuntu noble InRelease [4676 B]
+Get:9 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 Packages [15.3 MB]
+Get:10 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 Packages [1377 kB]
+Get:11 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 Packages [1480 kB]
+Get:12 http://ports.ubuntu.com/ubuntu-ports noble-updates/universe arm64 Packages [1417 kB]
+Get:13 http://ports.ubuntu.com/ubuntu-ports noble-security/universe arm64 Packages [860 kB]
+Get:14 http://ports.ubuntu.com/ubuntu-ports noble-security/main arm64 Packages [1187 kB]
+Get:15 http://packages.ros.org/ros2/ubuntu noble/main arm64 Packages [1685 kB]
+Fetched 23.8 MB in 16s (1461 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
++------------------------------------------------------------------------------+
+| Fetch source files                                                           |
++------------------------------------------------------------------------------+
+
+
+Local sources
+-------------
+
+/home/runner/work/legged_buildfarm/legged_buildfarm/src/ros-jazzy-onnxruntime-ament_0-2025.09.17.05.51.dsc exists in /home/runner/work/legged_buildfarm/legged_buildfarm/src; copying to chroot
+I: NOTICE: Log filtering will replace 'build/package//package' with '<<PKGBUILDDIR>>'
+I: NOTICE: Log filtering will replace 'build/package/' with '<<BUILDDIR>>'
+
++------------------------------------------------------------------------------+
+| Install package build dependencies                                           |
++------------------------------------------------------------------------------+
+
+
+Setup apt archive
+-----------------
+
+Merged Build-Depends: debhelper (>= 9.0.0), ros-jazzy-ament-cmake, ros-jazzy-ament-cmake-auto, build-essential, fakeroot
+Filtered Build-Depends: debhelper (>= 9.0.0), ros-jazzy-ament-cmake, ros-jazzy-ament-cmake-auto, build-essential, fakeroot
+dpkg-deb: building package 'sbuild-build-depends-main-dummy' in '/<<RESOLVERDIR>>/apt_archive/sbuild-build-depends-main-dummy.deb'.
+Ign:1 copy:/<<RESOLVERDIR>>/apt_archive ./ InRelease
+Get:2 copy:/<<RESOLVERDIR>>/apt_archive ./ Release [580 B]
+Ign:3 copy:/<<RESOLVERDIR>>/apt_archive ./ Release.gpg
+Get:4 copy:/<<RESOLVERDIR>>/apt_archive ./ Sources [665 B]
+Get:5 copy:/<<RESOLVERDIR>>/apt_archive ./ Packages [697 B]
+Fetched 1942 B in 0s (13.6 kB/s)
+Reading package lists...
+Get:1 file:/<<BUILDDIR>>/resolver-9g5lA2/apt_archive ./ InRelease
+Ign:1 file:/<<BUILDDIR>>/resolver-9g5lA2/apt_archive ./ InRelease
+Get:2 file:/<<BUILDDIR>>/resolver-9g5lA2/apt_archive ./ Release [577 B]
+Get:2 file:/<<BUILDDIR>>/resolver-9g5lA2/apt_archive ./ Release [577 B]
+Get:3 file:/<<BUILDDIR>>/resolver-9g5lA2/apt_archive ./ Release.gpg
+Ign:3 file:/<<BUILDDIR>>/resolver-9g5lA2/apt_archive ./ Release.gpg
+Reading package lists...
+Hit:1 http://packages.ros.org/ros2/ubuntu noble InRelease
+Reading package lists...
+Reading package lists...
+
+Install main build dependencies (apt-based resolver)
+----------------------------------------------------
+
+Installing build dependencies
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  autoconf automake autopoint autotools-dev bsdextrautils cmake cmake-data
+  debhelper debugedit dh-autoreconf dh-strip-nondeterminism docutils-common
+  dwz fakeroot file gettext gettext-base google-mock googletest groff-base
+  intltool-debian libarchive-zip-perl libarchive13t64 libbrotli1 libcurl4t64
+  libdebhelper-perl libdw1t64 libelf1t64 libexpat1 libfakeroot
+  libfile-stripnondeterminism-perl libgssapi-krb5-2 libgtest-dev libicu74
+  libjsoncpp25 libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 libldap2
+  libmagic-mgc libmagic1t64 libnghttp2-14 libpipeline1 libpsl5t64
+  libpython3-stdlib libpython3.12-minimal libpython3.12-stdlib libreadline8t64
+  librhash0 librtmp1 libsasl2-2 libsasl2-modules-db libsqlite3-0 libssh-4
+  libsub-override-perl libtool libuchardet0 libuv1t64 libxml2 m4 man-db
+  media-types netbase po-debconf python3 python3-catkin-pkg-modules
+  python3-dateutil python3-docutils python3-importlib-metadata python3-minimal
+  python3-more-itertools python3-packaging python3-pkg-resources
+  python3-pyparsing python3-roman python3-setuptools python3-six python3-zipp
+  python3.12 python3.12-minimal readline-common ros-jazzy-ament-cmake
+  ros-jazzy-ament-cmake-auto ros-jazzy-ament-cmake-core
+  ros-jazzy-ament-cmake-export-definitions
+  ros-jazzy-ament-cmake-export-dependencies
+  ros-jazzy-ament-cmake-export-include-directories
+  ros-jazzy-ament-cmake-export-interfaces
+  ros-jazzy-ament-cmake-export-libraries
+  ros-jazzy-ament-cmake-export-link-flags ros-jazzy-ament-cmake-export-targets
+  ros-jazzy-ament-cmake-gen-version-h ros-jazzy-ament-cmake-gmock
+  ros-jazzy-ament-cmake-gtest ros-jazzy-ament-cmake-include-directories
+  ros-jazzy-ament-cmake-libraries ros-jazzy-ament-cmake-python
+  ros-jazzy-ament-cmake-target-dependencies ros-jazzy-ament-cmake-test
+  ros-jazzy-ament-cmake-version ros-jazzy-ament-package ros-jazzy-gmock-vendor
+  ros-jazzy-gtest-vendor ros-jazzy-ros-workspace sgml-base tzdata xml-core
+Suggested packages:
+  autoconf-archive gnu-standards autoconf-doc cmake-doc cmake-format
+  elpa-cmake-mode ninja-build dh-make gettext-doc libasprintf-dev
+  libgettextpo-dev groff lrzip krb5-doc krb5-user libtool-doc gfortran
+  | fortran95-compiler gcj-jdk m4-doc apparmor less www-browser
+  libmail-box-perl python3-doc python3-tk python3-venv docutils-doc
+  fonts-linuxlibertine | ttf-linux-libertine texlive-lang-french
+  texlive-latex-base texlive-latex-recommended python-pyparsing-doc
+  python-setuptools-doc python3.12-venv python3.12-doc binfmt-support
+  readline-doc sgml-base-doc
+Recommended packages:
+  curl | wget | lynx libarchive-cpio-perl krb5-locales libldap-common
+  publicsuffix libsasl2-modules libltdl-dev libmail-sendmail-perl
+  libpaper-utils python3-pil python3-pygments
+The following NEW packages will be installed:
+  autoconf automake autopoint autotools-dev bsdextrautils cmake cmake-data
+  debhelper debugedit dh-autoreconf dh-strip-nondeterminism docutils-common
+  dwz fakeroot file gettext gettext-base google-mock googletest groff-base
+  intltool-debian libarchive-zip-perl libarchive13t64 libbrotli1 libcurl4t64
+  libdebhelper-perl libdw1t64 libelf1t64 libexpat1 libfakeroot
+  libfile-stripnondeterminism-perl libgssapi-krb5-2 libgtest-dev libicu74
+  libjsoncpp25 libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 libldap2
+  libmagic-mgc libmagic1t64 libnghttp2-14 libpipeline1 libpsl5t64
+  libpython3-stdlib libpython3.12-minimal libpython3.12-stdlib libreadline8t64
+  librhash0 librtmp1 libsasl2-2 libsasl2-modules-db libsqlite3-0 libssh-4
+  libsub-override-perl libtool libuchardet0 libuv1t64 libxml2 m4 man-db
+  media-types netbase po-debconf python3 python3-catkin-pkg-modules
+  python3-dateutil python3-docutils python3-importlib-metadata python3-minimal
+  python3-more-itertools python3-packaging python3-pkg-resources
+  python3-pyparsing python3-roman python3-setuptools python3-six python3-zipp
+  python3.12 python3.12-minimal readline-common ros-jazzy-ament-cmake
+  ros-jazzy-ament-cmake-auto ros-jazzy-ament-cmake-core
+  ros-jazzy-ament-cmake-export-definitions
+  ros-jazzy-ament-cmake-export-dependencies
+  ros-jazzy-ament-cmake-export-include-directories
+  ros-jazzy-ament-cmake-export-interfaces
+  ros-jazzy-ament-cmake-export-libraries
+  ros-jazzy-ament-cmake-export-link-flags ros-jazzy-ament-cmake-export-targets
+  ros-jazzy-ament-cmake-gen-version-h ros-jazzy-ament-cmake-gmock
+  ros-jazzy-ament-cmake-gtest ros-jazzy-ament-cmake-include-directories
+  ros-jazzy-ament-cmake-libraries ros-jazzy-ament-cmake-python
+  ros-jazzy-ament-cmake-target-dependencies ros-jazzy-ament-cmake-test
+  ros-jazzy-ament-cmake-version ros-jazzy-ament-package ros-jazzy-gmock-vendor
+  ros-jazzy-gtest-vendor ros-jazzy-ros-workspace
+  sbuild-build-depends-main-dummy sgml-base tzdata xml-core
+0 upgraded, 109 newly installed, 0 to remove and 0 not upgraded.
+Need to get 43.9 MB of archives.
+After this operation, 168 MB of additional disk space will be used.
+Get:1 copy:/<<RESOLVERDIR>>/apt_archive ./ sbuild-build-depends-main-dummy 0.invalid.0 [690 B]
+Get:2 http://packages.ros.org/ros2/ubuntu noble/main arm64 python3-catkin-pkg-modules all 1.1.0-2 [43.3 kB]
+Get:3 http://packages.ros.org/ros2/ubuntu noble/main arm64 ros-jazzy-ament-package arm64 0.16.4-1noble.20250406.073756 [25.8 kB]
+Get:4 http://packages.ros.org/ros2/ubuntu noble/main arm64 ros-jazzy-ament-cmake-core arm64 2.5.4-1noble.20250424.101337 [27.0 kB]
+Get:5 http://packages.ros.org/ros2/ubuntu noble/main arm64 ros-jazzy-ros-workspace arm64 1.0.3-7noble.20250424.101846 [15.0 kB]
+Get:6 http://packages.ros.org/ros2/ubuntu noble/main arm64 ros-jazzy-ament-cmake-export-definitions arm64 2.5.4-1noble.20250424.102923 [7200 B]
+Get:7 http://packages.ros.org/ros2/ubuntu noble/main arm64 ros-jazzy-ament-cmake-libraries arm64 2.5.4-1noble.20250424.103343 [7086 B]
+Get:8 http://packages.ros.org/ros2/ubuntu noble/main arm64 ros-jazzy-ament-cmake-export-dependencies arm64 2.5.4-1noble.20250424.103918 [8594 B]
+Get:9 http://packages.ros.org/ros2/ubuntu noble/main arm64 ros-jazzy-ament-cmake-export-include-directories arm64 2.5.4-1noble.20250424.102914 [7522 B]
+Get:10 http://packages.ros.org/ros2/ubuntu noble/main arm64 ros-jazzy-ament-cmake-export-libraries arm64 2.5.4-1noble.20250424.102925 [9552 B]
+Get:11 http://packages.ros.org/ros2/ubuntu noble/main arm64 ros-jazzy-ament-cmake-export-interfaces arm64 2.5.4-1noble.20250424.103508 [7934 B]
+Get:12 http://packages.ros.org/ros2/ubuntu noble/main arm64 ros-jazzy-ament-cmake-export-link-flags arm64 2.5.4-1noble.20250424.103357 [7114 B]
+Get:13 http://packages.ros.org/ros2/ubuntu noble/main arm64 ros-jazzy-ament-cmake-export-targets arm64 2.5.4-1noble.20250424.103509 [8166 B]
+Get:14 http://packages.ros.org/ros2/ubuntu noble/main arm64 ros-jazzy-ament-cmake-gen-version-h arm64 2.5.4-1noble.20250424.103405 [9674 B]
+Get:15 http://packages.ros.org/ros2/ubuntu noble/main arm64 ros-jazzy-ament-cmake-python arm64 2.5.4-1noble.20250424.103412 [10.2 kB]
+Get:16 http://packages.ros.org/ros2/ubuntu noble/main arm64 ros-jazzy-ament-cmake-include-directories arm64 2.5.4-1noble.20250424.103409 [7286 B]
+Get:17 http://packages.ros.org/ros2/ubuntu noble/main arm64 ros-jazzy-ament-cmake-target-dependencies arm64 2.5.4-1noble.20250424.104001 [9454 B]
+Get:18 http://packages.ros.org/ros2/ubuntu noble/main arm64 ros-jazzy-ament-cmake-test arm64 2.5.4-1noble.20250424.104004 [15.4 kB]
+Get:19 http://packages.ros.org/ros2/ubuntu noble/main arm64 ros-jazzy-ament-cmake-version arm64 2.5.4-1noble.20250424.103411 [7476 B]
+Get:20 http://packages.ros.org/ros2/ubuntu noble/main arm64 ros-jazzy-ament-cmake arm64 2.5.4-1noble.20250424.104545 [7432 B]
+Get:21 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libpython3.12-minimal arm64 3.12.3-1ubuntu0.8 [832 kB]
+Get:22 http://packages.ros.org/ros2/ubuntu noble/main arm64 ros-jazzy-gtest-vendor arm64 1.14.9000-2noble.20250424.103946 [183 kB]
+Get:23 http://packages.ros.org/ros2/ubuntu noble/main arm64 ros-jazzy-ament-cmake-gtest arm64 2.5.4-1noble.20250424.105059 [10.3 kB]
+Get:24 http://packages.ros.org/ros2/ubuntu noble/main arm64 ros-jazzy-gmock-vendor arm64 1.14.9000-2noble.20250424.104532 [102 kB]
+Get:25 http://packages.ros.org/ros2/ubuntu noble/main arm64 ros-jazzy-ament-cmake-gmock arm64 2.5.4-1noble.20250424.105701 [10.0 kB]
+Get:26 http://packages.ros.org/ros2/ubuntu noble/main arm64 ros-jazzy-ament-cmake-auto arm64 2.5.4-1noble.20250424.110245 [10.9 kB]
+Get:27 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libexpat1 arm64 2.6.1-2ubuntu0.3 [77.4 kB]
+Get:28 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 python3.12-minimal arm64 3.12.3-1ubuntu0.8 [2253 kB]
+Get:29 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 python3-minimal arm64 3.12.3-0ubuntu2 [27.4 kB]
+Get:30 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 media-types all 10.1.0 [27.5 kB]
+Get:31 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 netbase all 6.4 [13.1 kB]
+Get:32 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 tzdata all 2025b-0ubuntu0.24.04.1 [276 kB]
+Get:33 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 readline-common all 8.2-4build1 [56.5 kB]
+Get:34 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libreadline8t64 arm64 8.2-4build1 [153 kB]
+Get:35 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libsqlite3-0 arm64 3.45.1-1ubuntu2.5 [704 kB]
+Get:36 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libpython3.12-stdlib arm64 3.12.3-1ubuntu0.8 [2037 kB]
+Get:37 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 python3.12 arm64 3.12.3-1ubuntu0.8 [651 kB]
+Get:38 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libpython3-stdlib arm64 3.12.3-0ubuntu2 [10.0 kB]
+Get:39 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 python3 arm64 3.12.3-0ubuntu2 [23.0 kB]
+Get:40 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 sgml-base all 1.31 [11.4 kB]
+Get:41 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libelf1t64 arm64 0.190-1.1ubuntu0.1 [58.4 kB]
+Get:42 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libkrb5support0 arm64 1.20.1-6ubuntu2.6 [34.8 kB]
+Get:43 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libk5crypto3 arm64 1.20.1-6ubuntu2.6 [85.8 kB]
+Get:44 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libkeyutils1 arm64 1.6.3-3build1 [9654 B]
+Get:45 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libkrb5-3 arm64 1.20.1-6ubuntu2.6 [349 kB]
+Get:46 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libgssapi-krb5-2 arm64 1.20.1-6ubuntu2.6 [142 kB]
+Get:47 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libicu74 arm64 74.2-1ubuntu3.1 [10.8 MB]
+Get:48 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libxml2 arm64 2.9.14+dfsg-1.3ubuntu3.5 [735 kB]
+Get:49 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 python3-pkg-resources all 68.1.2-2ubuntu1.2 [168 kB]
+Get:50 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 bsdextrautils arm64 2.39.3-9ubuntu6.3 [71.4 kB]
+Get:51 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libmagic-mgc arm64 1:5.45-3build1 [307 kB]
+Get:52 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libmagic1t64 arm64 1:5.45-3build1 [85.7 kB]
+Get:53 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 file arm64 1:5.45-3build1 [22.0 kB]
+Get:54 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 gettext-base arm64 0.21-14ubuntu2 [37.6 kB]
+Get:55 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libuchardet0 arm64 0.0.8-1build1 [75.4 kB]
+Get:56 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 groff-base arm64 1.23.0-3build2 [993 kB]
+Get:57 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libnghttp2-14 arm64 1.59.0-1ubuntu0.2 [74.5 kB]
+Get:58 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libpipeline1 arm64 1.5.7-2 [23.7 kB]
+Get:59 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libpsl5t64 arm64 0.21.2-1.1build1 [57.4 kB]
+Get:60 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libuv1t64 arm64 1.48.0-1.1build1 [95.3 kB]
+Get:61 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 man-db arm64 2.12.0-4build2 [1232 kB]
+Get:62 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 m4 arm64 1.4.19-4build1 [240 kB]
+Get:63 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 autoconf all 2.71-3 [339 kB]
+Get:64 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 autotools-dev all 20220109.1 [44.9 kB]
+Get:65 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 automake all 1:1.16.5-1.3ubuntu1 [558 kB]
+Get:66 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 autopoint all 0.21-14ubuntu2 [422 kB]
+Get:67 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libarchive13t64 arm64 3.7.2-2ubuntu0.5 [377 kB]
+Get:68 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libbrotli1 arm64 1.1.0-2build2 [339 kB]
+Get:69 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libsasl2-modules-db arm64 2.1.28+dfsg1-5ubuntu3.1 [21.6 kB]
+Get:70 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libsasl2-2 arm64 2.1.28+dfsg1-5ubuntu3.1 [54.7 kB]
+Get:71 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libldap2 arm64 2.6.7+dfsg-1~exp1ubuntu8.2 [194 kB]
+Get:72 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 librtmp1 arm64 2.4+20151223.gitfa8646d.1-2build7 [57.8 kB]
+Get:73 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libssh-4 arm64 0.10.6-2ubuntu0.1 [190 kB]
+Get:74 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libcurl4t64 arm64 8.5.0-2ubuntu10.6 [333 kB]
+Get:75 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libjsoncpp25 arm64 1.9.5-6build1 [78.2 kB]
+Get:76 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 librhash0 arm64 1.4.3-3build1 [126 kB]
+Get:77 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 cmake-data all 3.28.3-1build7 [2155 kB]
+Get:78 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 cmake arm64 3.28.3-1build7 [10.3 MB]
+Get:79 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libdebhelper-perl all 13.14.1ubuntu5 [89.8 kB]
+Get:80 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libtool all 2.4.7-7build1 [166 kB]
+Get:81 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 dh-autoreconf all 20 [16.1 kB]
+Get:82 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libarchive-zip-perl all 1.68-1 [90.2 kB]
+Get:83 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libsub-override-perl all 0.10-1 [10.0 kB]
+Get:84 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libfile-stripnondeterminism-perl all 1.13.1-1 [18.1 kB]
+Get:85 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 dh-strip-nondeterminism all 1.13.1-1 [5362 B]
+Get:86 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 libdw1t64 arm64 0.190-1.1ubuntu0.1 [258 kB]
+Get:87 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 debugedit arm64 1:5.0-5build2 [45.3 kB]
+Get:88 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 dwz arm64 0.15-1build6 [113 kB]
+Get:89 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 gettext arm64 0.21-14ubuntu2 [845 kB]
+Get:90 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 intltool-debian all 0.35.0+20060710.6 [23.2 kB]
+Get:91 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 po-debconf all 1.0.21+nmu1 [233 kB]
+Get:92 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 debhelper all 13.14.1ubuntu5 [869 kB]
+Get:93 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 xml-core all 0.19 [20.3 kB]
+Get:94 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 docutils-common all 0.20.1+dfsg-3 [132 kB]
+Get:95 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libfakeroot arm64 1.33-1 [32.5 kB]
+Get:96 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 fakeroot arm64 1.33-1 [66.9 kB]
+Get:97 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 googletest all 1.14.0-1 [521 kB]
+Get:98 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 google-mock arm64 1.14.0-1 [4836 B]
+Get:99 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 libgtest-dev arm64 1.14.0-1 [266 kB]
+Get:100 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 python3-six all 1.16.0-4 [12.4 kB]
+Get:101 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 python3-dateutil all 2.8.2-3ubuntu1 [79.4 kB]
+Get:102 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 python3-roman all 3.3-3 [9632 B]
+Get:103 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 python3-docutils all 0.20.1+dfsg-3 [393 kB]
+Get:104 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 python3-pyparsing all 3.1.1-1 [86.2 kB]
+Get:105 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 python3-packaging all 24.0-1 [41.1 kB]
+Get:106 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 python3-more-itertools all 10.2.0-1 [52.9 kB]
+Get:107 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 python3-zipp all 1.0.0-6ubuntu0.1 [6774 B]
+Get:108 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 python3-importlib-metadata all 4.12.0-1 [17.8 kB]
+Get:109 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 python3-setuptools all 68.1.2-2ubuntu1.2 [397 kB]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 43.9 MB in 4s (11.6 MB/s)
+Selecting previously unselected package libpython3.12-minimal:arm64.
+(Reading database ... 10801 files and directories currently installed.)
+Preparing to unpack .../libpython3.12-minimal_3.12.3-1ubuntu0.8_arm64.deb ...
+Unpacking libpython3.12-minimal:arm64 (3.12.3-1ubuntu0.8) ...
+Selecting previously unselected package libexpat1:arm64.
+Preparing to unpack .../libexpat1_2.6.1-2ubuntu0.3_arm64.deb ...
+Unpacking libexpat1:arm64 (2.6.1-2ubuntu0.3) ...
+Selecting previously unselected package python3.12-minimal.
+Preparing to unpack .../python3.12-minimal_3.12.3-1ubuntu0.8_arm64.deb ...
+Unpacking python3.12-minimal (3.12.3-1ubuntu0.8) ...
+Setting up libpython3.12-minimal:arm64 (3.12.3-1ubuntu0.8) ...
+Setting up libexpat1:arm64 (2.6.1-2ubuntu0.3) ...
+Setting up python3.12-minimal (3.12.3-1ubuntu0.8) ...
+Selecting previously unselected package python3-minimal.
+(Reading database ... 11120 files and directories currently installed.)
+Preparing to unpack .../0-python3-minimal_3.12.3-0ubuntu2_arm64.deb ...
+Unpacking python3-minimal (3.12.3-0ubuntu2) ...
+Selecting previously unselected package media-types.
+Preparing to unpack .../1-media-types_10.1.0_all.deb ...
+Unpacking media-types (10.1.0) ...
+Selecting previously unselected package netbase.
+Preparing to unpack .../2-netbase_6.4_all.deb ...
+Unpacking netbase (6.4) ...
+Selecting previously unselected package tzdata.
+Preparing to unpack .../3-tzdata_2025b-0ubuntu0.24.04.1_all.deb ...
+Unpacking tzdata (2025b-0ubuntu0.24.04.1) ...
+Selecting previously unselected package readline-common.
+Preparing to unpack .../4-readline-common_8.2-4build1_all.deb ...
+Unpacking readline-common (8.2-4build1) ...
+Selecting previously unselected package libreadline8t64:arm64.
+Preparing to unpack .../5-libreadline8t64_8.2-4build1_arm64.deb ...
+Adding 'diversion of /lib/aarch64-linux-gnu/libhistory.so.8 to /lib/aarch64-linux-gnu/libhistory.so.8.usr-is-merged by libreadline8t64'
+Adding 'diversion of /lib/aarch64-linux-gnu/libhistory.so.8.2 to /lib/aarch64-linux-gnu/libhistory.so.8.2.usr-is-merged by libreadline8t64'
+Adding 'diversion of /lib/aarch64-linux-gnu/libreadline.so.8 to /lib/aarch64-linux-gnu/libreadline.so.8.usr-is-merged by libreadline8t64'
+Adding 'diversion of /lib/aarch64-linux-gnu/libreadline.so.8.2 to /lib/aarch64-linux-gnu/libreadline.so.8.2.usr-is-merged by libreadline8t64'
+Unpacking libreadline8t64:arm64 (8.2-4build1) ...
+Selecting previously unselected package libsqlite3-0:arm64.
+Preparing to unpack .../6-libsqlite3-0_3.45.1-1ubuntu2.5_arm64.deb ...
+Unpacking libsqlite3-0:arm64 (3.45.1-1ubuntu2.5) ...
+Selecting previously unselected package libpython3.12-stdlib:arm64.
+Preparing to unpack .../7-libpython3.12-stdlib_3.12.3-1ubuntu0.8_arm64.deb ...
+Unpacking libpython3.12-stdlib:arm64 (3.12.3-1ubuntu0.8) ...
+Selecting previously unselected package python3.12.
+Preparing to unpack .../8-python3.12_3.12.3-1ubuntu0.8_arm64.deb ...
+Unpacking python3.12 (3.12.3-1ubuntu0.8) ...
+Selecting previously unselected package libpython3-stdlib:arm64.
+Preparing to unpack .../9-libpython3-stdlib_3.12.3-0ubuntu2_arm64.deb ...
+Unpacking libpython3-stdlib:arm64 (3.12.3-0ubuntu2) ...
+Setting up python3-minimal (3.12.3-0ubuntu2) ...
+Selecting previously unselected package python3.
+(Reading database ... 12126 files and directories currently installed.)
+Preparing to unpack .../00-python3_3.12.3-0ubuntu2_arm64.deb ...
+Unpacking python3 (3.12.3-0ubuntu2) ...
+Selecting previously unselected package sgml-base.
+Preparing to unpack .../01-sgml-base_1.31_all.deb ...
+Unpacking sgml-base (1.31) ...
+Selecting previously unselected package libelf1t64:arm64.
+Preparing to unpack .../02-libelf1t64_0.190-1.1ubuntu0.1_arm64.deb ...
+Unpacking libelf1t64:arm64 (0.190-1.1ubuntu0.1) ...
+Selecting previously unselected package libkrb5support0:arm64.
+Preparing to unpack .../03-libkrb5support0_1.20.1-6ubuntu2.6_arm64.deb ...
+Unpacking libkrb5support0:arm64 (1.20.1-6ubuntu2.6) ...
+Selecting previously unselected package libk5crypto3:arm64.
+Preparing to unpack .../04-libk5crypto3_1.20.1-6ubuntu2.6_arm64.deb ...
+Unpacking libk5crypto3:arm64 (1.20.1-6ubuntu2.6) ...
+Selecting previously unselected package libkeyutils1:arm64.
+Preparing to unpack .../05-libkeyutils1_1.6.3-3build1_arm64.deb ...
+Unpacking libkeyutils1:arm64 (1.6.3-3build1) ...
+Selecting previously unselected package libkrb5-3:arm64.
+Preparing to unpack .../06-libkrb5-3_1.20.1-6ubuntu2.6_arm64.deb ...
+Unpacking libkrb5-3:arm64 (1.20.1-6ubuntu2.6) ...
+Selecting previously unselected package libgssapi-krb5-2:arm64.
+Preparing to unpack .../07-libgssapi-krb5-2_1.20.1-6ubuntu2.6_arm64.deb ...
+Unpacking libgssapi-krb5-2:arm64 (1.20.1-6ubuntu2.6) ...
+Selecting previously unselected package libicu74:arm64.
+Preparing to unpack .../08-libicu74_74.2-1ubuntu3.1_arm64.deb ...
+Unpacking libicu74:arm64 (74.2-1ubuntu3.1) ...
+Selecting previously unselected package libxml2:arm64.
+Preparing to unpack .../09-libxml2_2.9.14+dfsg-1.3ubuntu3.5_arm64.deb ...
+Unpacking libxml2:arm64 (2.9.14+dfsg-1.3ubuntu3.5) ...
+Selecting previously unselected package python3-pkg-resources.
+Preparing to unpack .../10-python3-pkg-resources_68.1.2-2ubuntu1.2_all.deb ...
+Unpacking python3-pkg-resources (68.1.2-2ubuntu1.2) ...
+Selecting previously unselected package bsdextrautils.
+Preparing to unpack .../11-bsdextrautils_2.39.3-9ubuntu6.3_arm64.deb ...
+Unpacking bsdextrautils (2.39.3-9ubuntu6.3) ...
+Selecting previously unselected package libmagic-mgc.
+Preparing to unpack .../12-libmagic-mgc_1%3a5.45-3build1_arm64.deb ...
+Unpacking libmagic-mgc (1:5.45-3build1) ...
+Selecting previously unselected package libmagic1t64:arm64.
+Preparing to unpack .../13-libmagic1t64_1%3a5.45-3build1_arm64.deb ...
+Unpacking libmagic1t64:arm64 (1:5.45-3build1) ...
+Selecting previously unselected package file.
+Preparing to unpack .../14-file_1%3a5.45-3build1_arm64.deb ...
+Unpacking file (1:5.45-3build1) ...
+Selecting previously unselected package gettext-base.
+Preparing to unpack .../15-gettext-base_0.21-14ubuntu2_arm64.deb ...
+Unpacking gettext-base (0.21-14ubuntu2) ...
+Selecting previously unselected package libuchardet0:arm64.
+Preparing to unpack .../16-libuchardet0_0.0.8-1build1_arm64.deb ...
+Unpacking libuchardet0:arm64 (0.0.8-1build1) ...
+Selecting previously unselected package groff-base.
+Preparing to unpack .../17-groff-base_1.23.0-3build2_arm64.deb ...
+Unpacking groff-base (1.23.0-3build2) ...
+Selecting previously unselected package libnghttp2-14:arm64.
+Preparing to unpack .../18-libnghttp2-14_1.59.0-1ubuntu0.2_arm64.deb ...
+Unpacking libnghttp2-14:arm64 (1.59.0-1ubuntu0.2) ...
+Selecting previously unselected package libpipeline1:arm64.
+Preparing to unpack .../19-libpipeline1_1.5.7-2_arm64.deb ...
+Unpacking libpipeline1:arm64 (1.5.7-2) ...
+Selecting previously unselected package libpsl5t64:arm64.
+Preparing to unpack .../20-libpsl5t64_0.21.2-1.1build1_arm64.deb ...
+Unpacking libpsl5t64:arm64 (0.21.2-1.1build1) ...
+Selecting previously unselected package libuv1t64:arm64.
+Preparing to unpack .../21-libuv1t64_1.48.0-1.1build1_arm64.deb ...
+Unpacking libuv1t64:arm64 (1.48.0-1.1build1) ...
+Selecting previously unselected package man-db.
+Preparing to unpack .../22-man-db_2.12.0-4build2_arm64.deb ...
+Unpacking man-db (2.12.0-4build2) ...
+Selecting previously unselected package m4.
+Preparing to unpack .../23-m4_1.4.19-4build1_arm64.deb ...
+Unpacking m4 (1.4.19-4build1) ...
+Selecting previously unselected package autoconf.
+Preparing to unpack .../24-autoconf_2.71-3_all.deb ...
+Unpacking autoconf (2.71-3) ...
+Selecting previously unselected package autotools-dev.
+Preparing to unpack .../25-autotools-dev_20220109.1_all.deb ...
+Unpacking autotools-dev (20220109.1) ...
+Selecting previously unselected package automake.
+Preparing to unpack .../26-automake_1%3a1.16.5-1.3ubuntu1_all.deb ...
+Unpacking automake (1:1.16.5-1.3ubuntu1) ...
+Selecting previously unselected package autopoint.
+Preparing to unpack .../27-autopoint_0.21-14ubuntu2_all.deb ...
+Unpacking autopoint (0.21-14ubuntu2) ...
+Selecting previously unselected package libarchive13t64:arm64.
+Preparing to unpack .../28-libarchive13t64_3.7.2-2ubuntu0.5_arm64.deb ...
+Unpacking libarchive13t64:arm64 (3.7.2-2ubuntu0.5) ...
+Selecting previously unselected package libbrotli1:arm64.
+Preparing to unpack .../29-libbrotli1_1.1.0-2build2_arm64.deb ...
+Unpacking libbrotli1:arm64 (1.1.0-2build2) ...
+Selecting previously unselected package libsasl2-modules-db:arm64.
+Preparing to unpack .../30-libsasl2-modules-db_2.1.28+dfsg1-5ubuntu3.1_arm64.deb ...
+Unpacking libsasl2-modules-db:arm64 (2.1.28+dfsg1-5ubuntu3.1) ...
+Selecting previously unselected package libsasl2-2:arm64.
+Preparing to unpack .../31-libsasl2-2_2.1.28+dfsg1-5ubuntu3.1_arm64.deb ...
+Unpacking libsasl2-2:arm64 (2.1.28+dfsg1-5ubuntu3.1) ...
+Selecting previously unselected package libldap2:arm64.
+Preparing to unpack .../32-libldap2_2.6.7+dfsg-1~exp1ubuntu8.2_arm64.deb ...
+Unpacking libldap2:arm64 (2.6.7+dfsg-1~exp1ubuntu8.2) ...
+Selecting previously unselected package librtmp1:arm64.
+Preparing to unpack .../33-librtmp1_2.4+20151223.gitfa8646d.1-2build7_arm64.deb ...
+Unpacking librtmp1:arm64 (2.4+20151223.gitfa8646d.1-2build7) ...
+Selecting previously unselected package libssh-4:arm64.
+Preparing to unpack .../34-libssh-4_0.10.6-2ubuntu0.1_arm64.deb ...
+Unpacking libssh-4:arm64 (0.10.6-2ubuntu0.1) ...
+Selecting previously unselected package libcurl4t64:arm64.
+Preparing to unpack .../35-libcurl4t64_8.5.0-2ubuntu10.6_arm64.deb ...
+Unpacking libcurl4t64:arm64 (8.5.0-2ubuntu10.6) ...
+Selecting previously unselected package libjsoncpp25:arm64.
+Preparing to unpack .../36-libjsoncpp25_1.9.5-6build1_arm64.deb ...
+Unpacking libjsoncpp25:arm64 (1.9.5-6build1) ...
+Selecting previously unselected package librhash0:arm64.
+Preparing to unpack .../37-librhash0_1.4.3-3build1_arm64.deb ...
+Unpacking librhash0:arm64 (1.4.3-3build1) ...
+Selecting previously unselected package cmake-data.
+Preparing to unpack .../38-cmake-data_3.28.3-1build7_all.deb ...
+Unpacking cmake-data (3.28.3-1build7) ...
+Selecting previously unselected package cmake.
+Preparing to unpack .../39-cmake_3.28.3-1build7_arm64.deb ...
+Unpacking cmake (3.28.3-1build7) ...
+Selecting previously unselected package libdebhelper-perl.
+Preparing to unpack .../40-libdebhelper-perl_13.14.1ubuntu5_all.deb ...
+Unpacking libdebhelper-perl (13.14.1ubuntu5) ...
+Selecting previously unselected package libtool.
+Preparing to unpack .../41-libtool_2.4.7-7build1_all.deb ...
+Unpacking libtool (2.4.7-7build1) ...
+Selecting previously unselected package dh-autoreconf.
+Preparing to unpack .../42-dh-autoreconf_20_all.deb ...
+Unpacking dh-autoreconf (20) ...
+Selecting previously unselected package libarchive-zip-perl.
+Preparing to unpack .../43-libarchive-zip-perl_1.68-1_all.deb ...
+Unpacking libarchive-zip-perl (1.68-1) ...
+Selecting previously unselected package libsub-override-perl.
+Preparing to unpack .../44-libsub-override-perl_0.10-1_all.deb ...
+Unpacking libsub-override-perl (0.10-1) ...
+Selecting previously unselected package libfile-stripnondeterminism-perl.
+Preparing to unpack .../45-libfile-stripnondeterminism-perl_1.13.1-1_all.deb ...
+Unpacking libfile-stripnondeterminism-perl (1.13.1-1) ...
+Selecting previously unselected package dh-strip-nondeterminism.
+Preparing to unpack .../46-dh-strip-nondeterminism_1.13.1-1_all.deb ...
+Unpacking dh-strip-nondeterminism (1.13.1-1) ...
+Selecting previously unselected package libdw1t64:arm64.
+Preparing to unpack .../47-libdw1t64_0.190-1.1ubuntu0.1_arm64.deb ...
+Unpacking libdw1t64:arm64 (0.190-1.1ubuntu0.1) ...
+Selecting previously unselected package debugedit.
+Preparing to unpack .../48-debugedit_1%3a5.0-5build2_arm64.deb ...
+Unpacking debugedit (1:5.0-5build2) ...
+Selecting previously unselected package dwz.
+Preparing to unpack .../49-dwz_0.15-1build6_arm64.deb ...
+Unpacking dwz (0.15-1build6) ...
+Selecting previously unselected package gettext.
+Preparing to unpack .../50-gettext_0.21-14ubuntu2_arm64.deb ...
+Unpacking gettext (0.21-14ubuntu2) ...
+Selecting previously unselected package intltool-debian.
+Preparing to unpack .../51-intltool-debian_0.35.0+20060710.6_all.deb ...
+Unpacking intltool-debian (0.35.0+20060710.6) ...
+Selecting previously unselected package po-debconf.
+Preparing to unpack .../52-po-debconf_1.0.21+nmu1_all.deb ...
+Unpacking po-debconf (1.0.21+nmu1) ...
+Selecting previously unselected package debhelper.
+Preparing to unpack .../53-debhelper_13.14.1ubuntu5_all.deb ...
+Unpacking debhelper (13.14.1ubuntu5) ...
+Selecting previously unselected package xml-core.
+Preparing to unpack .../54-xml-core_0.19_all.deb ...
+Unpacking xml-core (0.19) ...
+Selecting previously unselected package docutils-common.
+Preparing to unpack .../55-docutils-common_0.20.1+dfsg-3_all.deb ...
+Unpacking docutils-common (0.20.1+dfsg-3) ...
+Selecting previously unselected package libfakeroot:arm64.
+Preparing to unpack .../56-libfakeroot_1.33-1_arm64.deb ...
+Unpacking libfakeroot:arm64 (1.33-1) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../57-fakeroot_1.33-1_arm64.deb ...
+Unpacking fakeroot (1.33-1) ...
+Selecting previously unselected package googletest.
+Preparing to unpack .../58-googletest_1.14.0-1_all.deb ...
+Unpacking googletest (1.14.0-1) ...
+Selecting previously unselected package google-mock:arm64.
+Preparing to unpack .../59-google-mock_1.14.0-1_arm64.deb ...
+Unpacking google-mock:arm64 (1.14.0-1) ...
+Selecting previously unselected package libgtest-dev:arm64.
+Preparing to unpack .../60-libgtest-dev_1.14.0-1_arm64.deb ...
+Unpacking libgtest-dev:arm64 (1.14.0-1) ...
+Selecting previously unselected package python3-six.
+Preparing to unpack .../61-python3-six_1.16.0-4_all.deb ...
+Unpacking python3-six (1.16.0-4) ...
+Selecting previously unselected package python3-dateutil.
+Preparing to unpack .../62-python3-dateutil_2.8.2-3ubuntu1_all.deb ...
+Unpacking python3-dateutil (2.8.2-3ubuntu1) ...
+Selecting previously unselected package python3-roman.
+Preparing to unpack .../63-python3-roman_3.3-3_all.deb ...
+Unpacking python3-roman (3.3-3) ...
+Selecting previously unselected package python3-docutils.
+Preparing to unpack .../64-python3-docutils_0.20.1+dfsg-3_all.deb ...
+Unpacking python3-docutils (0.20.1+dfsg-3) ...
+Selecting previously unselected package python3-pyparsing.
+Preparing to unpack .../65-python3-pyparsing_3.1.1-1_all.deb ...
+Unpacking python3-pyparsing (3.1.1-1) ...
+Selecting previously unselected package python3-packaging.
+Preparing to unpack .../66-python3-packaging_24.0-1_all.deb ...
+Unpacking python3-packaging (24.0-1) ...
+Selecting previously unselected package python3-catkin-pkg-modules.
+Preparing to unpack .../67-python3-catkin-pkg-modules_1.1.0-2_all.deb ...
+Unpacking python3-catkin-pkg-modules (1.1.0-2) ...
+Selecting previously unselected package python3-more-itertools.
+Preparing to unpack .../68-python3-more-itertools_10.2.0-1_all.deb ...
+Unpacking python3-more-itertools (10.2.0-1) ...
+Selecting previously unselected package python3-zipp.
+Preparing to unpack .../69-python3-zipp_1.0.0-6ubuntu0.1_all.deb ...
+Unpacking python3-zipp (1.0.0-6ubuntu0.1) ...
+Selecting previously unselected package python3-importlib-metadata.
+Preparing to unpack .../70-python3-importlib-metadata_4.12.0-1_all.deb ...
+Unpacking python3-importlib-metadata (4.12.0-1) ...
+Selecting previously unselected package python3-setuptools.
+Preparing to unpack .../71-python3-setuptools_68.1.2-2ubuntu1.2_all.deb ...
+Unpacking python3-setuptools (68.1.2-2ubuntu1.2) ...
+Selecting previously unselected package ros-jazzy-ament-package.
+Preparing to unpack .../72-ros-jazzy-ament-package_0.16.4-1noble.20250406.073756_arm64.deb ...
+Unpacking ros-jazzy-ament-package (0.16.4-1noble.20250406.073756) ...
+Selecting previously unselected package ros-jazzy-ament-cmake-core.
+Preparing to unpack .../73-ros-jazzy-ament-cmake-core_2.5.4-1noble.20250424.101337_arm64.deb ...
+Unpacking ros-jazzy-ament-cmake-core (2.5.4-1noble.20250424.101337) ...
+Selecting previously unselected package ros-jazzy-ros-workspace.
+Preparing to unpack .../74-ros-jazzy-ros-workspace_1.0.3-7noble.20250424.101846_arm64.deb ...
+Unpacking ros-jazzy-ros-workspace (1.0.3-7noble.20250424.101846) ...
+Selecting previously unselected package ros-jazzy-ament-cmake-export-definitions.
+Preparing to unpack .../75-ros-jazzy-ament-cmake-export-definitions_2.5.4-1noble.20250424.102923_arm64.deb ...
+Unpacking ros-jazzy-ament-cmake-export-definitions (2.5.4-1noble.20250424.102923) ...
+Selecting previously unselected package ros-jazzy-ament-cmake-libraries.
+Preparing to unpack .../76-ros-jazzy-ament-cmake-libraries_2.5.4-1noble.20250424.103343_arm64.deb ...
+Unpacking ros-jazzy-ament-cmake-libraries (2.5.4-1noble.20250424.103343) ...
+Selecting previously unselected package ros-jazzy-ament-cmake-export-dependencies.
+Preparing to unpack .../77-ros-jazzy-ament-cmake-export-dependencies_2.5.4-1noble.20250424.103918_arm64.deb ...
+Unpacking ros-jazzy-ament-cmake-export-dependencies (2.5.4-1noble.20250424.103918) ...
+Selecting previously unselected package ros-jazzy-ament-cmake-export-include-directories.
+Preparing to unpack .../78-ros-jazzy-ament-cmake-export-include-directories_2.5.4-1noble.20250424.102914_arm64.deb ...
+Unpacking ros-jazzy-ament-cmake-export-include-directories (2.5.4-1noble.20250424.102914) ...
+Selecting previously unselected package ros-jazzy-ament-cmake-export-libraries.
+Preparing to unpack .../79-ros-jazzy-ament-cmake-export-libraries_2.5.4-1noble.20250424.102925_arm64.deb ...
+Unpacking ros-jazzy-ament-cmake-export-libraries (2.5.4-1noble.20250424.102925) ...
+Selecting previously unselected package ros-jazzy-ament-cmake-export-interfaces.
+Preparing to unpack .../80-ros-jazzy-ament-cmake-export-interfaces_2.5.4-1noble.20250424.103508_arm64.deb ...
+Unpacking ros-jazzy-ament-cmake-export-interfaces (2.5.4-1noble.20250424.103508) ...
+Selecting previously unselected package ros-jazzy-ament-cmake-export-link-flags.
+Preparing to unpack .../81-ros-jazzy-ament-cmake-export-link-flags_2.5.4-1noble.20250424.103357_arm64.deb ...
+Unpacking ros-jazzy-ament-cmake-export-link-flags (2.5.4-1noble.20250424.103357) ...
+Selecting previously unselected package ros-jazzy-ament-cmake-export-targets.
+Preparing to unpack .../82-ros-jazzy-ament-cmake-export-targets_2.5.4-1noble.20250424.103509_arm64.deb ...
+Unpacking ros-jazzy-ament-cmake-export-targets (2.5.4-1noble.20250424.103509) ...
+Selecting previously unselected package ros-jazzy-ament-cmake-gen-version-h.
+Preparing to unpack .../83-ros-jazzy-ament-cmake-gen-version-h_2.5.4-1noble.20250424.103405_arm64.deb ...
+Unpacking ros-jazzy-ament-cmake-gen-version-h (2.5.4-1noble.20250424.103405) ...
+Selecting previously unselected package ros-jazzy-ament-cmake-python.
+Preparing to unpack .../84-ros-jazzy-ament-cmake-python_2.5.4-1noble.20250424.103412_arm64.deb ...
+Unpacking ros-jazzy-ament-cmake-python (2.5.4-1noble.20250424.103412) ...
+Selecting previously unselected package ros-jazzy-ament-cmake-include-directories.
+Preparing to unpack .../85-ros-jazzy-ament-cmake-include-directories_2.5.4-1noble.20250424.103409_arm64.deb ...
+Unpacking ros-jazzy-ament-cmake-include-directories (2.5.4-1noble.20250424.103409) ...
+Selecting previously unselected package ros-jazzy-ament-cmake-target-dependencies.
+Preparing to unpack .../86-ros-jazzy-ament-cmake-target-dependencies_2.5.4-1noble.20250424.104001_arm64.deb ...
+Unpacking ros-jazzy-ament-cmake-target-dependencies (2.5.4-1noble.20250424.104001) ...
+Selecting previously unselected package ros-jazzy-ament-cmake-test.
+Preparing to unpack .../87-ros-jazzy-ament-cmake-test_2.5.4-1noble.20250424.104004_arm64.deb ...
+Unpacking ros-jazzy-ament-cmake-test (2.5.4-1noble.20250424.104004) ...
+Selecting previously unselected package ros-jazzy-ament-cmake-version.
+Preparing to unpack .../88-ros-jazzy-ament-cmake-version_2.5.4-1noble.20250424.103411_arm64.deb ...
+Unpacking ros-jazzy-ament-cmake-version (2.5.4-1noble.20250424.103411) ...
+Selecting previously unselected package ros-jazzy-ament-cmake.
+Preparing to unpack .../89-ros-jazzy-ament-cmake_2.5.4-1noble.20250424.104545_arm64.deb ...
+Unpacking ros-jazzy-ament-cmake (2.5.4-1noble.20250424.104545) ...
+Selecting previously unselected package ros-jazzy-gtest-vendor.
+Preparing to unpack .../90-ros-jazzy-gtest-vendor_1.14.9000-2noble.20250424.103946_arm64.deb ...
+Unpacking ros-jazzy-gtest-vendor (1.14.9000-2noble.20250424.103946) ...
+Selecting previously unselected package ros-jazzy-ament-cmake-gtest.
+Preparing to unpack .../91-ros-jazzy-ament-cmake-gtest_2.5.4-1noble.20250424.105059_arm64.deb ...
+Unpacking ros-jazzy-ament-cmake-gtest (2.5.4-1noble.20250424.105059) ...
+Selecting previously unselected package ros-jazzy-gmock-vendor.
+Preparing to unpack .../92-ros-jazzy-gmock-vendor_1.14.9000-2noble.20250424.104532_arm64.deb ...
+Unpacking ros-jazzy-gmock-vendor (1.14.9000-2noble.20250424.104532) ...
+Selecting previously unselected package ros-jazzy-ament-cmake-gmock.
+Preparing to unpack .../93-ros-jazzy-ament-cmake-gmock_2.5.4-1noble.20250424.105701_arm64.deb ...
+Unpacking ros-jazzy-ament-cmake-gmock (2.5.4-1noble.20250424.105701) ...
+Selecting previously unselected package ros-jazzy-ament-cmake-auto.
+Preparing to unpack .../94-ros-jazzy-ament-cmake-auto_2.5.4-1noble.20250424.110245_arm64.deb ...
+Unpacking ros-jazzy-ament-cmake-auto (2.5.4-1noble.20250424.110245) ...
+Selecting previously unselected package sbuild-build-depends-main-dummy.
+Preparing to unpack .../95-sbuild-build-depends-main-dummy_0.invalid.0_arm64.deb ...
+Unpacking sbuild-build-depends-main-dummy (0.invalid.0) ...
+Setting up media-types (10.1.0) ...
+Setting up libpipeline1:arm64 (1.5.7-2) ...
+Setting up libkeyutils1:arm64 (1.6.3-3build1) ...
+Setting up ros-jazzy-ros-workspace (1.0.3-7noble.20250424.101846) ...
+Setting up bsdextrautils (2.39.3-9ubuntu6.3) ...
+Setting up libmagic-mgc (1:5.45-3build1) ...
+Setting up libarchive-zip-perl (1.68-1) ...
+Setting up libdebhelper-perl (13.14.1ubuntu5) ...
+Setting up libbrotli1:arm64 (1.1.0-2build2) ...
+Setting up libsqlite3-0:arm64 (3.45.1-1ubuntu2.5) ...
+Setting up libuv1t64:arm64 (1.48.0-1.1build1) ...
+Setting up libmagic1t64:arm64 (1:5.45-3build1) ...
+Setting up libpsl5t64:arm64 (0.21.2-1.1build1) ...
+Setting up libnghttp2-14:arm64 (1.59.0-1ubuntu0.2) ...
+Setting up gettext-base (0.21-14ubuntu2) ...
+Setting up m4 (1.4.19-4build1) ...
+Setting up file (1:5.45-3build1) ...
+Setting up googletest (1.14.0-1) ...
+Setting up libfakeroot:arm64 (1.33-1) ...
+Setting up libelf1t64:arm64 (0.190-1.1ubuntu0.1) ...
+Setting up libkrb5support0:arm64 (1.20.1-6ubuntu2.6) ...
+Setting up libdw1t64:arm64 (0.190-1.1ubuntu0.1) ...
+Setting up libsasl2-modules-db:arm64 (2.1.28+dfsg1-5ubuntu3.1) ...
+Setting up tzdata (2025b-0ubuntu0.24.04.1) ...
+
+Current default time zone: 'Etc/UTC'
+Local time is now:      Wed Sep 17 05:56:47 UTC 2025.
+Universal Time is now:  Wed Sep 17 05:56:47 UTC 2025.
+Run 'dpkg-reconfigure tzdata' if you wish to change it.
+
+Setting up fakeroot (1.33-1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+Setting up ros-jazzy-gtest-vendor (1.14.9000-2noble.20250424.103946) ...
+Setting up autotools-dev (20220109.1) ...
+Setting up librtmp1:arm64 (2.4+20151223.gitfa8646d.1-2build7) ...
+Setting up autopoint (0.21-14ubuntu2) ...
+Setting up libjsoncpp25:arm64 (1.9.5-6build1) ...
+Setting up libk5crypto3:arm64 (1.20.1-6ubuntu2.6) ...
+Setting up libsasl2-2:arm64 (2.1.28+dfsg1-5ubuntu3.1) ...
+Setting up autoconf (2.71-3) ...
+Setting up ros-jazzy-gmock-vendor (1.14.9000-2noble.20250424.104532) ...
+Setting up libicu74:arm64 (74.2-1ubuntu3.1) ...
+Setting up dwz (0.15-1build6) ...
+Setting up google-mock:arm64 (1.14.0-1) ...
+Setting up librhash0:arm64 (1.4.3-3build1) ...
+Setting up libuchardet0:arm64 (0.0.8-1build1) ...
+Setting up debugedit (1:5.0-5build2) ...
+Setting up libsub-override-perl (0.10-1) ...
+Setting up netbase (6.4) ...
+Setting up sgml-base (1.31) ...
+Setting up cmake-data (3.28.3-1build7) ...
+Setting up libkrb5-3:arm64 (1.20.1-6ubuntu2.6) ...
+Setting up readline-common (8.2-4build1) ...
+Setting up libxml2:arm64 (2.9.14+dfsg-1.3ubuntu3.5) ...
+Setting up libldap2:arm64 (2.6.7+dfsg-1~exp1ubuntu8.2) ...
+Setting up automake (1:1.16.5-1.3ubuntu1) ...
+update-alternatives: using /usr/bin/automake-1.16 to provide /usr/bin/automake (automake) in auto mode
+Setting up libfile-stripnondeterminism-perl (1.13.1-1) ...
+Setting up gettext (0.21-14ubuntu2) ...
+Setting up libgtest-dev:arm64 (1.14.0-1) ...
+Setting up libtool (2.4.7-7build1) ...
+Setting up intltool-debian (0.35.0+20060710.6) ...
+Setting up dh-autoreconf (20) ...
+Setting up libgssapi-krb5-2:arm64 (1.20.1-6ubuntu2.6) ...
+Setting up libssh-4:arm64 (0.10.6-2ubuntu0.1) ...
+Setting up libreadline8t64:arm64 (8.2-4build1) ...
+Setting up dh-strip-nondeterminism (1.13.1-1) ...
+Setting up groff-base (1.23.0-3build2) ...
+Setting up xml-core (0.19) ...
+Setting up libarchive13t64:arm64 (3.7.2-2ubuntu0.5) ...
+Setting up libpython3.12-stdlib:arm64 (3.12.3-1ubuntu0.8) ...
+Setting up libcurl4t64:arm64 (8.5.0-2ubuntu10.6) ...
+Setting up po-debconf (1.0.21+nmu1) ...
+Setting up python3.12 (3.12.3-1ubuntu0.8) ...
+Setting up man-db (2.12.0-4build2) ...
+Not building database; man-db/auto-update is not 'true'.
+Setting up cmake (3.28.3-1build7) ...
+Setting up libpython3-stdlib:arm64 (3.12.3-0ubuntu2) ...
+Setting up debhelper (13.14.1ubuntu5) ...
+Setting up python3 (3.12.3-0ubuntu2) ...
+Setting up python3-six (1.16.0-4) ...
+Setting up python3-roman (3.3-3) ...
+Setting up python3-packaging (24.0-1) ...
+Setting up python3-pyparsing (3.1.1-1) ...
+Setting up python3-dateutil (2.8.2-3ubuntu1) ...
+Setting up python3-pkg-resources (68.1.2-2ubuntu1.2) ...
+Setting up python3-more-itertools (10.2.0-1) ...
+Setting up python3-setuptools (68.1.2-2ubuntu1.2) ...
+Setting up python3-zipp (1.0.0-6ubuntu0.1) ...
+Setting up python3-importlib-metadata (4.12.0-1) ...
+Setting up ros-jazzy-ament-package (0.16.4-1noble.20250406.073756) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.5) ...
+Processing triggers for sgml-base (1.31) ...
+Setting up docutils-common (0.20.1+dfsg-3) ...
+Processing triggers for sgml-base (1.31) ...
+Setting up python3-docutils (0.20.1+dfsg-3) ...
+Setting up python3-catkin-pkg-modules (1.1.0-2) ...
+Setting up ros-jazzy-ament-cmake-core (2.5.4-1noble.20250424.101337) ...
+Setting up ros-jazzy-ament-cmake-export-definitions (2.5.4-1noble.20250424.102923) ...
+Setting up ros-jazzy-ament-cmake-include-directories (2.5.4-1noble.20250424.103409) ...
+Setting up ros-jazzy-ament-cmake-libraries (2.5.4-1noble.20250424.103343) ...
+Setting up ros-jazzy-ament-cmake-export-libraries (2.5.4-1noble.20250424.102925) ...
+Setting up ros-jazzy-ament-cmake-export-interfaces (2.5.4-1noble.20250424.103508) ...
+Setting up ros-jazzy-ament-cmake-export-targets (2.5.4-1noble.20250424.103509) ...
+Setting up ros-jazzy-ament-cmake-export-link-flags (2.5.4-1noble.20250424.103357) ...
+Setting up ros-jazzy-ament-cmake-version (2.5.4-1noble.20250424.103411) ...
+Setting up ros-jazzy-ament-cmake-export-include-directories (2.5.4-1noble.20250424.102914) ...
+Setting up ros-jazzy-ament-cmake-python (2.5.4-1noble.20250424.103412) ...
+Setting up ros-jazzy-ament-cmake-test (2.5.4-1noble.20250424.104004) ...
+Setting up ros-jazzy-ament-cmake-export-dependencies (2.5.4-1noble.20250424.103918) ...
+Setting up ros-jazzy-ament-cmake-gen-version-h (2.5.4-1noble.20250424.103405) ...
+Setting up ros-jazzy-ament-cmake-target-dependencies (2.5.4-1noble.20250424.104001) ...
+Setting up ros-jazzy-ament-cmake-gtest (2.5.4-1noble.20250424.105059) ...
+Setting up ros-jazzy-ament-cmake (2.5.4-1noble.20250424.104545) ...
+Setting up ros-jazzy-ament-cmake-gmock (2.5.4-1noble.20250424.105701) ...
+Setting up ros-jazzy-ament-cmake-auto (2.5.4-1noble.20250424.110245) ...
+Setting up sbuild-build-depends-main-dummy (0.invalid.0) ...
+
++------------------------------------------------------------------------------+
+| Check architectures                                                          |
++------------------------------------------------------------------------------+
+
+Arch check ok (arm64 included in any)
+
++------------------------------------------------------------------------------+
+| Build environment                                                            |
++------------------------------------------------------------------------------+
+
+Kernel: Linux 6.8.0-1031-azure #36~22.04.1-Ubuntu SMP Tue Jul  1 03:54:01 UTC 2025 amd64 (x86_64)
+Toolchain package versions: binutils_2.42-4ubuntu2.5 dpkg-dev_1.22.6ubuntu6.1 g++-13_13.3.0-6ubuntu2~24.04 gcc-13_13.3.0-6ubuntu2~24.04 libc6-dev_2.39-0ubuntu8.5 libstdc++-13-dev_13.3.0-6ubuntu2~24.04 libstdc++6_14.2.0-4ubuntu2~24.04 linux-libc-dev_6.8.0-83.83
+Package versions: apt_2.8.3 autoconf_2.71-3 automake_1:1.16.5-1.3ubuntu1 autopoint_0.21-14ubuntu2 autotools-dev_20220109.1 base-files_13ubuntu10.3 base-passwd_3.6.3build1 bash_5.2.21-2ubuntu4 binutils_2.42-4ubuntu2.5 binutils-aarch64-linux-gnu_2.42-4ubuntu2.5 binutils-common_2.42-4ubuntu2.5 bsdextrautils_2.39.3-9ubuntu6.3 bsdutils_1:2.39.3-9ubuntu6.3 build-essential_12.10ubuntu1 bzip2_1.0.8-5.1build0.1 ca-certificates_20240203 ccache_4.9.1-1 cmake_3.28.3-1build7 cmake-data_3.28.3-1build7 coreutils_9.4-3ubuntu6.1 cpp_4:13.2.0-7ubuntu1 cpp-13_13.3.0-6ubuntu2~24.04 cpp-13-aarch64-linux-gnu_13.3.0-6ubuntu2~24.04 cpp-aarch64-linux-gnu_4:13.2.0-7ubuntu1 dash_0.5.12-6ubuntu5 debconf_1.5.86ubuntu1 debhelper_13.14.1ubuntu5 debianutils_5.17build1 debugedit_1:5.0-5build2 dh-autoreconf_20 dh-strip-nondeterminism_1.13.1-1 diffutils_1:3.10-1build1 docutils-common_0.20.1+dfsg-3 dpkg_1.22.6ubuntu6.1 dpkg-dev_1.22.6ubuntu6.1 dwz_0.15-1build6 e2fsprogs_1.47.0-2.4~exp1ubuntu4.1 fakeroot_1.33-1 file_1:5.45-3build1 findutils_4.9.0-5build1 g++_4:13.2.0-7ubuntu1 g++-13_13.3.0-6ubuntu2~24.04 g++-13-aarch64-linux-gnu_13.3.0-6ubuntu2~24.04 g++-aarch64-linux-gnu_4:13.2.0-7ubuntu1 gcc_4:13.2.0-7ubuntu1 gcc-13_13.3.0-6ubuntu2~24.04 gcc-13-aarch64-linux-gnu_13.3.0-6ubuntu2~24.04 gcc-13-base_13.3.0-6ubuntu2~24.04 gcc-14-base_14.2.0-4ubuntu2~24.04 gcc-aarch64-linux-gnu_4:13.2.0-7ubuntu1 gettext_0.21-14ubuntu2 gettext-base_0.21-14ubuntu2 google-mock_1.14.0-1 googletest_1.14.0-1 gpgv_2.4.4-2ubuntu17.3 grep_3.11-4build1 groff-base_1.23.0-3build2 gzip_1.12-1ubuntu3.1 hostname_3.23+nmu2ubuntu2 init-system-helpers_1.66ubuntu1 intltool-debian_0.35.0+20060710.6 libacl1_2.3.2-1build1.1 libapt-pkg6.0t64_2.8.3 libarchive-zip-perl_1.68-1 libarchive13t64_3.7.2-2ubuntu0.5 libasan8_14.2.0-4ubuntu2~24.04 libassuan0_2.5.6-1build1 libatomic1_14.2.0-4ubuntu2~24.04 libattr1_1:2.5.2-1build1.1 libaudit-common_1:3.1.2-2.1build1.1 libaudit1_1:3.1.2-2.1build1.1 libbinutils_2.42-4ubuntu2.5 libblkid1_2.39.3-9ubuntu6.3 libbrotli1_1.1.0-2build2 libbz2-1.0_1.0.8-5.1build0.1 libc-bin_2.39-0ubuntu8.5 libc-dev-bin_2.39-0ubuntu8.5 libc6_2.39-0ubuntu8.5 libc6-dev_2.39-0ubuntu8.5 libcap-ng0_0.8.4-2build2 libcap2_1:2.66-5ubuntu2.2 libcc1-0_14.2.0-4ubuntu2~24.04 libcom-err2_1.47.0-2.4~exp1ubuntu4.1 libcrypt-dev_1:4.4.36-4build1 libcrypt1_1:4.4.36-4build1 libctf-nobfd0_2.42-4ubuntu2.5 libctf0_2.42-4ubuntu2.5 libcurl4t64_8.5.0-2ubuntu10.6 libdb5.3t64_5.3.28+dfsg2-7 libdebconfclient0_0.271ubuntu3 libdebhelper-perl_13.14.1ubuntu5 libdpkg-perl_1.22.6ubuntu6.1 libdw1t64_0.190-1.1ubuntu0.1 libelf1t64_0.190-1.1ubuntu0.1 libexpat1_2.6.1-2ubuntu0.3 libext2fs2t64_1.47.0-2.4~exp1ubuntu4.1 libfakeroot_1.33-1 libffi8_3.4.6-1build1 libfile-stripnondeterminism-perl_1.13.1-1 libgcc-13-dev_13.3.0-6ubuntu2~24.04 libgcc-s1_14.2.0-4ubuntu2~24.04 libgcrypt20_1.10.3-2build1 libgdbm-compat4t64_1.23-5.1build1 libgdbm6t64_1.23-5.1build1 libgmp10_2:6.3.0+dfsg-2ubuntu6.1 libgnutls30t64_3.8.3-1.1ubuntu3.4 libgomp1_14.2.0-4ubuntu2~24.04 libgpg-error0_1.47-3build2.1 libgprofng0_2.42-4ubuntu2.5 libgssapi-krb5-2_1.20.1-6ubuntu2.6 libgtest-dev_1.14.0-1 libhiredis1.1.0_1.2.0-6ubuntu3 libhogweed6t64_3.9.1-2.2build1.1 libhwasan0_14.2.0-4ubuntu2~24.04 libicu74_74.2-1ubuntu3.1 libidn2-0_2.3.7-2build1.1 libisl23_0.26-3build1.1 libitm1_14.2.0-4ubuntu2~24.04 libjansson4_2.14-2build2 libjsoncpp25_1.9.5-6build1 libk5crypto3_1.20.1-6ubuntu2.6 libkeyutils1_1.6.3-3build1 libkrb5-3_1.20.1-6ubuntu2.6 libkrb5support0_1.20.1-6ubuntu2.6 libldap2_2.6.7+dfsg-1~exp1ubuntu8.2 liblsan0_14.2.0-4ubuntu2~24.04 liblz4-1_1.9.4-1build1.1 liblzma5_5.6.1+really5.4.5-1ubuntu0.2 libmagic-mgc_1:5.45-3build1 libmagic1t64_1:5.45-3build1 libmd0_1.1.0-2build1.1 libmount1_2.39.3-9ubuntu6.3 libmpc3_1.3.1-1build1.1 libmpfr6_4.2.1-1build1.1 libncursesw6_6.4+20240113-1ubuntu2 libnettle8t64_3.9.1-2.2build1.1 libnghttp2-14_1.59.0-1ubuntu0.2 libnpth0t64_1.6-3.1build1 libp11-kit0_0.25.3-4ubuntu2.1 libpam-modules_1.5.3-5ubuntu5.4 libpam-modules-bin_1.5.3-5ubuntu5.4 libpam-runtime_1.5.3-5ubuntu5.4 libpam0g_1.5.3-5ubuntu5.4 libpcre2-8-0_10.42-4ubuntu2.1 libperl5.38t64_5.38.2-3.2ubuntu0.2 libpipeline1_1.5.7-2 libproc2-0_2:4.0.4-4ubuntu3.2 libpsl5t64_0.21.2-1.1build1 libpython3-stdlib_3.12.3-0ubuntu2 libpython3.12-minimal_3.12.3-1ubuntu0.8 libpython3.12-stdlib_3.12.3-1ubuntu0.8 libreadline8t64_8.2-4build1 librhash0_1.4.3-3build1 librtmp1_2.4+20151223.gitfa8646d.1-2build7 libsasl2-2_2.1.28+dfsg1-5ubuntu3.1 libsasl2-modules-db_2.1.28+dfsg1-5ubuntu3.1 libseccomp2_2.5.5-1ubuntu3.1 libselinux1_3.5-2ubuntu2.1 libsemanage-common_3.5-1build5 libsemanage2_3.5-1build5 libsepol2_3.5-2build1 libsframe1_2.42-4ubuntu2.5 libsmartcols1_2.39.3-9ubuntu6.3 libsqlite3-0_3.45.1-1ubuntu2.5 libss2_1.47.0-2.4~exp1ubuntu4.1 libssh-4_0.10.6-2ubuntu0.1 libssl3t64_3.0.13-0ubuntu3.5 libstdc++-13-dev_13.3.0-6ubuntu2~24.04 libstdc++6_14.2.0-4ubuntu2~24.04 libsub-override-perl_0.10-1 libsystemd0_255.4-1ubuntu8.10 libtasn1-6_4.19.0-3ubuntu0.24.04.1 libtinfo6_6.4+20240113-1ubuntu2 libtool_2.4.7-7build1 libtsan2_14.2.0-4ubuntu2~24.04 libubsan1_14.2.0-4ubuntu2~24.04 libuchardet0_0.0.8-1build1 libudev1_255.4-1ubuntu8.10 libunistring5_1.1-2build1.1 libuuid1_2.39.3-9ubuntu6.3 libuv1t64_1.48.0-1.1build1 libxml2_2.9.14+dfsg-1.3ubuntu3.5 libxxhash0_0.8.2-2build1 libzstd1_1.5.5+dfsg2-2build1.1 linux-libc-dev_6.8.0-83.83 login_1:4.13+dfsg1-4ubuntu3.2 logsave_1.47.0-2.4~exp1ubuntu4.1 lto-disabled-list_47 m4_1.4.19-4build1 make_4.3-4.1build2 man-db_2.12.0-4build2 mawk_1.3.4.20240123-1build1 media-types_10.1.0 mount_2.39.3-9ubuntu6.3 ncurses-base_6.4+20240113-1ubuntu2 ncurses-bin_6.4+20240113-1ubuntu2 netbase_6.4 openssl_3.0.13-0ubuntu3.5 passwd_1:4.13+dfsg1-4ubuntu3.2 patch_2.7.6-7build3 perl_5.38.2-3.2ubuntu0.2 perl-base_5.38.2-3.2ubuntu0.2 perl-modules-5.38_5.38.2-3.2ubuntu0.2 po-debconf_1.0.21+nmu1 procps_2:4.0.4-4ubuntu3.2 python3_3.12.3-0ubuntu2 python3-catkin-pkg-modules_1.1.0-2 python3-dateutil_2.8.2-3ubuntu1 python3-docutils_0.20.1+dfsg-3 python3-importlib-metadata_4.12.0-1 python3-minimal_3.12.3-0ubuntu2 python3-more-itertools_10.2.0-1 python3-packaging_24.0-1 python3-pkg-resources_68.1.2-2ubuntu1.2 python3-pyparsing_3.1.1-1 python3-roman_3.3-3 python3-setuptools_68.1.2-2ubuntu1.2 python3-six_1.16.0-4 python3-zipp_1.0.0-6ubuntu0.1 python3.12_3.12.3-1ubuntu0.8 python3.12-minimal_3.12.3-1ubuntu0.8 readline-common_8.2-4build1 ros-jazzy-ament-cmake_2.5.4-1noble.20250424.104545 ros-jazzy-ament-cmake-auto_2.5.4-1noble.20250424.110245 ros-jazzy-ament-cmake-core_2.5.4-1noble.20250424.101337 ros-jazzy-ament-cmake-export-definitions_2.5.4-1noble.20250424.102923 ros-jazzy-ament-cmake-export-dependencies_2.5.4-1noble.20250424.103918 ros-jazzy-ament-cmake-export-include-directories_2.5.4-1noble.20250424.102914 ros-jazzy-ament-cmake-export-interfaces_2.5.4-1noble.20250424.103508 ros-jazzy-ament-cmake-export-libraries_2.5.4-1noble.20250424.102925 ros-jazzy-ament-cmake-export-link-flags_2.5.4-1noble.20250424.103357 ros-jazzy-ament-cmake-export-targets_2.5.4-1noble.20250424.103509 ros-jazzy-ament-cmake-gen-version-h_2.5.4-1noble.20250424.103405 ros-jazzy-ament-cmake-gmock_2.5.4-1noble.20250424.105701 ros-jazzy-ament-cmake-gtest_2.5.4-1noble.20250424.105059 ros-jazzy-ament-cmake-include-directories_2.5.4-1noble.20250424.103409 ros-jazzy-ament-cmake-libraries_2.5.4-1noble.20250424.103343 ros-jazzy-ament-cmake-python_2.5.4-1noble.20250424.103412 ros-jazzy-ament-cmake-target-dependencies_2.5.4-1noble.20250424.104001 ros-jazzy-ament-cmake-test_2.5.4-1noble.20250424.104004 ros-jazzy-ament-cmake-version_2.5.4-1noble.20250424.103411 ros-jazzy-ament-package_0.16.4-1noble.20250406.073756 ros-jazzy-gmock-vendor_1.14.9000-2noble.20250424.104532 ros-jazzy-gtest-vendor_1.14.9000-2noble.20250424.103946 ros-jazzy-ros-workspace_1.0.3-7noble.20250424.101846 rpcsvc-proto_1.4.2-0ubuntu7 sbuild-build-depends-main-dummy_0.invalid.0 sed_4.9-2build1 sensible-utils_0.0.22 sgml-base_1.31 sysvinit-utils_3.08-6ubuntu3 tar_1.35+dfsg-3build1 tzdata_2025b-0ubuntu0.24.04.1 ubuntu-keyring_2023.11.28.1 util-linux_2.39.3-9ubuntu6.3 xml-core_0.19 xz-utils_5.6.1+really5.4.5-1ubuntu0.2 zlib1g_1:1.3.dfsg-3.1ubuntu2.1
+
++------------------------------------------------------------------------------+
+| Build                                                                        |
++------------------------------------------------------------------------------+
+
+
+Unpack source
+-------------
+
+Format: 1.0
+Source: ros-jazzy-onnxruntime-ament
+Binary: ros-jazzy-onnxruntime-ament
+Architecture: any
+Version: 0-2025.09.17.05.51
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9.0.0), ros-jazzy-ament-cmake, ros-jazzy-ament-cmake-auto
+Package-List:
+ ros-jazzy-onnxruntime-ament deb misc optional arch=any
+Checksums-Sha1:
+ fb6bada992cf1a51592138d94905daee7abbde55 18006 ros-jazzy-onnxruntime-ament_0-2025.09.17.05.51.tar.gz
+Checksums-Sha256:
+ dc832806844ec8a26f1bfc7ef97d6174bee458db639e72713236b1f46dc94ecf 18006 ros-jazzy-onnxruntime-ament_0-2025.09.17.05.51.tar.gz
+Files:
+ 361bd9f6f95c56bd8916d867d3c18101 18006 ros-jazzy-onnxruntime-ament_0-2025.09.17.05.51.tar.gz
+
+dpkg-source: warning: extracting unsigned source package (ros-jazzy-onnxruntime-ament_0-2025.09.17.05.51.dsc)
+dpkg-source: info: extracting ros-jazzy-onnxruntime-ament in /<<BUILDDIR>>package
+dpkg-source: info: unpacking ros-jazzy-onnxruntime-ament_0-2025.09.17.05.51.tar.gz
+
+Check disk space
+----------------
+
+Sufficient free space for build
+
+User Environment
+----------------
+
+APT_CONFIG=/var/lib/sbuild/apt.conf
+CCACHE_DIR=/build/ccache
+DEB_BUILD_OPTIONS=nocheck
+HOME=/var/lib/sbuild
+LANG=C.UTF-8
+LC_ALL=C.UTF-8
+LOGNAME=runner
+OLDPWD=/
+PATH=/usr/lib/ccache:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+PWD=/<<BUILDDIR>>package
+SHELL=/bin/sh
+USER=runner
+
+dpkg-buildpackage
+-----------------
+
+Command: dpkg-buildpackage --sanitize-env -us -uc -b -rfakeroot
+dpkg-buildpackage: info: source package ros-jazzy-onnxruntime-ament
+dpkg-buildpackage: info: source version 0-2025.09.17.05.51
+dpkg-buildpackage: info: source distribution noble
+dpkg-buildpackage: info: source changed by Qiayuan Liao <liaoqiayuan@gamil.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture arm64
+dpkg-source: info: using options from package/debian/source/options: --auto-commit
+ fakeroot debian/rules clean
+dh clean -v --buildsystem=cmake
+   dh_auto_clean -O-v -O--buildsystem=cmake
+   dh_autoreconf_clean -O-v -O--buildsystem=cmake
+   dh_clean -O-v -O--buildsystem=cmake
+	rm -f debian/debhelper-build-stamp
+	rm -rf debian/.debhelper/
+	rm -f -- debian/ros-jazzy-onnxruntime-ament.substvars debian/files
+	rm -fr -- debian/ros-jazzy-onnxruntime-ament/ debian/tmp/
+	find .  \( \( \
+		\( -path .\*/.git -o -path .\*/.svn -o -path .\*/.bzr -o -path .\*/.hg -o -path .\*/CVS -o -path .\*/.pc -o -path .\*/_darcs \) -prune -o -type f -a \
+	        \( -name '#*#' -o -name '.*~' -o -name '*~' -o -name DEADJOE \
+		 -o -name '*.orig' -o -name '*.rej' -o -name '*.bak' \
+		 -o -name '.*.orig' -o -name .*.rej -o -name '.SUMS' \
+		 -o -name TAGS -o \( -path '*/.deps/*' -a -name '*.P' \) \
+		\) -exec rm -f {} + \) -o \
+		\( -type d -a \( -name autom4te.cache -o -name __pycache__ \) -prune -exec rm -rf {} + \) \)
+ debian/rules build
+dh build -v --buildsystem=cmake
+   dh_update_autotools_config -O-v -O--buildsystem=cmake
+   dh_autoreconf -O-v -O--buildsystem=cmake
+   debian/rules override_dh_auto_configure
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/jazzy/setup.sh" ]; then . "/opt/ros/jazzy/setup.sh"; fi && \
+dh_auto_configure -- \
+	-DCMAKE_INSTALL_PREFIX="/opt/ros/jazzy" \
+	-DAMENT_PREFIX_PATH="/opt/ros/jazzy" \
+	-DCMAKE_PREFIX_PATH="/opt/ros/jazzy"
+	cd obj-aarch64-linux-gnu && DEB_PYTHON_INSTALL_LAYOUT=deb cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=None -DCMAKE_INSTALL_SYSCONFDIR=/etc -DCMAKE_INSTALL_LOCALSTATEDIR=/var -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF -DCMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY=ON -DFETCHCONTENT_FULLY_DISCONNECTED=ON -DCMAKE_INSTALL_RUNSTATEDIR=/run "-GUnix Makefiles" -DCMAKE_VERBOSE_MAKEFILE=ON -DCMAKE_INSTALL_LIBDIR=lib/aarch64-linux-gnu -DBUILD_TESTING:BOOL=OFF -DCMAKE_INSTALL_PREFIX=/opt/ros/jazzy -DAMENT_PREFIX_PATH=/opt/ros/jazzy -DCMAKE_PREFIX_PATH=/opt/ros/jazzy ..
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/lib/ccache/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+CMake Warning (dev) at /usr/share/cmake-3.28/Modules/FetchContent.cmake:1331 (message):
+  The DOWNLOAD_EXTRACT_TIMESTAMP option was not given and policy CMP0135 is
+  not set.  The policy's OLD behavior will be used.  When using a URL
+  download, the timestamps of extracted files should preferably be that of
+  the time of extraction, otherwise code that depends on the extracted
+  contents might not be rebuilt if the URL changes.  The OLD behavior
+  preserves the timestamps from the archive instead, but this is usually not
+  what you want.  Update your project to the NEW behavior or specify the
+  DOWNLOAD_EXTRACT_TIMESTAMP option with a value of true to avoid this
+  robustness issue.
+Call Stack (most recent call first):
+  CMakeLists.txt:21 (FetchContent_Declare)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done (49.3s)
+-- Generating done (0.0s)
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    AMENT_PREFIX_PATH
+    CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+    CMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY
+    CMAKE_INSTALL_LIBDIR
+    CMAKE_INSTALL_LOCALSTATEDIR
+    CMAKE_INSTALL_RUNSTATEDIR
+    CMAKE_INSTALL_SYSCONFDIR
+
+
+-- Build files have been written to: /<<BUILDDIR>>package/obj-aarch64-linux-gnu
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+	rm -f debian/ros-jazzy-onnxruntime-ament.debhelper.log
+   debian/rules override_dh_auto_build
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/jazzy/setup.sh" ]; then . "/opt/ros/jazzy/setup.sh"; fi && \
+dh_auto_build
+	cd obj-aarch64-linux-gnu && make -j4 "INSTALL=install --strip-program=true" VERBOSE=1
+make[2]: Entering directory '/<<BUILDDIR>>package/obj-aarch64-linux-gnu'
+/usr/bin/cmake -S/<<BUILDDIR>>package -B/<<BUILDDIR>>package/obj-aarch64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/obj-aarch64-linux-gnu/CMakeFiles /<<BUILDDIR>>package/obj-aarch64-linux-gnu//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[3]: Entering directory '/<<BUILDDIR>>package/obj-aarch64-linux-gnu'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/<<BUILDDIR>>package/obj-aarch64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/obj-aarch64-linux-gnu/CMakeFiles 0
+make[2]: Leaving directory '/<<BUILDDIR>>package/obj-aarch64-linux-gnu'
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+	rm -f debian/ros-jazzy-onnxruntime-ament.debhelper.log
+   debian/rules override_dh_auto_test
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+echo -- Running tests. Even if one of them fails the build is not canceled.
+-- Running tests. Even if one of them fails the build is not canceled.
+if [ -f "/opt/ros/jazzy/setup.sh" ]; then . "/opt/ros/jazzy/setup.sh"; fi && \
+dh_auto_test || true
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary -v --buildsystem=cmake
+   dh_testroot -O-v -O--buildsystem=cmake
+   dh_prep -O-v -O--buildsystem=cmake
+	rm -f -- debian/ros-jazzy-onnxruntime-ament.substvars
+	rm -fr -- debian/.debhelper/generated/ros-jazzy-onnxruntime-ament/ debian/ros-jazzy-onnxruntime-ament/ debian/tmp/
+   debian/rules override_dh_auto_install
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/jazzy/setup.sh" ]; then . "/opt/ros/jazzy/setup.sh"; fi && \
+dh_auto_install
+	install -m0755 -d /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament
+	cd obj-aarch64-linux-gnu && make -j4 install DESTDIR=/<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament AM_UPDATE_INFO_DIR=no "INSTALL=install --strip-program=true"
+make[2]: Entering directory '/<<BUILDDIR>>package/obj-aarch64-linux-gnu'
+/usr/bin/cmake -S/<<BUILDDIR>>package -B/<<BUILDDIR>>package/obj-aarch64-linux-gnu --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/obj-aarch64-linux-gnu/CMakeFiles /<<BUILDDIR>>package/obj-aarch64-linux-gnu//CMakeFiles/progress.marks
+make  -f CMakeFiles/Makefile2 all
+make[3]: Entering directory '/<<BUILDDIR>>package/obj-aarch64-linux-gnu'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/<<BUILDDIR>>package/obj-aarch64-linux-gnu'
+/usr/bin/cmake -E cmake_progress_start /<<BUILDDIR>>package/obj-aarch64-linux-gnu/CMakeFiles 0
+make  -f CMakeFiles/Makefile2 preinstall
+make[3]: Entering directory '/<<BUILDDIR>>package/obj-aarch64-linux-gnu'
+make[3]: Nothing to be done for 'preinstall'.
+make[3]: Leaving directory '/<<BUILDDIR>>package/obj-aarch64-linux-gnu'
+Install the project...
+/usr/bin/cmake -P cmake_install.cmake
+-- Install configuration: "None"
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/include/onnxruntime
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/include/onnxruntime/onnxruntime_c_api.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/include/onnxruntime/onnxruntime_lite_custom_op.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/include/onnxruntime/onnxruntime_float16.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/include/onnxruntime/onnxruntime_run_options_config_keys.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/include/onnxruntime/onnxruntime_session_options_config_keys.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/include/onnxruntime/core
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/include/onnxruntime/core/providers
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/include/onnxruntime/core/providers/custom_op_context.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/include/onnxruntime/core/providers/resource.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/include/onnxruntime/onnxruntime_cxx_api.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/include/onnxruntime/provider_options.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/include/onnxruntime/onnxruntime_cxx_inline.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/include/onnxruntime/cpu_provider_factory.h
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/lib/libonnxruntime.so
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/lib/libonnxruntime.so.1
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/lib/libonnxruntime.so.1.20.0
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/share/onnxruntime_ament/environment/library_path.sh
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/share/onnxruntime_ament/environment/library_path.dsv
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/share/ament_index/resource_index/package_run_dependencies/onnxruntime_ament
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/share/ament_index/resource_index/parent_prefix_path/onnxruntime_ament
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/share/onnxruntime_ament/environment/ament_prefix_path.sh
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/share/onnxruntime_ament/environment/ament_prefix_path.dsv
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/share/onnxruntime_ament/environment/path.sh
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/share/onnxruntime_ament/environment/path.dsv
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/share/onnxruntime_ament/local_setup.bash
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/share/onnxruntime_ament/local_setup.sh
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/share/onnxruntime_ament/local_setup.zsh
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/share/onnxruntime_ament/local_setup.dsv
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/share/onnxruntime_ament/package.dsv
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/share/ament_index/resource_index/packages/onnxruntime_ament
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/share/onnxruntime_ament/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/share/onnxruntime_ament/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/share/onnxruntime_ament/cmake/onnxruntime_amentConfig.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/share/onnxruntime_ament/cmake/onnxruntime_amentConfig-version.cmake
+-- Installing: /<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/share/onnxruntime_ament/package.xml
+make[2]: Leaving directory '/<<BUILDDIR>>package/obj-aarch64-linux-gnu'
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+   dh_installdocs -O-v -O--buildsystem=cmake
+	install -m0755 -d debian/ros-jazzy-onnxruntime-ament/usr/share/doc/ros-jazzy-onnxruntime-ament
+   dh_installchangelogs -O-v -O--buildsystem=cmake
+	install -m0755 -d debian/ros-jazzy-onnxruntime-ament/usr/share/doc/ros-jazzy-onnxruntime-ament
+	install -p -m0644 debian/.debhelper/generated/ros-jazzy-onnxruntime-ament/dh_installchangelogs.dch.trimmed debian/ros-jazzy-onnxruntime-ament/usr/share/doc/ros-jazzy-onnxruntime-ament/changelog.Debian
+   dh_installinit -O-v -O--buildsystem=cmake
+   dh_perl -O-v -O--buildsystem=cmake
+   dh_link -O-v -O--buildsystem=cmake
+	rm -f debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/lib/libonnxruntime.so.1
+	ln -s libonnxruntime.so.1.20.0 debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/lib/libonnxruntime.so.1
+	rm -f debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/lib/libonnxruntime.so
+	ln -s libonnxruntime.so.1 debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/lib/libonnxruntime.so
+   dh_strip_nondeterminism -O-v -O--buildsystem=cmake
+   dh_compress -O-v -O--buildsystem=cmake
+	cd debian/ros-jazzy-onnxruntime-ament
+	chmod a-x usr/share/doc/ros-jazzy-onnxruntime-ament/changelog.Debian
+	gzip -9nf usr/share/doc/ros-jazzy-onnxruntime-ament/changelog.Debian
+	cd '/<<BUILDDIR>>package'
+   dh_fixperms -O-v -O--buildsystem=cmake
+	find debian/ros-jazzy-onnxruntime-ament -true -print0 2>/dev/null | xargs -0r chown --no-dereference 0:0
+	find debian/ros-jazzy-onnxruntime-ament ! -type l -a -true -a -true -print0 2>/dev/null | xargs -0r chmod go=rX,u+rw,a-s
+	find debian/ros-jazzy-onnxruntime-ament/usr/share/doc -type f -a -true -a ! -regex 'debian/ros-jazzy-onnxruntime-ament/usr/share/doc/[^/]*/examples/.*' -print0 2>/dev/null | xargs -0r chmod 0644
+	find debian/ros-jazzy-onnxruntime-ament/usr/share/doc -type d -a -true -a -true -print0 2>/dev/null | xargs -0r chmod 0755
+	find debian/ros-jazzy-onnxruntime-ament -type f \( -name '*.so.*' -o -name '*.so' -o -name '*.la' -o -name '*.a' -o -name '*.js' -o -name '*.css' -o -name '*.scss' -o -name '*.sass' -o -name '*.jpeg' -o -name '*.jpg' -o -name '*.png' -o -name '*.gif' -o -name '*.cmxs' -o -name '*.node' \) -a -true -a -true -print0 2>/dev/null | xargs -0r chmod 0644
+   dh_missing -O-v -O--buildsystem=cmake
+   dh_strip -O-v -O--buildsystem=cmake
+	strip --remove-section=.comment --remove-section=.note --strip-unneeded -o /tmp/04F9o2YJ2U/strip68hXua debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/lib/libonnxruntime.so.1.20.0
+	chmod --reference debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/lib/libonnxruntime.so.1.20.0 /tmp/04F9o2YJ2U/strip68hXua
+	cat '/tmp/04F9o2YJ2U/strip68hXua' > 'debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/lib/libonnxruntime.so.1.20.0'
+	chmod --reference /tmp/04F9o2YJ2U/strip68hXua debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/lib/libonnxruntime.so.1.20.0
+   dh_makeshlibs -O-v -O--buildsystem=cmake
+	rm -f debian/ros-jazzy-onnxruntime-ament/DEBIAN/shlibs
+	install -m0755 -d debian/ros-jazzy-onnxruntime-ament/DEBIAN
+	echo "libonnxruntime 1 ros-jazzy-onnxruntime-ament" >> debian/ros-jazzy-onnxruntime-ament/DEBIAN/shlibs
+	chmod 0644 -- debian/ros-jazzy-onnxruntime-ament/DEBIAN/shlibs
+	chown 0:0 -- debian/ros-jazzy-onnxruntime-ament/DEBIAN/shlibs
+	mv debian/.debhelper/generated/ros-jazzy-onnxruntime-ament/triggers.new debian/.debhelper/generated/ros-jazzy-onnxruntime-ament/triggers
+	rm -f debian/ros-jazzy-onnxruntime-ament.debhelper.log
+   debian/rules override_dh_shlibdeps
+make[1]: Entering directory '/<<BUILDDIR>>package'
+# In case we're installing to a non-standard location, look for a setup.sh
+# in the install tree and source it.  It will set things like
+# CMAKE_PREFIX_PATH, PKG_CONFIG_PATH, and PYTHONPATH.
+if [ -f "/opt/ros/jazzy/setup.sh" ]; then . "/opt/ros/jazzy/setup.sh"; fi && \
+dh_shlibdeps -l/<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament//opt/ros/jazzy/lib/
+	install -m0755 -d debian/ros-jazzy-onnxruntime-ament/DEBIAN
+	dpkg-shlibdeps -Tdebian/ros-jazzy-onnxruntime-ament.substvars -l/<<BUILDDIR>>package/debian/ros-jazzy-onnxruntime-ament//opt/ros/jazzy/lib/ debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/lib/libonnxruntime.so.1.20.0
+dpkg-shlibdeps: warning: diversions involved - output may be incorrect
+ diversion by libc6 from: /lib/ld-linux-aarch64.so.1
+dpkg-shlibdeps: warning: diversions involved - output may be incorrect
+ diversion by libc6 to: /lib/ld-linux-aarch64.so.1.usr-is-merged
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/lib/libonnxruntime.so.1.20.0 was not linked against libpthread.so.0 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/lib/libonnxruntime.so.1.20.0 was not linked against libdl.so.2 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/ros-jazzy-onnxruntime-ament/opt/ros/jazzy/lib/libonnxruntime.so.1.20.0 was not linked against librt.so.1 (it uses none of the library's symbols)
+make[1]: Leaving directory '/<<BUILDDIR>>package'
+   dh_installdeb -O-v -O--buildsystem=cmake
+	install -m0755 -d debian/ros-jazzy-onnxruntime-ament/DEBIAN
+	install -p -m0644 debian/.debhelper/generated/ros-jazzy-onnxruntime-ament/triggers debian/ros-jazzy-onnxruntime-ament/DEBIAN/triggers
+   dh_gencontrol -O-v -O--buildsystem=cmake
+	install -m0755 -d debian/ros-jazzy-onnxruntime-ament/DEBIAN
+	echo misc:Depends= >> debian/ros-jazzy-onnxruntime-ament.substvars
+	echo misc:Pre-Depends= >> debian/ros-jazzy-onnxruntime-ament.substvars
+	dpkg-gencontrol -pros-jazzy-onnxruntime-ament -ldebian/changelog -Tdebian/ros-jazzy-onnxruntime-ament.substvars -Pdebian/ros-jazzy-onnxruntime-ament
+	chmod 0644 -- debian/ros-jazzy-onnxruntime-ament/DEBIAN/control
+	chown 0:0 -- debian/ros-jazzy-onnxruntime-ament/DEBIAN/control
+   dh_md5sums -O-v -O--buildsystem=cmake
+	install -m0755 -d debian/ros-jazzy-onnxruntime-ament/DEBIAN
+	cd debian/ros-jazzy-onnxruntime-ament >/dev/null && xargs -r0 md5sum | perl -pe 'if (s@^\\@@) { s/\\\\/\\/g; }' > DEBIAN/md5sums
+	chmod 0644 -- debian/ros-jazzy-onnxruntime-ament/DEBIAN/md5sums
+	chown 0:0 -- debian/ros-jazzy-onnxruntime-ament/DEBIAN/md5sums
+   dh_builddeb -O-v -O--buildsystem=cmake
+	dpkg-deb --build debian/ros-jazzy-onnxruntime-ament ..
+dpkg-deb: building package 'ros-jazzy-onnxruntime-ament' in '../ros-jazzy-onnxruntime-ament_0-2025.09.17.05.51_arm64.deb'.
+ dpkg-genbuildinfo --build=binary -O../ros-jazzy-onnxruntime-ament_0-2025.09.17.05.51_arm64.buildinfo
+ dpkg-genchanges --build=binary -O../ros-jazzy-onnxruntime-ament_0-2025.09.17.05.51_arm64.changes
+dpkg-genchanges: warning: the current version (0-2025.09.17.05.51) is earlier than the previous one (1.1.0-0noble)
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-source: info: using options from package/debian/source/options: --auto-commit
+dpkg-buildpackage: info: binary-only upload (no source included)
+--------------------------------------------------------------------------------
+Build finished at 2025-09-17T06:08:14Z
+
+Finished
+--------
+
+I: Built successfully
+
++------------------------------------------------------------------------------+
+| Changes                                                                      |
++------------------------------------------------------------------------------+
+
+
+ros-jazzy-onnxruntime-ament_0-2025.09.17.05.51_arm64.changes:
+-------------------------------------------------------------
+
+Format: 1.8
+Date: Sat, 31 May 2025 00:00:00 -0000
+Source: ros-jazzy-onnxruntime-ament
+Binary: ros-jazzy-onnxruntime-ament
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 0-2025.09.17.05.51
+Distribution: noble
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-jazzy-onnxruntime-ament - Model of legged robot
+Changes:
+ ros-jazzy-onnxruntime-ament (0-2025.09.17.05.51) noble; urgency=high
+ .
+   * Update onnxruntime to v1.20.0
+   * Update onnxruntime to v1.12.1
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ a177888e783dcb2cef9c30955723a807e71d0cbe 9797 ros-jazzy-onnxruntime-ament_0-2025.09.17.05.51_arm64.buildinfo
+ fbec09de343d881c420775f8aacdf43fc6e02c4b 4187986 ros-jazzy-onnxruntime-ament_0-2025.09.17.05.51_arm64.deb
+Checksums-Sha256:
+ 7a8d7a4f57202336ab7b5a6be23e5b3ec7319b04de920127a532405c90e708aa 9797 ros-jazzy-onnxruntime-ament_0-2025.09.17.05.51_arm64.buildinfo
+ 1661e1da478c1038c9f83ecc5141761221d2549d596de9b12b76c7356d227f47 4187986 ros-jazzy-onnxruntime-ament_0-2025.09.17.05.51_arm64.deb
+Files:
+ f8b41904bcd6bd5ab55cbd4c7053e0c5 9797 misc optional ros-jazzy-onnxruntime-ament_0-2025.09.17.05.51_arm64.buildinfo
+ dabf3b9972a8ea1f1562c71d27feb039 4187986 misc optional ros-jazzy-onnxruntime-ament_0-2025.09.17.05.51_arm64.deb
+
++------------------------------------------------------------------------------+
+| Buildinfo                                                                    |
++------------------------------------------------------------------------------+
+
+Format: 1.0
+Source: ros-jazzy-onnxruntime-ament
+Binary: ros-jazzy-onnxruntime-ament
+Architecture: arm64
+Version: 0-2025.09.17.05.51
+Checksums-Md5:
+ dabf3b9972a8ea1f1562c71d27feb039 4187986 ros-jazzy-onnxruntime-ament_0-2025.09.17.05.51_arm64.deb
+Checksums-Sha1:
+ fbec09de343d881c420775f8aacdf43fc6e02c4b 4187986 ros-jazzy-onnxruntime-ament_0-2025.09.17.05.51_arm64.deb
+Checksums-Sha256:
+ 1661e1da478c1038c9f83ecc5141761221d2549d596de9b12b76c7356d227f47 4187986 ros-jazzy-onnxruntime-ament_0-2025.09.17.05.51_arm64.deb
+Build-Origin: Ubuntu
+Build-Architecture: arm64
+Build-Date: Wed, 17 Sep 2025 06:07:59 +0000
+Build-Path: /<<BUILDDIR>>package
+Build-Tainted-By:
+ merged-usr-via-aliased-dirs
+Installed-Build-Depends:
+ autoconf (= 2.71-3),
+ automake (= 1:1.16.5-1.3ubuntu1),
+ autopoint (= 0.21-14ubuntu2),
+ autotools-dev (= 20220109.1),
+ base-files (= 13ubuntu10.3),
+ base-passwd (= 3.6.3build1),
+ bash (= 5.2.21-2ubuntu4),
+ binutils (= 2.42-4ubuntu2.5),
+ binutils-aarch64-linux-gnu (= 2.42-4ubuntu2.5),
+ binutils-common (= 2.42-4ubuntu2.5),
+ bsdextrautils (= 2.39.3-9ubuntu6.3),
+ bsdutils (= 1:2.39.3-9ubuntu6.3),
+ build-essential (= 12.10ubuntu1),
+ bzip2 (= 1.0.8-5.1build0.1),
+ cmake (= 3.28.3-1build7),
+ cmake-data (= 3.28.3-1build7),
+ coreutils (= 9.4-3ubuntu6.1),
+ cpp (= 4:13.2.0-7ubuntu1),
+ cpp-13 (= 13.3.0-6ubuntu2~24.04),
+ cpp-13-aarch64-linux-gnu (= 13.3.0-6ubuntu2~24.04),
+ cpp-aarch64-linux-gnu (= 4:13.2.0-7ubuntu1),
+ dash (= 0.5.12-6ubuntu5),
+ debconf (= 1.5.86ubuntu1),
+ debhelper (= 13.14.1ubuntu5),
+ debianutils (= 5.17build1),
+ debugedit (= 1:5.0-5build2),
+ dh-autoreconf (= 20),
+ dh-strip-nondeterminism (= 1.13.1-1),
+ diffutils (= 1:3.10-1build1),
+ docutils-common (= 0.20.1+dfsg-3),
+ dpkg (= 1.22.6ubuntu6.1),
+ dpkg-dev (= 1.22.6ubuntu6.1),
+ dwz (= 0.15-1build6),
+ file (= 1:5.45-3build1),
+ findutils (= 4.9.0-5build1),
+ g++ (= 4:13.2.0-7ubuntu1),
+ g++-13 (= 13.3.0-6ubuntu2~24.04),
+ g++-13-aarch64-linux-gnu (= 13.3.0-6ubuntu2~24.04),
+ g++-aarch64-linux-gnu (= 4:13.2.0-7ubuntu1),
+ gcc (= 4:13.2.0-7ubuntu1),
+ gcc-13 (= 13.3.0-6ubuntu2~24.04),
+ gcc-13-aarch64-linux-gnu (= 13.3.0-6ubuntu2~24.04),
+ gcc-13-base (= 13.3.0-6ubuntu2~24.04),
+ gcc-14-base (= 14.2.0-4ubuntu2~24.04),
+ gcc-aarch64-linux-gnu (= 4:13.2.0-7ubuntu1),
+ gettext (= 0.21-14ubuntu2),
+ gettext-base (= 0.21-14ubuntu2),
+ google-mock (= 1.14.0-1),
+ googletest (= 1.14.0-1),
+ grep (= 3.11-4build1),
+ groff-base (= 1.23.0-3build2),
+ gzip (= 1.12-1ubuntu3.1),
+ hostname (= 3.23+nmu2ubuntu2),
+ init-system-helpers (= 1.66ubuntu1),
+ intltool-debian (= 0.35.0+20060710.6),
+ libacl1 (= 2.3.2-1build1.1),
+ libarchive-zip-perl (= 1.68-1),
+ libarchive13t64 (= 3.7.2-2ubuntu0.5),
+ libasan8 (= 14.2.0-4ubuntu2~24.04),
+ libatomic1 (= 14.2.0-4ubuntu2~24.04),
+ libattr1 (= 1:2.5.2-1build1.1),
+ libaudit-common (= 1:3.1.2-2.1build1.1),
+ libaudit1 (= 1:3.1.2-2.1build1.1),
+ libbinutils (= 2.42-4ubuntu2.5),
+ libblkid1 (= 2.39.3-9ubuntu6.3),
+ libbrotli1 (= 1.1.0-2build2),
+ libbz2-1.0 (= 1.0.8-5.1build0.1),
+ libc-bin (= 2.39-0ubuntu8.5),
+ libc-dev-bin (= 2.39-0ubuntu8.5),
+ libc6 (= 2.39-0ubuntu8.5),
+ libc6-dev (= 2.39-0ubuntu8.5),
+ libcap-ng0 (= 0.8.4-2build2),
+ libcap2 (= 1:2.66-5ubuntu2.2),
+ libcc1-0 (= 14.2.0-4ubuntu2~24.04),
+ libcom-err2 (= 1.47.0-2.4~exp1ubuntu4.1),
+ libcrypt-dev (= 1:4.4.36-4build1),
+ libcrypt1 (= 1:4.4.36-4build1),
+ libctf-nobfd0 (= 2.42-4ubuntu2.5),
+ libctf0 (= 2.42-4ubuntu2.5),
+ libcurl4t64 (= 8.5.0-2ubuntu10.6),
+ libdb5.3t64 (= 5.3.28+dfsg2-7),
+ libdebconfclient0 (= 0.271ubuntu3),
+ libdebhelper-perl (= 13.14.1ubuntu5),
+ libdpkg-perl (= 1.22.6ubuntu6.1),
+ libdw1t64 (= 0.190-1.1ubuntu0.1),
+ libelf1t64 (= 0.190-1.1ubuntu0.1),
+ libexpat1 (= 2.6.1-2ubuntu0.3),
+ libffi8 (= 3.4.6-1build1),
+ libfile-stripnondeterminism-perl (= 1.13.1-1),
+ libgcc-13-dev (= 13.3.0-6ubuntu2~24.04),
+ libgcc-s1 (= 14.2.0-4ubuntu2~24.04),
+ libgcrypt20 (= 1.10.3-2build1),
+ libgdbm-compat4t64 (= 1.23-5.1build1),
+ libgdbm6t64 (= 1.23-5.1build1),
+ libgmp10 (= 2:6.3.0+dfsg-2ubuntu6.1),
+ libgnutls30t64 (= 3.8.3-1.1ubuntu3.4),
+ libgomp1 (= 14.2.0-4ubuntu2~24.04),
+ libgpg-error0 (= 1.47-3build2.1),
+ libgprofng0 (= 2.42-4ubuntu2.5),
+ libgssapi-krb5-2 (= 1.20.1-6ubuntu2.6),
+ libgtest-dev (= 1.14.0-1),
+ libhogweed6t64 (= 3.9.1-2.2build1.1),
+ libhwasan0 (= 14.2.0-4ubuntu2~24.04),
+ libicu74 (= 74.2-1ubuntu3.1),
+ libidn2-0 (= 2.3.7-2build1.1),
+ libisl23 (= 0.26-3build1.1),
+ libitm1 (= 14.2.0-4ubuntu2~24.04),
+ libjansson4 (= 2.14-2build2),
+ libjsoncpp25 (= 1.9.5-6build1),
+ libk5crypto3 (= 1.20.1-6ubuntu2.6),
+ libkeyutils1 (= 1.6.3-3build1),
+ libkrb5-3 (= 1.20.1-6ubuntu2.6),
+ libkrb5support0 (= 1.20.1-6ubuntu2.6),
+ libldap2 (= 2.6.7+dfsg-1~exp1ubuntu8.2),
+ liblsan0 (= 14.2.0-4ubuntu2~24.04),
+ liblz4-1 (= 1.9.4-1build1.1),
+ liblzma5 (= 5.6.1+really5.4.5-1ubuntu0.2),
+ libmagic-mgc (= 1:5.45-3build1),
+ libmagic1t64 (= 1:5.45-3build1),
+ libmd0 (= 1.1.0-2build1.1),
+ libmount1 (= 2.39.3-9ubuntu6.3),
+ libmpc3 (= 1.3.1-1build1.1),
+ libmpfr6 (= 4.2.1-1build1.1),
+ libncursesw6 (= 6.4+20240113-1ubuntu2),
+ libnettle8t64 (= 3.9.1-2.2build1.1),
+ libnghttp2-14 (= 1.59.0-1ubuntu0.2),
+ libp11-kit0 (= 0.25.3-4ubuntu2.1),
+ libpam-modules (= 1.5.3-5ubuntu5.4),
+ libpam-modules-bin (= 1.5.3-5ubuntu5.4),
+ libpam-runtime (= 1.5.3-5ubuntu5.4),
+ libpam0g (= 1.5.3-5ubuntu5.4),
+ libpcre2-8-0 (= 10.42-4ubuntu2.1),
+ libperl5.38t64 (= 5.38.2-3.2ubuntu0.2),
+ libpipeline1 (= 1.5.7-2),
+ libproc2-0 (= 2:4.0.4-4ubuntu3.2),
+ libpsl5t64 (= 0.21.2-1.1build1),
+ libpython3-stdlib (= 3.12.3-0ubuntu2),
+ libpython3.12-minimal (= 3.12.3-1ubuntu0.8),
+ libpython3.12-stdlib (= 3.12.3-1ubuntu0.8),
+ libreadline8t64 (= 8.2-4build1),
+ librhash0 (= 1.4.3-3build1),
+ librtmp1 (= 2.4+20151223.gitfa8646d.1-2build7),
+ libsasl2-2 (= 2.1.28+dfsg1-5ubuntu3.1),
+ libsasl2-modules-db (= 2.1.28+dfsg1-5ubuntu3.1),
+ libseccomp2 (= 2.5.5-1ubuntu3.1),
+ libselinux1 (= 3.5-2ubuntu2.1),
+ libsframe1 (= 2.42-4ubuntu2.5),
+ libsmartcols1 (= 2.39.3-9ubuntu6.3),
+ libsqlite3-0 (= 3.45.1-1ubuntu2.5),
+ libssh-4 (= 0.10.6-2ubuntu0.1),
+ libssl3t64 (= 3.0.13-0ubuntu3.5),
+ libstdc++-13-dev (= 13.3.0-6ubuntu2~24.04),
+ libstdc++6 (= 14.2.0-4ubuntu2~24.04),
+ libsub-override-perl (= 0.10-1),
+ libsystemd0 (= 255.4-1ubuntu8.10),
+ libtasn1-6 (= 4.19.0-3ubuntu0.24.04.1),
+ libtinfo6 (= 6.4+20240113-1ubuntu2),
+ libtool (= 2.4.7-7build1),
+ libtsan2 (= 14.2.0-4ubuntu2~24.04),
+ libubsan1 (= 14.2.0-4ubuntu2~24.04),
+ libuchardet0 (= 0.0.8-1build1),
+ libudev1 (= 255.4-1ubuntu8.10),
+ libunistring5 (= 1.1-2build1.1),
+ libuuid1 (= 2.39.3-9ubuntu6.3),
+ libuv1t64 (= 1.48.0-1.1build1),
+ libxml2 (= 2.9.14+dfsg-1.3ubuntu3.5),
+ libzstd1 (= 1.5.5+dfsg2-2build1.1),
+ linux-libc-dev (= 6.8.0-83.83),
+ login (= 1:4.13+dfsg1-4ubuntu3.2),
+ lto-disabled-list (= 47),
+ m4 (= 1.4.19-4build1),
+ make (= 4.3-4.1build2),
+ man-db (= 2.12.0-4build2),
+ mawk (= 1.3.4.20240123-1build1),
+ media-types (= 10.1.0),
+ ncurses-base (= 6.4+20240113-1ubuntu2),
+ ncurses-bin (= 6.4+20240113-1ubuntu2),
+ netbase (= 6.4),
+ patch (= 2.7.6-7build3),
+ perl (= 5.38.2-3.2ubuntu0.2),
+ perl-base (= 5.38.2-3.2ubuntu0.2),
+ perl-modules-5.38 (= 5.38.2-3.2ubuntu0.2),
+ po-debconf (= 1.0.21+nmu1),
+ procps (= 2:4.0.4-4ubuntu3.2),
+ python3 (= 3.12.3-0ubuntu2),
+ python3-catkin-pkg-modules (= 1.1.0-2),
+ python3-dateutil (= 2.8.2-3ubuntu1),
+ python3-docutils (= 0.20.1+dfsg-3),
+ python3-importlib-metadata (= 4.12.0-1),
+ python3-minimal (= 3.12.3-0ubuntu2),
+ python3-more-itertools (= 10.2.0-1),
+ python3-packaging (= 24.0-1),
+ python3-pkg-resources (= 68.1.2-2ubuntu1.2),
+ python3-pyparsing (= 3.1.1-1),
+ python3-roman (= 3.3-3),
+ python3-setuptools (= 68.1.2-2ubuntu1.2),
+ python3-six (= 1.16.0-4),
+ python3-zipp (= 1.0.0-6ubuntu0.1),
+ python3.12 (= 3.12.3-1ubuntu0.8),
+ python3.12-minimal (= 3.12.3-1ubuntu0.8),
+ readline-common (= 8.2-4build1),
+ ros-jazzy-ament-cmake (= 2.5.4-1noble.20250424.104545),
+ ros-jazzy-ament-cmake-auto (= 2.5.4-1noble.20250424.110245),
+ ros-jazzy-ament-cmake-core (= 2.5.4-1noble.20250424.101337),
+ ros-jazzy-ament-cmake-export-definitions (= 2.5.4-1noble.20250424.102923),
+ ros-jazzy-ament-cmake-export-dependencies (= 2.5.4-1noble.20250424.103918),
+ ros-jazzy-ament-cmake-export-include-directories (= 2.5.4-1noble.20250424.102914),
+ ros-jazzy-ament-cmake-export-interfaces (= 2.5.4-1noble.20250424.103508),
+ ros-jazzy-ament-cmake-export-libraries (= 2.5.4-1noble.20250424.102925),
+ ros-jazzy-ament-cmake-export-link-flags (= 2.5.4-1noble.20250424.103357),
+ ros-jazzy-ament-cmake-export-targets (= 2.5.4-1noble.20250424.103509),
+ ros-jazzy-ament-cmake-gen-version-h (= 2.5.4-1noble.20250424.103405),
+ ros-jazzy-ament-cmake-gmock (= 2.5.4-1noble.20250424.105701),
+ ros-jazzy-ament-cmake-gtest (= 2.5.4-1noble.20250424.105059),
+ ros-jazzy-ament-cmake-include-directories (= 2.5.4-1noble.20250424.103409),
+ ros-jazzy-ament-cmake-libraries (= 2.5.4-1noble.20250424.103343),
+ ros-jazzy-ament-cmake-python (= 2.5.4-1noble.20250424.103412),
+ ros-jazzy-ament-cmake-target-dependencies (= 2.5.4-1noble.20250424.104001),
+ ros-jazzy-ament-cmake-test (= 2.5.4-1noble.20250424.104004),
+ ros-jazzy-ament-cmake-version (= 2.5.4-1noble.20250424.103411),
+ ros-jazzy-ament-package (= 0.16.4-1noble.20250406.073756),
+ ros-jazzy-gmock-vendor (= 1.14.9000-2noble.20250424.104532),
+ ros-jazzy-gtest-vendor (= 1.14.9000-2noble.20250424.103946),
+ ros-jazzy-ros-workspace (= 1.0.3-7noble.20250424.101846),
+ rpcsvc-proto (= 1.4.2-0ubuntu7),
+ sed (= 4.9-2build1),
+ sensible-utils (= 0.0.22),
+ sgml-base (= 1.31),
+ sysvinit-utils (= 3.08-6ubuntu3),
+ tar (= 1.35+dfsg-3build1),
+ tzdata (= 2025b-0ubuntu0.24.04.1),
+ util-linux (= 2.39.3-9ubuntu6.3),
+ xml-core (= 0.19),
+ xz-utils (= 5.6.1+really5.4.5-1ubuntu0.2),
+ zlib1g (= 1:1.3.dfsg-3.1ubuntu2.1)
+Environment:
+ DEB_BUILD_OPTIONS="nocheck parallel=4"
+ DEB_BUILD_PROFILES="noudeb"
+ LANG="C.UTF-8"
+ LC_ALL="C.UTF-8"
+ LC_COLLATE="C.UTF-8"
+ SOURCE_DATE_EPOCH="1748649600"
+
+
++------------------------------------------------------------------------------+
+| Package contents                                                             |
++------------------------------------------------------------------------------+
+
+
+ros-jazzy-onnxruntime-ament_0-2025.09.17.05.51_arm64.deb
+--------------------------------------------------------
+
+ new Debian package, version 2.0.
+ size 4187986 bytes: control archive=1481 bytes.
+     291 bytes,     9 lines      control
+    3163 bytes,    32 lines      md5sums
+      45 bytes,     1 lines      shlibs
+      75 bytes,     2 lines      triggers
+ Package: ros-jazzy-onnxruntime-ament
+ Version: 0-2025.09.17.05.51
+ Architecture: arm64
+ Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+ Installed-Size: 13893
+ Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.0), libstdc++6 (>= 10.2)
+ Section: misc
+ Priority: optional
+ Description: Model of legged robot
+
+drwxr-xr-x root/root         0 2025-05-31 00:00 ./
+drwxr-xr-x root/root         0 2025-05-31 00:00 ./opt/
+drwxr-xr-x root/root         0 2025-05-31 00:00 ./opt/ros/
+drwxr-xr-x root/root         0 2025-05-31 00:00 ./opt/ros/jazzy/
+drwxr-xr-x root/root         0 2025-05-31 00:00 ./opt/ros/jazzy/include/
+drwxr-xr-x root/root         0 2025-05-31 00:00 ./opt/ros/jazzy/include/onnxruntime/
+drwxr-xr-x root/root         0 2025-05-31 00:00 ./opt/ros/jazzy/include/onnxruntime/core/
+drwxr-xr-x root/root         0 2025-05-31 00:00 ./opt/ros/jazzy/include/onnxruntime/core/providers/
+-rw-r--r-- root/root       296 2024-10-30 17:05 ./opt/ros/jazzy/include/onnxruntime/core/providers/custom_op_context.h
+-rw-r--r-- root/root       360 2024-10-30 17:05 ./opt/ros/jazzy/include/onnxruntime/core/providers/resource.h
+-rw-r--r-- root/root       397 2024-10-30 17:05 ./opt/ros/jazzy/include/onnxruntime/cpu_provider_factory.h
+-rw-r--r-- root/root    218187 2024-10-30 17:05 ./opt/ros/jazzy/include/onnxruntime/onnxruntime_c_api.h
+-rw-r--r-- root/root    111526 2024-10-30 17:05 ./opt/ros/jazzy/include/onnxruntime/onnxruntime_cxx_api.h
+-rw-r--r-- root/root     81172 2024-10-30 17:05 ./opt/ros/jazzy/include/onnxruntime/onnxruntime_cxx_inline.h
+-rw-r--r-- root/root     17860 2024-10-30 17:05 ./opt/ros/jazzy/include/onnxruntime/onnxruntime_float16.h
+-rw-r--r-- root/root     62225 2024-10-30 17:05 ./opt/ros/jazzy/include/onnxruntime/onnxruntime_lite_custom_op.h
+-rw-r--r-- root/root      2806 2024-10-30 17:05 ./opt/ros/jazzy/include/onnxruntime/onnxruntime_run_options_config_keys.h
+-rw-r--r-- root/root     18714 2024-10-30 17:05 ./opt/ros/jazzy/include/onnxruntime/onnxruntime_session_options_config_keys.h
+-rw-r--r-- root/root       480 2024-10-30 17:05 ./opt/ros/jazzy/include/onnxruntime/provider_options.h
+drwxr-xr-x root/root         0 2025-05-31 00:00 ./opt/ros/jazzy/lib/
+lrwxrwxrwx root/root         0 2025-05-31 00:00 ./opt/ros/jazzy/lib/libonnxruntime.so -> libonnxruntime.so.1
+lrwxrwxrwx root/root         0 2025-05-31 00:00 ./opt/ros/jazzy/lib/libonnxruntime.so.1 -> libonnxruntime.so.1.20.0
+-rw-r--r-- root/root  13647168 2025-05-31 00:00 ./opt/ros/jazzy/lib/libonnxruntime.so.1.20.0
+drwxr-xr-x root/root         0 2025-05-31 00:00 ./opt/ros/jazzy/share/
+drwxr-xr-x root/root         0 2025-05-31 00:00 ./opt/ros/jazzy/share/ament_index/
+drwxr-xr-x root/root         0 2025-05-31 00:00 ./opt/ros/jazzy/share/ament_index/resource_index/
+drwxr-xr-x root/root         0 2025-05-31 00:00 ./opt/ros/jazzy/share/ament_index/resource_index/package_run_dependencies/
+-rw-r--r-- root/root         0 2025-05-31 00:00 ./opt/ros/jazzy/share/ament_index/resource_index/package_run_dependencies/onnxruntime_ament
+drwxr-xr-x root/root         0 2025-05-31 00:00 ./opt/ros/jazzy/share/ament_index/resource_index/packages/
+-rw-r--r-- root/root         0 2025-05-31 00:00 ./opt/ros/jazzy/share/ament_index/resource_index/packages/onnxruntime_ament
+drwxr-xr-x root/root         0 2025-05-31 00:00 ./opt/ros/jazzy/share/ament_index/resource_index/parent_prefix_path/
+-rw-r--r-- root/root         8 2025-05-31 00:00 ./opt/ros/jazzy/share/ament_index/resource_index/parent_prefix_path/onnxruntime_ament
+drwxr-xr-x root/root         0 2025-05-31 00:00 ./opt/ros/jazzy/share/onnxruntime_ament/
+drwxr-xr-x root/root         0 2025-05-31 00:00 ./opt/ros/jazzy/share/onnxruntime_ament/cmake/
+-rw-r--r-- root/root       797 2025-05-31 00:00 ./opt/ros/jazzy/share/onnxruntime_ament/cmake/ament_cmake_export_include_directories-extras.cmake
+-rw-r--r-- root/root      5125 2025-05-31 00:00 ./opt/ros/jazzy/share/onnxruntime_ament/cmake/ament_cmake_export_libraries-extras.cmake
+-rw-r--r-- root/root       432 2025-05-31 00:00 ./opt/ros/jazzy/share/onnxruntime_ament/cmake/onnxruntime_amentConfig-version.cmake
+-rw-r--r-- root/root      1436 2025-05-31 00:00 ./opt/ros/jazzy/share/onnxruntime_ament/cmake/onnxruntime_amentConfig.cmake
+drwxr-xr-x root/root         0 2025-05-31 00:00 ./opt/ros/jazzy/share/onnxruntime_ament/environment/
+-rw-r--r-- root/root        41 2025-05-31 00:00 ./opt/ros/jazzy/share/onnxruntime_ament/environment/ament_prefix_path.dsv
+-rw-r--r-- root/root       160 2025-04-24 09:28 ./opt/ros/jazzy/share/onnxruntime_ament/environment/ament_prefix_path.sh
+-rw-r--r-- root/root        42 2025-05-31 00:00 ./opt/ros/jazzy/share/onnxruntime_ament/environment/library_path.dsv
+-rw-r--r-- root/root       411 2025-04-06 07:11 ./opt/ros/jazzy/share/onnxruntime_ament/environment/library_path.sh
+-rw-r--r-- root/root        41 2025-05-31 00:00 ./opt/ros/jazzy/share/onnxruntime_ament/environment/path.dsv
+-rw-r--r-- root/root       185 2025-04-24 09:28 ./opt/ros/jazzy/share/onnxruntime_ament/environment/path.sh
+-rw-r--r-- root/root      1594 2025-05-31 00:00 ./opt/ros/jazzy/share/onnxruntime_ament/local_setup.bash
+-rw-r--r-- root/root       174 2025-05-31 00:00 ./opt/ros/jazzy/share/onnxruntime_ament/local_setup.dsv
+-rw-r--r-- root/root      5117 2025-05-31 00:00 ./opt/ros/jazzy/share/onnxruntime_ament/local_setup.sh
+-rw-r--r-- root/root      1957 2025-05-31 00:00 ./opt/ros/jazzy/share/onnxruntime_ament/local_setup.zsh
+-rw-r--r-- root/root       188 2025-05-31 00:00 ./opt/ros/jazzy/share/onnxruntime_ament/package.dsv
+-rw-r--r-- root/root       574 2025-05-31 00:00 ./opt/ros/jazzy/share/onnxruntime_ament/package.xml
+drwxr-xr-x root/root         0 2025-05-31 00:00 ./usr/
+drwxr-xr-x root/root         0 2025-05-31 00:00 ./usr/share/
+drwxr-xr-x root/root         0 2025-05-31 00:00 ./usr/share/doc/
+drwxr-xr-x root/root         0 2025-05-31 00:00 ./usr/share/doc/ros-jazzy-onnxruntime-ament/
+-rw-r--r-- root/root       280 2025-05-31 00:00 ./usr/share/doc/ros-jazzy-onnxruntime-ament/changelog.Debian.gz
+
+
++------------------------------------------------------------------------------+
+| Post Build                                                                   |
++------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------+
+| Cleanup                                                                      |
++------------------------------------------------------------------------------+
+
+Purging /<<BUILDDIR>>
+Not cleaning session: cloned chroot in use
+
++------------------------------------------------------------------------------+
+| Summary                                                                      |
++------------------------------------------------------------------------------+
+
+Build Architecture: arm64
+Build Type: binary
+Build-Space: 38952
+Build-Time: 332
+Distribution: noble
+Host Architecture: arm64
+Install-Time: 584
+Job: /home/runner/work/legged_buildfarm/legged_buildfarm/src/ros-jazzy-onnxruntime-ament_0-2025.09.17.05.51.dsc
+Machine Architecture: amd64
+Package: ros-jazzy-onnxruntime-ament
+Package-Time: 1030
+Source-Version: 0-2025.09.17.05.51
+Space: 38952
+Status: successful
+Version: 0-2025.09.17.05.51
+--------------------------------------------------------------------------------
+Finished at 2025-09-17T06:08:14Z
+Build needed 00:17:10, 38952k disk space
