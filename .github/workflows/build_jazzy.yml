@@ -1,0 +1,98 @@
+name: Builder Jazzy
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 10 * * *'
+  push:
+    paths: [ros2.repos]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      skip: ${{ steps.ros_cache.outputs.cache-hit }}
+    steps:
+      - name: Get ROS release hash
+        id: ros_check
+        if: github.event_name == 'schedule'
+        run: |
+          HASH=$(curl -sL http://packages.ros.org/ros2/ubuntu/dists/noble/Release \
+            | grep "^Date:" | sha256sum | cut -d' ' -f1)
+          echo "hash=${HASH}" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/cache@v4
+        if: github.event_name == 'schedule'
+        id: ros_cache
+        with:
+          path: .ros_release_marker
+          key: ros-noble-jazzy-${{ steps.ros_check.outputs.hash }}
+
+      - if: github.event_name == 'schedule' && steps.ros_cache.outputs.cache-hit != 'true'
+        run: echo "${{ steps.ros_check.outputs.hash }}" > .ros_release_marker
+
+  build:
+    needs: check
+    if: needs.check.outputs.skip != 'true'
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - arch: amd64
+            runner: ubuntu-22.04
+          - arch: arm64
+            runner: ubuntu-22.04-arm
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Resolve tags
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          resolve_tag() {
+            local repo=$1 pattern=$2
+            tag=$(gh api "repos/qiayuanl/$repo/tags?per_page=100" \
+              --jq ".[].name | select(test(\"$pattern\"))" | head -1)
+            if [ -z "$tag" ]; then echo "::error::No tag found for $repo" >&2; return 1; fi
+            echo "$tag"
+          }
+          LEGGED_TAG=$(resolve_tag legged_control2 '^[0-9]+\\.[0-9]+\\.[0-9]+$')
+          ONNX_TAG=$(resolve_tag onnxruntime_ament '^v?[0-9]+\\.[0-9]+\\.[0-9]+')
+          {
+            echo "LEGGED_TAG=$LEGGED_TAG"
+            echo "ONNX_TAG=$ONNX_TAG"
+          } >> "$GITHUB_ENV"
+
+      - uses: actions/checkout@v4
+        with:
+          repository: qiayuanl/legged_control2
+          token: ${{ secrets.GH_PAT }}
+          path: src/legged_control2
+          ref: ${{ env.LEGGED_TAG }}
+          fetch-tags: true
+
+      - uses: actions/checkout@v4
+        with:
+          repository: qiayuanl/onnxruntime_ament
+          token: ${{ secrets.GH_PAT }}
+          path: src/onnxruntime_ament
+          ref: ${{ env.ONNX_TAG }}
+          fetch-tags: true
+
+      - uses: qiayuanl/ros-deb-builder-action@main
+        with:
+          DEB_DISTRO: noble
+          ROS_DISTRO: jazzy
+          DEB_ARCH: ${{ matrix.arch }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SQUASH_HISTORY: true
+          SKIP_CHECKOUT: true
+
+  trigger-docker:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: gh workflow run docker.yml -R qiayuanl/unitree_ros2
