@@ -1,176 +1,176 @@
 Package: ros-jazzy-legged-control-base
 Architecture: amd64
-Version: 3.2.2-2026.02.04.23.13
+Version: 3.2.2-2026.03.05.10.11
 Priority: optional
 Section: misc
 Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
 Installed-Size: 40
 Depends: ros-jazzy-legged-controllers, ros-jazzy-legged-estimation, ros-jazzy-legged-model, ros-jazzy-legged-rl-controllers
-Filename: ./ros-jazzy-legged-control-base_3.2.2-2026.02.04.23.13_amd64.deb
-Size: 5202
-MD5sum: 0f76152f4c856f2a7d5b52349f87c87d
-SHA1: a27488999930fbf59f04cc47fa688180645358e3
-SHA256: 2e3a605b6485ea30e7d15ff700e0dd29aba866f239fda51bccd9f2891b8d773d
-SHA512: c0e70c971de4ccf16d602b338553c8d8266bc56a87efbd9e6235b2178f25102619c634042d22bf77acf2a9c14c25f135fa289e3d7dbf3fbe4ca3a32fe8053cac
+Filename: ./ros-jazzy-legged-control-base_3.2.2-2026.03.05.10.11_amd64.deb
+Size: 5200
+MD5sum: e0120612d18177bc1bbf87bd668667d7
+SHA1: 2978381e135bab9f2ee78a622d11373cc6e68b0d
+SHA256: 041a6e84b73709581d35f174d651e767528b5d2f058b2a070a95e6e2d5973bed
+SHA512: 96c3479a6493a95b2990bf9fba3f45cd80a3fa0200a24cc48766887f392dbde2094638306989cce7fb710efa8e11c6a7f2611b4289825bb3ee0efa69c05395b1
 Description: A package includes basic functionalities for legged_control.
 
 Package: ros-jazzy-legged-controllers-dbgsym
 Package-Type: ddeb
 Architecture: amd64
-Version: 3.2.2-2026.02.04.23.18
+Version: 3.2.2-2026.03.05.10.16
 Auto-Built-Package: debug-symbols
 Priority: optional
 Section: debug
 Source: ros-jazzy-legged-controllers
 Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
 Installed-Size: 7944
-Depends: ros-jazzy-legged-controllers (= 3.2.2-2026.02.04.23.18)
-Filename: ./ros-jazzy-legged-controllers-dbgsym_3.2.2-2026.02.04.23.18_amd64.ddeb
-Size: 7472166
-MD5sum: ca9c603486cd7084eb3aef1f14afb19e
-SHA1: 338fab5143b0f35fd94065832ac742b1ac39aa69
-SHA256: 360f599564fb6dd69cd8de2873203ace7060d660ba9341ffe99a2f14e86ff2ab
-SHA512: a04ed0a9f544748d5f1447c8598145c21ce5508a4ffe8f96e4a1ee49ab826cf6217ff0c4311cc455eff0324372057b269239acac7fa27072e900c127db564720
+Depends: ros-jazzy-legged-controllers (= 3.2.2-2026.03.05.10.16)
+Filename: ./ros-jazzy-legged-controllers-dbgsym_3.2.2-2026.03.05.10.16_amd64.ddeb
+Size: 7471574
+MD5sum: b39bd2b504a885481f0e97c4b0ff9431
+SHA1: cfbd24286fd6fafef0e1b0aee0cd308d5fcd1fc3
+SHA256: 4886641834715991df1cc95e2f358b37d41d04cd82ce15b9f7d16de6a0315a2b
+SHA512: ca9958e8f1dc926890d668d6507b5bf771568fecd75a150f7ce6969c64cda2cd06a52019591e269b87a84f78fa7bbe6d9f7b6c5d32aa51be8d5427d22134c05f
 Description: debug symbols for ros-jazzy-legged-controllers
-Build-Ids: 7e6b2d84924b51c4454511c7f54d34194352e0b6 aef38922ab1a12b59a642e7e309f31656d468692
+Build-Ids: 38f41f6c856fca9d38d11754a43ee5570391c137 c69f14fe1d64b805ad02a743c6e03497d927c601
 
 Package: ros-jazzy-legged-controllers
 Architecture: amd64
-Version: 3.2.2-2026.02.04.23.18
+Version: 3.2.2-2026.03.05.10.16
 Priority: optional
 Section: misc
 Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
 Installed-Size: 967
 Depends: libc6 (>= 2.34), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 13.1), ros-jazzy-urdfdom, ros-jazzy-controller-interface, ros-jazzy-controller-manager, ros-jazzy-geometry-msgs, ros-jazzy-joy-linux, ros-jazzy-joy-teleop, ros-jazzy-legged-estimation, ros-jazzy-nav-msgs, ros-jazzy-realtime-tools, ros-jazzy-robot-state-publisher, ros-jazzy-ros2controlcli, ros-jazzy-tf2-msgs, ros-jazzy-visualization-msgs
-Filename: ./ros-jazzy-legged-controllers_3.2.2-2026.02.04.23.18_amd64.deb
-Size: 224822
-MD5sum: 2c3ef5c3f8a7c5be23f2c0f73de44b41
-SHA1: db041efaa0f68b516af2be6b54f3d70fa50953f6
-SHA256: fbd3d73e325f189ea9ea9fff8d060bddaf629481c9deff667d210344dfa6c7d1
-SHA512: 6dff336cd21a2d7310604fbcd11f54b86cce435e47939dcfc418e5c2c13c2a8261c7ca4b87177adf41d74545513889768f003af20744d967dab5668f04d082c2
+Filename: ./ros-jazzy-legged-controllers_3.2.2-2026.03.05.10.16_amd64.deb
+Size: 224728
+MD5sum: 4d12ca4e65c922ec47d6c67e8eb4c979
+SHA1: aa7cc790536d6f1ced6e35fb1adc37e74c9e8d1b
+SHA256: 5114337a53ebad272432ddbfcf69d1a4e4f467d146816a87d474776dc67313c0
+SHA512: 64ae0d0d967330db0f668acea1c2562d69118b92336818c429b833974cd576ed317909b1a339795689a7cd8d2232f3010141dcce8cf1cdca4ee565dfa6fa7eee
 Description: Model of legged robot
 
 Package: ros-jazzy-legged-estimation-dbgsym
 Package-Type: ddeb
 Architecture: amd64
-Version: 3.2.2-2026.02.04.23.17
+Version: 3.2.2-2026.03.05.10.14
 Auto-Built-Package: debug-symbols
 Priority: optional
 Section: debug
 Source: ros-jazzy-legged-estimation
 Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
-Installed-Size: 3829
-Depends: ros-jazzy-legged-estimation (= 3.2.2-2026.02.04.23.17)
-Filename: ./ros-jazzy-legged-estimation-dbgsym_3.2.2-2026.02.04.23.17_amd64.ddeb
-Size: 3857350
-MD5sum: 08bd1e7209e6306b084b2927df90fe4d
-SHA1: 94acab53fd20b3c089f679603942114c90a3f998
-SHA256: 2d524e300a1c679030f08e2d3d4a5e703f581826326d9d4b79bfaf2f87b9e464
-SHA512: e239806433b65804ce316ee1dc53e9c1dcadd846c56b5e16a82c30b6766b4fc31a87dcdd41bb4b62f8f452c8910b593fb6599db73bb9c38ba4c5529d9bd7d6c3
+Installed-Size: 3830
+Depends: ros-jazzy-legged-estimation (= 3.2.2-2026.03.05.10.14)
+Filename: ./ros-jazzy-legged-estimation-dbgsym_3.2.2-2026.03.05.10.14_amd64.ddeb
+Size: 3857070
+MD5sum: 101ed600412e8338ddc3668fb0e5b63c
+SHA1: 31f93b560aeda27e154750ebac8d002b57e11cfd
+SHA256: 0f557d13133a02cb45db2c5a3975cb59458209d94e0ee7ca645f2c3b1f75570f
+SHA512: cc46ec78a53b46330e24c4671b834cb57a3a0ec1b5c45d81ee5f25cb21effe10daf9ae4a2f0410c406ce7c60965e41def1800f5c1f1a486c8f924a2de59cce6c
 Description: debug symbols for ros-jazzy-legged-estimation
-Build-Ids: 84879bd9c20b4ced3edf4ef11a4e56b04e36a056
+Build-Ids: dbc597977a824eba4987e597eb963e1ffd2f1e8e
 
 Package: ros-jazzy-legged-estimation
 Architecture: amd64
-Version: 3.2.2-2026.02.04.23.17
+Version: 3.2.2-2026.03.05.10.14
 Priority: optional
 Section: misc
 Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
 Installed-Size: 180
 Depends: libc6 (>= 2.32), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 5), ros-jazzy-urdfdom, ros-jazzy-legged-model
-Filename: ./ros-jazzy-legged-estimation_3.2.2-2026.02.04.23.17_amd64.deb
-Size: 60744
-MD5sum: c0d2e0591a75550718e1f354f59f57d2
-SHA1: 96656c9ef0d983fc68860ca8afbc0fc4a014f188
-SHA256: 21797d94ec452272ca2cd69735fd0aa81a18d643a53c45474408849627633652
-SHA512: 951d124660a50c80121dea5380268978f132964718c20a09d737de84851b194ac804abd83d486088ae8946c1a36c27ac6660f20c53542893c7444ecabafe6ed8
+Filename: ./ros-jazzy-legged-estimation_3.2.2-2026.03.05.10.14_amd64.deb
+Size: 60736
+MD5sum: 2152e121c3b7e718b53ec5ec64039395
+SHA1: c09c8b1d6b1ace782e4017dfff1a745b8fb402ad
+SHA256: 1af4ff6699e0c46a70bbeb1ce767f784838a984c95f6a63082b18b0222749e37
+SHA512: 735545e80e26a641c6e0f85de64d0c2aec868417ca6ec2e77c651f69488a4faf6324e30cc822a71a4dcf1a5fef67b8c20c01953c2d624a715600d251d341a57f
 Description: State estimation of legged robot
 
 Package: ros-jazzy-legged-model-dbgsym
 Package-Type: ddeb
 Architecture: amd64
-Version: 3.2.2-2026.02.04.23.14
+Version: 3.2.2-2026.03.05.10.11
 Auto-Built-Package: debug-symbols
 Priority: optional
 Section: debug
 Source: ros-jazzy-legged-model
 Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
 Installed-Size: 17831
-Depends: ros-jazzy-legged-model (= 3.2.2-2026.02.04.23.14)
-Filename: ./ros-jazzy-legged-model-dbgsym_3.2.2-2026.02.04.23.14_amd64.ddeb
-Size: 17614020
-MD5sum: 053e9a03406e3b97fa4417eea8b05ecf
-SHA1: b5e6452a3db382e7e1c2149856b396f69ab0e63f
-SHA256: e31f9fcfad4519ceddda37da713c967e0044b44e6586baab86f8b39aa1b0aa52
-SHA512: d861c0569851b1639e2ddeaae9d223af2a90172943e7293fba5383327b4d23beec6465a50fca0db4e2f36fb6d73c585ad48b0863f30a43a899afdffdac79a580
+Depends: ros-jazzy-legged-model (= 3.2.2-2026.03.05.10.11)
+Filename: ./ros-jazzy-legged-model-dbgsym_3.2.2-2026.03.05.10.11_amd64.ddeb
+Size: 17615034
+MD5sum: 39d512602079bb5806903cb57946c421
+SHA1: 95f376f0078d2f6956516c74137b9f6d4624e0ea
+SHA256: 09f4cd9aa780204983f2d20d0c2097176cdafc241d2094a9c396b3aba6bf2f27
+SHA512: cde00eae8d168f46de0651760ac6479f3c557c7645fe5b5d4e4fa8d271790f87a8d09915c2212975cc7d532a1726e880536ea793ac0f288391ae2d2bd356f66a
 Description: debug symbols for ros-jazzy-legged-model
-Build-Ids: ff25260cf1dc772b7ed5986c76c94b12b8b02e7e
+Build-Ids: ad8a7b99d3d742aa5bd3b0873d567b1b1e5a307c
 
 Package: ros-jazzy-legged-model
 Architecture: amd64
-Version: 3.2.2-2026.02.04.23.14
+Version: 3.2.2-2026.03.05.10.11
 Priority: optional
 Section: misc
 Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
 Installed-Size: 808
 Depends: libc6 (>= 2.32), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 13.1), ros-jazzy-pinocchio, ros-jazzy-urdfdom
-Filename: ./ros-jazzy-legged-model_3.2.2-2026.02.04.23.14_amd64.deb
-Size: 200390
-MD5sum: 9f21f9143b594372ead917b77e2e8018
-SHA1: 7f2021076a7bb941bdeb4ac33c2c97583738c847
-SHA256: 6f259a204407add318dbca96b143a681020448aecb86381e0cae0ba97bb2f647
-SHA512: b9e6957f9e2fab98f7d523771ed070b528a5aef6ae2253ed845df5a86d1ca8d10fd57ded841b9944b7ea0e659e81d9c2aec8a1638ce93c9b4980a94da07f02a6
+Filename: ./ros-jazzy-legged-model_3.2.2-2026.03.05.10.11_amd64.deb
+Size: 200388
+MD5sum: 38ca95cd822277c17b766948b8471c96
+SHA1: cda718f160286c45f68e4e6a0c1920c6b49337af
+SHA256: 74ee75fbb24914f3d21ca44651e58f4779231bbb75da887bb7985fc9a26a08e4
+SHA512: 3bb2c38f43b763db6d8783aa52d5c28f9ad36e11c750c1bc9a42eff3c477ff16cb147bf27f45bb23d7e9ee3b1c17f7db3140e53b190e48d54f59e1d089ebde25
 Description: Model of legged robot
 
 Package: ros-jazzy-legged-rl-controllers-dbgsym
 Package-Type: ddeb
 Architecture: amd64
-Version: 3.2.2-2026.02.04.23.21
+Version: 3.2.2-2026.03.05.10.19
 Auto-Built-Package: debug-symbols
 Priority: optional
 Section: debug
 Source: ros-jazzy-legged-rl-controllers
 Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
 Installed-Size: 4565
-Depends: ros-jazzy-legged-rl-controllers (= 3.2.2-2026.02.04.23.21)
-Filename: ./ros-jazzy-legged-rl-controllers-dbgsym_3.2.2-2026.02.04.23.21_amd64.ddeb
-Size: 4205926
-MD5sum: ae8a0c547df2e4156e047b3286fc8d29
-SHA1: c01d302516e76ba6fb4bad42cb2bf12a20b6330c
-SHA256: 74f9265a252c9d80e0f42934d453a3dbc78a30c130bc1d2169e2b3b37a365c1c
-SHA512: b51e102bb7dc329c611039009689d16616d83d5d9cdc18b00b01ca1d0ffc491965f0edbd1c8d61124367ccf6c79891416258b33198428f6fb18e093e246db329
+Depends: ros-jazzy-legged-rl-controllers (= 3.2.2-2026.03.05.10.19)
+Filename: ./ros-jazzy-legged-rl-controllers-dbgsym_3.2.2-2026.03.05.10.19_amd64.ddeb
+Size: 4205588
+MD5sum: 22161f73ac1a3a86aa0ed3661ed9d62e
+SHA1: a5e88cdd2089778a519c53a89ee8d06ce9b0d1fe
+SHA256: 6180ac12178f4f419e827fc6c14d02f44145962581f7f01f8f9480e70661a1d9
+SHA512: 5d5199576a36cc9c6fec5c984ec5ed93e848fd04f733d3ffd3dfafcbf696585767b31018b2584d47279b631654753dc355272e644ee932b44bd758dc47fcf1bd
 Description: debug symbols for ros-jazzy-legged-rl-controllers
-Build-Ids: 294ea3ce6e517dc7a9cc5ae65ac57d9511d182b3
+Build-Ids: eec649419c9114f4a65bc4ade3f437be287eaf52
 
 Package: ros-jazzy-legged-rl-controllers
 Architecture: amd64
-Version: 3.2.2-2026.02.04.23.21
+Version: 3.2.2-2026.03.05.10.19
 Priority: optional
 Section: misc
 Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
 Installed-Size: 698
 Depends: libc6 (>= 2.38), libconsole-bridge1.0 (>= 1.0.1+dfsg2), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 13.1), ros-jazzy-onnxruntime-ament, ros-jazzy-legged-controllers
-Filename: ./ros-jazzy-legged-rl-controllers_3.2.2-2026.02.04.23.21_amd64.deb
-Size: 165180
-MD5sum: a39cc373668d4890ad44b2296222bf4e
-SHA1: 3127bc93ce8bc582ef7277ae57f68dbe4682fe0d
-SHA256: 03579f77322c91975aea5495ec3a2c04c67a5ad814fa61cd2f585f34e745c511
-SHA512: 49d84c7c740e829d6b4ee1e84d517d6718edf3d8a71a4b7a99afc6df25e6e2c86b8d848bd4c9ae0fc0f890dbddb5e668b99b094dfa799bd727f37f428b4e1f1e
+Filename: ./ros-jazzy-legged-rl-controllers_3.2.2-2026.03.05.10.19_amd64.deb
+Size: 165166
+MD5sum: da181ede982054017d5b5b0faa6145ac
+SHA1: 148c2dd30945c385429f5d177c88254560a9a9a2
+SHA256: 44c679c3a9fafa98753ca8f589beec3096b16fbf461a061b7fe78b368754c1d1
+SHA512: 0b4818f3e1accc1f0f30eef1243f364592167b45514770359b71a823d998afe109b29026b99bc526f40030f204c06e1f3b772d1287b5bea321e0dd7094b49ea4
 Description: Model of legged robot
 
 Package: ros-jazzy-onnxruntime-ament
 Architecture: amd64
-Version: 0-2026.02.04.23.20
+Version: 1.3.0-2026.03.05.10.19
 Priority: optional
 Section: misc
 Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
 Installed-Size: 16728
 Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.0), libstdc++6 (>= 10.2)
-Filename: ./ros-jazzy-onnxruntime-ament_0-2026.02.04.23.20_amd64.deb
-Size: 4847532
-MD5sum: 64e9e7865982e4da5489f562c5ce26c4
-SHA1: 5212e51f99851d69f577a1769e23be274db1ee50
-SHA256: 33200cf5650014faa5a2cd776bdee40fddf16ce51bef7ff3e3f5876ac4b59223
-SHA512: 948b814998f6daaf8ca449a3380c95df9944f3287793e1f20f39017a40b4b196514ff90f0f8f59576840fe36cf5a619da0cf03442e3ddc70f9676cf71547537e
+Filename: ./ros-jazzy-onnxruntime-ament_1.3.0-2026.03.05.10.19_amd64.deb
+Size: 4847508
+MD5sum: 432bbf0a2c4b8285fdc550d8f0e59713
+SHA1: 3908fd74d5464027f5573e5f42cbd1a66c85db26
+SHA256: 252b09f80ff06752371cd6fdca180c3521861ed358080a75cd90443136e45bc9
+SHA512: 92304e1fa1f11fdaaf943eb84a2bc6a55473688af3a0b458f17969ee156705364d68c0f855848eb7fe0e8063a904115c092c8e6fea745f279e17ce6633cbb2c5
 Description: Model of legged robot
 
