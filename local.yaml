@@ -1,3 +1,6 @@
+legged_bringup:
+  ubuntu:
+  - ros-jazzy-legged-bringup
 legged_control_base:
   ubuntu:
   - ros-jazzy-legged-control-base
