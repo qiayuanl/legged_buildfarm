@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Thu, 05 Mar 2026 00:00:00 -0000
+Source: ros-jazzy-legged-rl-controllers
+Binary: ros-jazzy-legged-rl-controllers
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 3.3.0-2026.03.31.10.57
+Distribution: noble
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-jazzy-legged-rl-controllers - Model of legged robot
+Changes:
+ ros-jazzy-legged-rl-controllers (3.3.0-2026.03.31.10.57) noble; urgency=high
+Checksums-Sha1:
+ 8cbfec4e8a2ab86ca1b576a11599acede7a761b0 4205566 ros-jazzy-legged-rl-controllers-dbgsym_3.3.0-2026.03.31.10.57_amd64.ddeb
+ f1e5fdd84220f89528772f540511e44a4d4d36e8 32530 ros-jazzy-legged-rl-controllers_3.3.0-2026.03.31.10.57_amd64.buildinfo
+ a6df9717b4e815253962924d5f2b74c43b2b8961 165216 ros-jazzy-legged-rl-controllers_3.3.0-2026.03.31.10.57_amd64.deb
+Checksums-Sha256:
+ 6c43f4dbb3f6de7aed2f17f3367a2c07ab2b7017e7a9eaf1683b70ba930a3f1d 4205566 ros-jazzy-legged-rl-controllers-dbgsym_3.3.0-2026.03.31.10.57_amd64.ddeb
+ 943bcd9dea913a54abc47d7941c1a904e2b4c9fe5669d0252a3e117fdfb52a28 32530 ros-jazzy-legged-rl-controllers_3.3.0-2026.03.31.10.57_amd64.buildinfo
+ 2c31a4020cfd17599ba600b9c45a43cc82878f0f222d4e69070cf4c3c4b6b317 165216 ros-jazzy-legged-rl-controllers_3.3.0-2026.03.31.10.57_amd64.deb
+Files:
+ 1c66e5ff0a392caab5841be5e435812a 4205566 debug optional ros-jazzy-legged-rl-controllers-dbgsym_3.3.0-2026.03.31.10.57_amd64.ddeb
+ f19e60585b8ac5161d47a570b4c3ac02 32530 misc optional ros-jazzy-legged-rl-controllers_3.3.0-2026.03.31.10.57_amd64.buildinfo
+ cfe0b7f8f1a219094312f042c6ec976f 165216 misc optional ros-jazzy-legged-rl-controllers_3.3.0-2026.03.31.10.57_amd64.deb
