@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Thu, 05 Mar 2026 00:00:00 -0000
+Source: ros-jazzy-legged-estimation
+Binary: ros-jazzy-legged-estimation
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 3.3.0-2026.04.03.10.43
+Distribution: noble
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-jazzy-legged-estimation - State estimation of legged robot
+Changes:
+ ros-jazzy-legged-estimation (3.3.0-2026.04.03.10.43) noble; urgency=high
+Checksums-Sha1:
+ a19bdd897f20a32655495290d90db39af1410b41 3838088 ros-jazzy-legged-estimation-dbgsym_3.3.0-2026.04.03.10.43_arm64.ddeb
+ 58066bfe63251d17eccd729d68a4bb185188a031 19095 ros-jazzy-legged-estimation_3.3.0-2026.04.03.10.43_arm64.buildinfo
+ 8123dbd98ef4e22d78f91764301587443a37df21 54372 ros-jazzy-legged-estimation_3.3.0-2026.04.03.10.43_arm64.deb
+Checksums-Sha256:
+ 09dde5fc85d0191acb3ef494eab04a69c1d4334fb0db0e97d7976617f161ad07 3838088 ros-jazzy-legged-estimation-dbgsym_3.3.0-2026.04.03.10.43_arm64.ddeb
+ 64f38a37625d43a583493483e4bcc9bed08bbf050e60f29ce69d73223fb14796 19095 ros-jazzy-legged-estimation_3.3.0-2026.04.03.10.43_arm64.buildinfo
+ 113b33f6b927ac4923b9415efdb38bcb7ee22173db458bced62c0f7fba83198f 54372 ros-jazzy-legged-estimation_3.3.0-2026.04.03.10.43_arm64.deb
+Files:
+ fee8b9dd25e43bc087532f88d69a8897 3838088 debug optional ros-jazzy-legged-estimation-dbgsym_3.3.0-2026.04.03.10.43_arm64.ddeb
+ 5ddea5f7983939a09e7c5069c9e1a324 19095 misc optional ros-jazzy-legged-estimation_3.3.0-2026.04.03.10.43_arm64.buildinfo
+ 6cc6c1f43e8b3cea73c6ff77092c5ab3 54372 misc optional ros-jazzy-legged-estimation_3.3.0-2026.04.03.10.43_arm64.deb
