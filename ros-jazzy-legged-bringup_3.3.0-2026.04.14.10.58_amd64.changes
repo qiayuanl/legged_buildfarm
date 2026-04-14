@@ -1,0 +1,40 @@
+Format: 1.8
+Date: Thu, 05 Mar 2026 00:00:00 -0000
+Source: ros-jazzy-legged-bringup
+Binary: ros-jazzy-legged-bringup
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 3.3.0-2026.04.14.10.58
+Distribution: noble
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gmail.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gmail.com>
+Description:
+ ros-jazzy-legged-bringup - Shared launch utilities for legged robots
+Changes:
+ ros-jazzy-legged-bringup (3.3.0-2026.04.14.10.58) noble; urgency=high
+ .
+   * Update CHANGELOG.rst
+   * Add legged_bringup package with shared launch utilities
+     Extract generate_temp_config, resolve_policy_paths, control_spawner,
+     and download_wandb_onnx into a shared Python module to avoid duplication
+     across robot bringup packages. Also makes --param-file mandatory on
+     spawner per Jazzy migration.
+     Co-Authored-By: Claude Opus 4.6 <mailto:noreply@anthropic.com>
+   * Contributors: qiayuanl
+   * Add legged_bringup package with shared launch utilities
+     Extract generate_temp_config, resolve_policy_paths, control_spawner,
+     and download_wandb_onnx into a shared Python module to avoid duplication
+     across robot bringup packages. Also makes --param-file mandatory on
+     spawner per Jazzy migration.
+     Co-Authored-By: Claude Opus 4.6 <mailto:noreply@anthropic.com>
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ f49df422cf9c02842c5deb04a328012d4a374b94 9496 ros-jazzy-legged-bringup_3.3.0-2026.04.14.10.58_amd64.buildinfo
+ 579b560a5fd2db6e1670c6c2a2d400007efc9a45 7294 ros-jazzy-legged-bringup_3.3.0-2026.04.14.10.58_amd64.deb
+Checksums-Sha256:
+ be249f4891e1bf80503a9ff5365d1de2747ea7854c8aa12ef1a0521277fba9c1 9496 ros-jazzy-legged-bringup_3.3.0-2026.04.14.10.58_amd64.buildinfo
+ cc73191c62b0fc1ed72479b02fc45423805897a329b69b895bf679904b61626b 7294 ros-jazzy-legged-bringup_3.3.0-2026.04.14.10.58_amd64.deb
+Files:
+ cf0cda9a749e86eff4580de53e1a605b 9496 misc optional ros-jazzy-legged-bringup_3.3.0-2026.04.14.10.58_amd64.buildinfo
+ 6e2b2adc80df689bc907923df65d3995 7294 misc optional ros-jazzy-legged-bringup_3.3.0-2026.04.14.10.58_amd64.deb
