@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Thu, 05 Mar 2026 00:00:00 -0000
+Source: ros-jazzy-legged-control-base
+Binary: ros-jazzy-legged-control-base
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 3.3.0-2026.04.29.11.34
+Distribution: noble
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-jazzy-legged-control-base - A package includes basic functionalities for legged_control.
+Changes:
+ ros-jazzy-legged-control-base (3.3.0-2026.04.29.11.34) noble; urgency=high
+ .
+   * Add legged_bringup package with shared launch utilities
+     Extract generate_temp_config, resolve_policy_paths, control_spawner,
+     and download_wandb_onnx into a shared Python module to avoid duplication
+     across robot bringup packages. Also makes --param-file mandatory on
+     spawner per Jazzy migration.
+     Co-Authored-By: Claude Opus 4.6 <mailto:noreply@anthropic.com>
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ 5a582479d04e3d09a98ebe37a2d8c1d1764ca172 9521 ros-jazzy-legged-control-base_3.3.0-2026.04.29.11.34_amd64.buildinfo
+ 8662a6e845b03319c8a1246967bda5e75aec8399 5494 ros-jazzy-legged-control-base_3.3.0-2026.04.29.11.34_amd64.deb
+Checksums-Sha256:
+ cc0c682aedd1cce8477f880b64266c3b72d4c030bfa1b6b2fd3bb18acad1992a 9521 ros-jazzy-legged-control-base_3.3.0-2026.04.29.11.34_amd64.buildinfo
+ dbdf781c0ceb6c250cb7f36f26e3d3d415b1955ce5d6c06dba6eb0d74a36108b 5494 ros-jazzy-legged-control-base_3.3.0-2026.04.29.11.34_amd64.deb
+Files:
+ 71aebe00f71c61e6fbeba618e5dec084 9521 misc optional ros-jazzy-legged-control-base_3.3.0-2026.04.29.11.34_amd64.buildinfo
+ d35615a0c0d805d2acf2308e8f3c59d7 5494 misc optional ros-jazzy-legged-control-base_3.3.0-2026.04.29.11.34_amd64.deb
