@@ -1,0 +1,43 @@
+Format: 1.8
+Date: Thu, 02 Jul 2026 00:00:00 -0000
+Source: ros-jazzy-legged-controllers
+Binary: ros-jazzy-legged-controllers
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 3.4.0-2026.07.28.12.05
+Distribution: noble
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-jazzy-legged-controllers - Model of legged robot
+Changes:
+ ros-jazzy-legged-controllers (3.4.0-2026.07.28.12.05) noble; urgency=high
+ .
+   * Migrate to Pinocchio 4.0
+     Replace the removed pinocchio/multibody/data.hpp include with the
+     consolidated pinocchio/multibody.hpp, and link the pinocchio::pinocchio
+     CMake target in the two targets whose sources instantiate Pinocchio
+     templates (legged_model constructs Model/Data and parses URDF;
+     legged_chainable_controllers holds a pinocchio::Model by value in
+     JointSensors.h). Pinocchio 4.0 delivers its Boost.MPL configuration
+     (BOOST_MPL_LIMIT_LIST_SIZE=30 etc.) as interface compile definitions on
+     its CMake targets instead of in-header defines, and instantiating the
+     25-member joint variant exceeds Boost's default limit without them.
+     Targets that merely include the headers without instantiating the
+     variant do not need the link.
+     Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>
+     Claude-Session: https://claude.ai/code/session_015G7uwu5g7F8QpLLyuxe6tP
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ 05d8eda0b5fa2dd29ca73b46426ef7dd847f29f8 7396792 ros-jazzy-legged-controllers-dbgsym_3.4.0-2026.07.28.12.05_amd64.ddeb
+ 85b4cafea8e18adc06bf5f87c66aafcdb0cf0e94 28146 ros-jazzy-legged-controllers_3.4.0-2026.07.28.12.05_amd64.buildinfo
+ f1ebf2cc523852936ced3f2d2c2981705764f2a3 229804 ros-jazzy-legged-controllers_3.4.0-2026.07.28.12.05_amd64.deb
+Checksums-Sha256:
+ 315942bd9fc0e75bc629107c154afd9943410fd28065558c600a4267b22e5ca0 7396792 ros-jazzy-legged-controllers-dbgsym_3.4.0-2026.07.28.12.05_amd64.ddeb
+ f1137dc623b6e44e9db8d889f49def2d99961c9f32618ab68761d5f400559386 28146 ros-jazzy-legged-controllers_3.4.0-2026.07.28.12.05_amd64.buildinfo
+ 6601f2093747026d412fc70ef4f76cbc72b9e34194be72dbf0b9bb0767728d35 229804 ros-jazzy-legged-controllers_3.4.0-2026.07.28.12.05_amd64.deb
+Files:
+ 188c6e7eb512a7ac659cc402760997c3 7396792 debug optional ros-jazzy-legged-controllers-dbgsym_3.4.0-2026.07.28.12.05_amd64.ddeb
+ b8d8c6da328cbae8e7c1d59d21fe0bba 28146 misc optional ros-jazzy-legged-controllers_3.4.0-2026.07.28.12.05_amd64.buildinfo
+ 39502ea7af3f3301d1f16d7a2a3328e7 229804 misc optional ros-jazzy-legged-controllers_3.4.0-2026.07.28.12.05_amd64.deb
