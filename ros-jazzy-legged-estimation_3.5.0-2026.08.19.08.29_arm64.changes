@@ -1,0 +1,53 @@
+Format: 1.8
+Date: Wed, 19 Aug 2026 00:00:00 -0000
+Source: ros-jazzy-legged-estimation
+Binary: ros-jazzy-legged-estimation
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 3.5.0-2026.08.19.08.29
+Distribution: noble
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-jazzy-legged-estimation - State estimation of legged robot
+Changes:
+ ros-jazzy-legged-estimation (3.5.0-2026.08.19.08.29) noble; urgency=high
+ .
+   * Harden the estimator against singular Jacobians and NaN
+     - Damp the contact wrench pseudo-inverse and solve it as symmetric
+     normal equations instead of forming an explicit inverse. The stacked
+     Jacobian loses a rank when a knee reaches full extension; measured on
+     a Jacobian with this robot's structure, the undamped solve reports
+     -2.7e5 N on a foot carrying 320 N at a knee angle of 1e-6 rad, and
+     chatters by an order of magnitude frame to frame. Damping by
+     1e-8 * max(diag) holds it within 176-520 N across the whole sweep and
+     is indistinguishable from the reference at the nominal posture. The
+     LDLT solve is also 2.6x faster than the inverse and keeps the residual
+     least-squares optimal; it does not by itself fix the amplification.
+     - Zero the contact probabilities that are not finite, at the point they
+     are produced. The existing gain guard could not prevent NaN reaching
+     p_: both the process noise and the measurement noise are divided by
+     the probability before any guard runs, so the gain came back entirely
+     NaN and poisoned xHat_ and p_ with nothing to reset them. Negating the
+     gain test as well keeps a NaN out of the "in contact" branch.
+     - Veto contact explicitly for a foot with no normal force, instead of
+     relying on a comparison against a divided-by-zero ZMP, and compare
+     with std::abs. The unqualified abs bound to the double overload only
+     by way of a transitive using-declaration.
+     - Note that feetHeights_ is never written, so the contact height
+     measurement is a constant zero, i.e. flat ground.
+     Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ a4ea997e780359d4390e1cba04fc36920d47460e 4062364 ros-jazzy-legged-estimation-dbgsym_3.5.0-2026.08.19.08.29_arm64.ddeb
+ 671e64285fd4256edac1f93003ae0b73e8097b3d 19117 ros-jazzy-legged-estimation_3.5.0-2026.08.19.08.29_arm64.buildinfo
+ e1296dc28c400c1f8b443fdba75b5edb7bf829fe 56182 ros-jazzy-legged-estimation_3.5.0-2026.08.19.08.29_arm64.deb
+Checksums-Sha256:
+ 7843471834719e1dd2003ed1a076024313805d912100b545aa818e3633c6c987 4062364 ros-jazzy-legged-estimation-dbgsym_3.5.0-2026.08.19.08.29_arm64.ddeb
+ 855c153ca9af26f7d6d26697e8cf9a22c1630086c198c41b80060549a2e073cd 19117 ros-jazzy-legged-estimation_3.5.0-2026.08.19.08.29_arm64.buildinfo
+ d98739225d076ffe4d5d1a75a815dc603f7df428fe170411cb245bf039ad058b 56182 ros-jazzy-legged-estimation_3.5.0-2026.08.19.08.29_arm64.deb
+Files:
+ 75755fe17e514fb5ab8c2afa90d362fb 4062364 debug optional ros-jazzy-legged-estimation-dbgsym_3.5.0-2026.08.19.08.29_arm64.ddeb
+ 9b09d6d0133d59a2641bfa3d9d919122 19117 misc optional ros-jazzy-legged-estimation_3.5.0-2026.08.19.08.29_arm64.buildinfo
+ e4916d40dd8fb9454aacfb74687c73ae 56182 misc optional ros-jazzy-legged-estimation_3.5.0-2026.08.19.08.29_arm64.deb
