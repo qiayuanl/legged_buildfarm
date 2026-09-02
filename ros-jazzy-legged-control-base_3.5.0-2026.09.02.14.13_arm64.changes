@@ -1,0 +1,24 @@
+Format: 1.8
+Date: Wed, 19 Aug 2026 00:00:00 -0000
+Source: ros-jazzy-legged-control-base
+Binary: ros-jazzy-legged-control-base
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 3.5.0-2026.09.02.14.13
+Distribution: noble
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-jazzy-legged-control-base - A package includes basic functionalities for legged_control.
+Changes:
+ ros-jazzy-legged-control-base (3.5.0-2026.09.02.14.13) noble; urgency=high
+Checksums-Sha1:
+ db92d3b8a56c02f5fde5f25bc855eaaaa9273cb3 9516 ros-jazzy-legged-control-base_3.5.0-2026.09.02.14.13_arm64.buildinfo
+ d00a7829ccac28fb02e031caaf819c22b5666110 5532 ros-jazzy-legged-control-base_3.5.0-2026.09.02.14.13_arm64.deb
+Checksums-Sha256:
+ df034e776e60fe06a189c4b52663287e7c2c19c6f5d8c5a74ebe86ae43d000ce 9516 ros-jazzy-legged-control-base_3.5.0-2026.09.02.14.13_arm64.buildinfo
+ 94b41eddf52a52f46a6df84bba8ef04e080c75f3efc59ee6ea22ed4fcc8f11ee 5532 ros-jazzy-legged-control-base_3.5.0-2026.09.02.14.13_arm64.deb
+Files:
+ 6255c14f2dcfcc4db0d32dfe8ca045e6 9516 misc optional ros-jazzy-legged-control-base_3.5.0-2026.09.02.14.13_arm64.buildinfo
+ 5916eeec2173a272a0b8b4ee7ade10ac 5532 misc optional ros-jazzy-legged-control-base_3.5.0-2026.09.02.14.13_arm64.deb
