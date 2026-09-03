@@ -1,0 +1,71 @@
+Format: 1.8
+Date: Wed, 19 Aug 2026 00:00:00 -0000
+Source: ros-jazzy-legged-controllers
+Binary: ros-jazzy-legged-controllers
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 3.5.0-2026.09.03.14.21
+Distribution: noble
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-jazzy-legged-controllers - Model of legged robot
+Changes:
+ ros-jazzy-legged-controllers (3.5.0-2026.09.03.14.21) noble; urgency=high
+ .
+   * Publish the estimator markers from a realtime publisher
+     The visualization built a MarkerArray, filled in frame ids and namespace
+     strings and called publish() directly, in the 500 Hz update. That is
+     roughly thirty allocations plus a middleware handoff per cycle on the
+     control thread, while the odometry publisher beside it already used a
+     RealtimePublisher with trylock.
+     Build the constant fields once and update only the pose and scale.
+     Co-Authored-By: Claude Opus 5 (1M context) <mailto:noreply@anthropic.com>
+   * Do not fabricate NaN joint samples on a failed interface read
+     JointSensors read through LoanedStateInterface::get_value, which is
+     deprecated and returns quiet_NaN when its try-lock times out. That NaN
+     went straight into the generalized position, pinocchio, the Kalman
+     filter and out again as a joint command, so a moment of lock contention
+     manufactured exactly the failure this series is chasing. It is also the
+     only remaining NaN source upstream of the finiteness check.
+     Read through get_optional instead and hold the previous sample for any
+     joint that fails, which is what IMUSensor already does, and warn. The
+     samples are now members rather than three vectors allocated per cycle.
+     Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
+   * Fix operator precedence in getColorFromId
+     id - 1 % 7 parses as id - (1 % 7). With eight or more contacts the cast
+     target left the enum's value range, which is undefined; below that it
+     agrees with the intended expression, so nothing rendered changes here.
+     Co-Authored-By: Claude Opus 5 (1M context) <mailto:noreply@anthropic.com>
+   * Check the state interface and command interface write results
+     Both call sites discarded a bool that reports a real failure, and
+     LoanedCommandInterface::set_value is even marked [[nodiscard]].
+     - assign_loaned_state_interfaces leaves the component's interface list
+     short when a name does not match, after which JointSensors would index
+     it out of bounds. Fail activation instead. get_ordered_interfaces
+     appends without clearing, so both components are released on either
+     failure path: otherwise the partial list dangles once
+     controller_manager reclaims the loans, and a retry appends on top and
+     can never succeed again. controller_manager refuses activation when a
+     requested interface is missing, so this is defence in depth.
+     - set_value try-locks and returns false on timeout; swallowing that
+     silently left the joint at its previous command with no indication.
+     Warn, throttled, on the failure branch only.
+     - Bound setCommands by the number of claimed interfaces, and take the
+     command vector by reference rather than by value, which was allocating
+     on every call from the control loop.
+     Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ 94108845429464e5bc3c4da6d4a8961758944b1d 7046144 ros-jazzy-legged-controllers-dbgsym_3.5.0-2026.09.03.14.21_arm64.ddeb
+ d09746f106b907d2a68b44fa1e339e892a0ff5db 27717 ros-jazzy-legged-controllers_3.5.0-2026.09.03.14.21_arm64.buildinfo
+ 6f516683299f3c7581992da49dda9b857d501233 212796 ros-jazzy-legged-controllers_3.5.0-2026.09.03.14.21_arm64.deb
+Checksums-Sha256:
+ ae59f3db3fbd2d5c19c01a34e055dad5b76f181aba29805df6b845a185aaa4b0 7046144 ros-jazzy-legged-controllers-dbgsym_3.5.0-2026.09.03.14.21_arm64.ddeb
+ 8c8a3b3661d759e3cad67ae4ae978423a92266d3cb3338b55fb57a80f110202a 27717 ros-jazzy-legged-controllers_3.5.0-2026.09.03.14.21_arm64.buildinfo
+ 573d40bca2779e027a18d7ac945599b06b60e033067f42d8d8e2455be2ebe9a2 212796 ros-jazzy-legged-controllers_3.5.0-2026.09.03.14.21_arm64.deb
+Files:
+ 44af168d70c04666fcb4c450a12eab5a 7046144 debug optional ros-jazzy-legged-controllers-dbgsym_3.5.0-2026.09.03.14.21_arm64.ddeb
+ 8a932e28fcf7af65b3358a620ad4ff20 27717 misc optional ros-jazzy-legged-controllers_3.5.0-2026.09.03.14.21_arm64.buildinfo
+ ff4e07305fe08de60bfad529bf5f2ec5 212796 misc optional ros-jazzy-legged-controllers_3.5.0-2026.09.03.14.21_arm64.deb
