@@ -1,0 +1,24 @@
+Format: 1.8
+Date: Wed, 19 Aug 2026 00:00:00 -0000
+Source: ros-jazzy-legged-bringup
+Binary: ros-jazzy-legged-bringup
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 3.5.0-2026.09.10.14.11
+Distribution: noble
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gmail.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gmail.com>
+Description:
+ ros-jazzy-legged-bringup - Shared launch utilities for legged robots
+Changes:
+ ros-jazzy-legged-bringup (3.5.0-2026.09.10.14.11) noble; urgency=high
+Checksums-Sha1:
+ d4affae2e12ed64cb8c11896fe0f3cc0142c7171 9491 ros-jazzy-legged-bringup_3.5.0-2026.09.10.14.11_arm64.buildinfo
+ fef80816f68b33b531b99d9ad73cba11479616c1 7306 ros-jazzy-legged-bringup_3.5.0-2026.09.10.14.11_arm64.deb
+Checksums-Sha256:
+ 7b041cb23ab6f5bef479667ca60cf7c9ee8038f7897a33a5bea6708a5b2d3ebc 9491 ros-jazzy-legged-bringup_3.5.0-2026.09.10.14.11_arm64.buildinfo
+ 20aea38dc92bdeda9ef04c403f9715f890c1bff372f583ecd91df199e9d3e53c 7306 ros-jazzy-legged-bringup_3.5.0-2026.09.10.14.11_arm64.deb
+Files:
+ 9a225ef0da1ec1c70761a53d81abe751 9491 misc optional ros-jazzy-legged-bringup_3.5.0-2026.09.10.14.11_arm64.buildinfo
+ de9409e99b1c3dae9218b871ff49e38e 7306 misc optional ros-jazzy-legged-bringup_3.5.0-2026.09.10.14.11_arm64.deb
