@@ -1,0 +1,27 @@
+Format: 1.8
+Date: Thu, 05 Mar 2026 00:00:00 -0000
+Source: ros-jazzy-onnxruntime-ament
+Binary: ros-jazzy-onnxruntime-ament
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 1.3.0-2026.09.24.14.51
+Distribution: noble
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-jazzy-onnxruntime-ament - Model of legged robot
+Changes:
+ ros-jazzy-onnxruntime-ament (1.3.0-2026.09.24.14.51) noble; urgency=high
+ .
+   * Set FETCHCONTENT_FULLY_DISCONNECTED to OFF for Ubuntu 24.04 compatibility
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ d5e41143daabc5553b17cc025b4a8abd71bdbefd 9914 ros-jazzy-onnxruntime-ament_1.3.0-2026.09.24.14.51_arm64.buildinfo
+ e4be5d474e5fcc5c44a3b21c081b0207a04c8a73 4187970 ros-jazzy-onnxruntime-ament_1.3.0-2026.09.24.14.51_arm64.deb
+Checksums-Sha256:
+ b9ff13dc02c7b636f1d137c7f5c806d6fac8ec1a83f7efe853d42dbe07bd9d5e 9914 ros-jazzy-onnxruntime-ament_1.3.0-2026.09.24.14.51_arm64.buildinfo
+ bdd76fd6a98eb6b48f560ccc307a29704db7992e924f3f1dc20b0f67ac3c5090 4187970 ros-jazzy-onnxruntime-ament_1.3.0-2026.09.24.14.51_arm64.deb
+Files:
+ 81252369a1d815edb7ae7c56d95024bd 9914 misc optional ros-jazzy-onnxruntime-ament_1.3.0-2026.09.24.14.51_arm64.buildinfo
+ c16368f842fdbd3ff62cac8c4b1ecd38 4187970 misc optional ros-jazzy-onnxruntime-ament_1.3.0-2026.09.24.14.51_arm64.deb
