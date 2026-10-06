@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Wed, 19 Aug 2026 00:00:00 -0000
+Source: ros-jazzy-legged-model
+Binary: ros-jazzy-legged-model
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 3.5.0-2026.10.06.16.38
+Distribution: noble
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-jazzy-legged-model - Model of legged robot
+Changes:
+ ros-jazzy-legged-model (3.5.0-2026.10.06.16.38) noble; urgency=high
+ .
+   * Take the joint name by reference in getJointIndex
+     It took std::string by value, and the G1 joint names are past the small
+     string optimisation, so the position_delta action path allocated and
+     freed once per joint per control cycle.
+     Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ 346f664fcb8c13811af3dc1a425c4a2e25b76fc1 10959158 ros-jazzy-legged-model-dbgsym_3.5.0-2026.10.06.16.38_amd64.ddeb
+ 90fff6632c00009128f25a5d10546971ef031296 19494 ros-jazzy-legged-model_3.5.0-2026.10.06.16.38_amd64.buildinfo
+ be931504441db2876fe5848a3dd63d809c9d0e1c 95634 ros-jazzy-legged-model_3.5.0-2026.10.06.16.38_amd64.deb
+Checksums-Sha256:
+ 216fdd70542f62e0ae100f8f364984c67d5b0c9111d9649fbfee49fb27847377 10959158 ros-jazzy-legged-model-dbgsym_3.5.0-2026.10.06.16.38_amd64.ddeb
+ 3be9588c2b3b545fa36195309e62a5d8570cef12225c9883c39c24c9baf250b2 19494 ros-jazzy-legged-model_3.5.0-2026.10.06.16.38_amd64.buildinfo
+ 295eb976e675388bae241a163d0e9ec05db9219ad563e27d3748cfcc1904d23d 95634 ros-jazzy-legged-model_3.5.0-2026.10.06.16.38_amd64.deb
+Files:
+ ee90c1dfccdde42872beba16e0c9ebdc 10959158 debug optional ros-jazzy-legged-model-dbgsym_3.5.0-2026.10.06.16.38_amd64.ddeb
+ 541a8599a3124a417ea4ec00b88f387d 19494 misc optional ros-jazzy-legged-model_3.5.0-2026.10.06.16.38_amd64.buildinfo
+ e45bdc81049101eb87aa8273de486e4e 95634 misc optional ros-jazzy-legged-model_3.5.0-2026.10.06.16.38_amd64.deb

@@ -1,0 +1,65 @@
+Format: 1.8
+Date: Wed, 19 Aug 2026 00:00:00 -0000
+Source: ros-jazzy-legged-rl-controllers
+Binary: ros-jazzy-legged-rl-controllers
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 3.5.0-2026.10.06.16.45
+Distribution: noble
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-jazzy-legged-rl-controllers - Model of legged robot
+Changes:
+ ros-jazzy-legged-rl-controllers (3.5.0-2026.10.06.16.45) noble; urgency=high
+ .
+   * Validate policy metadata and refuse to write non-finite commands
+     The controller trusted the ONNX metadata and the policy output without
+     checking either, so a malformed export or a NaN action reached the
+     hardware silently.
+     - Cross-check default_joint_pos, joint_stiffness and joint_damping
+     against joint_names in on_activate. These are indexed per joint and
+     command_interfaces_ is claimed as 5 * joint_names.size(), so a
+     mismatch was an out-of-bounds write from the update loop, which glibc
+     reports as "malloc(): corrupted top size".
+     - Clamp the update loop to the smallest of the joint count, the action
+     size and action_scale. Nothing ties the ONNX action dimension to
+     joint_names, in either direction: a policy may emit more than one term
+     per joint, and a short action_scale or action vector would otherwise
+     be read past its end. That read yields finite garbage, which the
+     finiteness check below cannot see.
+     - Take currentPosition from the model's joint count. It is indexed by an
+     index into getJointNames(), not by an action index.
+     - Reject an observation_history_lengths list whose length does not match
+     the number of observation terms, or that contains a zero. A zero
+     leaves the history deque empty but marked initialised, so the next
+     getValue() pops an empty deque.
+     - Catch std::exception around parseCsv: std::stoul throws
+     std::invalid_argument, a logic_error, which escaped the old handler.
+     - Refuse to write a non-finite command. ros2_control stores the value
+     unchecked, and a joint limiter does not help either since clamping
+     leaves NaN unchanged. Note this is not a skip-one-cycle path: ERROR
+     makes controller_manager deactivate the controller and run a command
+     mode switch, whose stop path zeroes kp on every joint and leaves only
+     damping, so the robot goes limp and settles. That is much better than
+     writing NaN while kp is 350, but it is an e-stop. Publish policy_io
+     before the check so the record explaining the command survives.
+     - Return const references from the Policy getters and hoist
+     getDefaultJointPositions out of the per-joint loop, which was
+     allocating and freeing once per joint per control cycle.
+     - Call the base ObservationTerm::reset from PhaseObservationTerm::reset.
+     Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ 65ced9a350584d72b354ea8634b0e8f928e1aeed 4389412 ros-jazzy-legged-rl-controllers-dbgsym_3.5.0-2026.10.06.16.45_amd64.ddeb
+ 65ee18a961e4eb82240b11c5b43299e897a34fad 32563 ros-jazzy-legged-rl-controllers_3.5.0-2026.10.06.16.45_amd64.buildinfo
+ 688582fef35f6d0b753f33fb719d511405ce9929 166924 ros-jazzy-legged-rl-controllers_3.5.0-2026.10.06.16.45_amd64.deb
+Checksums-Sha256:
+ 4f58a7d35214b3afbe33137cf9da04cc77f0043bedea2a4bf7e3f09b496fbe5a 4389412 ros-jazzy-legged-rl-controllers-dbgsym_3.5.0-2026.10.06.16.45_amd64.ddeb
+ e20bdb725d8934709a3e2eab9cffe0bb0e60e2aeb9588a3fb5b4174945c785df 32563 ros-jazzy-legged-rl-controllers_3.5.0-2026.10.06.16.45_amd64.buildinfo
+ e9c853c77c95c8f104fac9961c8be7941f27ce504a10624616e69dfb5e717794 166924 ros-jazzy-legged-rl-controllers_3.5.0-2026.10.06.16.45_amd64.deb
+Files:
+ 0d0fd4b7badd85517405e07d28a80cc4 4389412 debug optional ros-jazzy-legged-rl-controllers-dbgsym_3.5.0-2026.10.06.16.45_amd64.ddeb
+ b54d8c6e326857121318f870a74c2eff 32563 misc optional ros-jazzy-legged-rl-controllers_3.5.0-2026.10.06.16.45_amd64.buildinfo
+ 0cfb4eb72561c615f29f76f0860234b6 166924 misc optional ros-jazzy-legged-rl-controllers_3.5.0-2026.10.06.16.45_amd64.deb
