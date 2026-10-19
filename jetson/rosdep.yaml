@@ -1,0 +1,4 @@
+cudart-dev:  # cuda_runtime_api.h includes crt/host_defines.h, which CUDA 11.4 ships in cuda-nvcc
+  ubuntu: [cuda-cudart-dev-11-4, cuda-nvcc-11-4]
+tensorrt-dev:
+  ubuntu: [libnvinfer-dev, libnvonnxparsers-dev]
