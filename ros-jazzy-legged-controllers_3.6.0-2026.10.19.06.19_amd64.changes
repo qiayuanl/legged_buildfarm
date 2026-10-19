@@ -1,0 +1,42 @@
+Format: 1.8
+Date: Sun, 18 Oct 2026 00:00:00 -0000
+Source: ros-jazzy-legged-controllers
+Binary: ros-jazzy-legged-controllers
+Built-For-Profiles: noudeb
+Architecture: amd64
+Version: 3.6.0-2026.10.19.06.19
+Distribution: noble
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-jazzy-legged-controllers - Model of legged robot
+Changes:
+ ros-jazzy-legged-controllers (3.6.0-2026.10.19.06.19) noble; urgency=high
+ .
+   * Template ControllerBase on the controller interface base
+     Co-Authored-By: Claude Opus 5.5 <mailto:noreply@anthropic.com>
+     Claude-Session: https://claude.ai/code/session_01A2pd46YwYV5pUbH2WJmrKG
+   * Resolve the external localization frame from the odometry message
+     The estimation.position.frame_id parameter duplicated what every
+     nav_msgs/Odometry already carries: child_frame_id names the robot frame
+     the reported pose applies to. Read it from the message instead, caching
+     the pinocchio frame lookup until the name changes. A child_frame_id
+     that is not in the robot description skips the correction with a
+     throttled error, and everything else the estimator produces keeps
+     running.
+     Co-Authored-By: Claude Fable 5 <mailto:noreply@anthropic.com>
+     Claude-Session: https://claude.ai/code/session_01WUhufQkrqJ2LMQEaNq787e
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ 9eea36766cce686f9e33555fff8c1841c01a7405 7208904 ros-jazzy-legged-controllers-dbgsym_3.6.0-2026.10.19.06.19_amd64.ddeb
+ 0f779ea03f7eb1ab2acf2cd7df026ef84f54f941 28179 ros-jazzy-legged-controllers_3.6.0-2026.10.19.06.19_amd64.buildinfo
+ 618a4346ea7445aa38d95df6614f9c3ca1960ba1 230000 ros-jazzy-legged-controllers_3.6.0-2026.10.19.06.19_amd64.deb
+Checksums-Sha256:
+ 23ae4061df4acb6ea0107c7cb3527ebd3f96b349d6c3af2086cf036a1bfa896f 7208904 ros-jazzy-legged-controllers-dbgsym_3.6.0-2026.10.19.06.19_amd64.ddeb
+ 92bea45d6c755c6171e8ce96daa0beddf1b4d4c5d06ec29ead47eaad12da0cdd 28179 ros-jazzy-legged-controllers_3.6.0-2026.10.19.06.19_amd64.buildinfo
+ be66089b338abfa7af74eb1215d7e70334ae2f9b1249401b63203f514ed677c8 230000 ros-jazzy-legged-controllers_3.6.0-2026.10.19.06.19_amd64.deb
+Files:
+ 5abc8920377254aa9d851e99acf26e06 7208904 debug optional ros-jazzy-legged-controllers-dbgsym_3.6.0-2026.10.19.06.19_amd64.ddeb
+ 5aaadb22f1af14765ae67b8b80ed2e6b 28179 misc optional ros-jazzy-legged-controllers_3.6.0-2026.10.19.06.19_amd64.buildinfo
+ 396feb4a7fe499b0f2af1b780c481fae 230000 misc optional ros-jazzy-legged-controllers_3.6.0-2026.10.19.06.19_amd64.deb
