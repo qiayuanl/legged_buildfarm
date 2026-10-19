@@ -1,0 +1,48 @@
+Format: 1.8
+Date: Sun, 18 Oct 2026 00:00:00 -0000
+Source: ros-jazzy-legged-rl-controllers
+Binary: ros-jazzy-legged-rl-controllers
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 3.6.0-2026.10.19.06.22
+Distribution: noble
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-jazzy-legged-rl-controllers - Model of legged robot
+Changes:
+ ros-jazzy-legged-rl-controllers (3.6.0-2026.10.19.06.22) noble; urgency=high
+ .
+   * Run ONNX inference on the calling thread
+     The default intra-op thread pool busy-waits on every core after each run: one policy at 50 Hz kept about
+     15 cores busy on a 22-thread machine and starved the simulator and the control loop.
+     Co-Authored-By: Claude Opus 5.5 <mailto:noreply@anthropic.com>
+     Claude-Session: https://claude.ai/code/session_01A2pd46YwYV5pUbH2WJmrKG
+   * Template RlController on the controller base
+     Co-Authored-By: Claude Opus 5.5 <mailto:noreply@anthropic.com>
+     Claude-Session: https://claude.ai/code/session_01A2pd46YwYV5pUbH2WJmrKG
+   * Template ControllerBase on the controller interface base
+     Co-Authored-By: Claude Opus 5.5 <mailto:noreply@anthropic.com>
+     Claude-Session: https://claude.ai/code/session_01A2pd46YwYV5pUbH2WJmrKG
+   * Drop the policy_io publisher
+     Sensor data and actuator commands are already published through the
+     controller_manager's pal_statistics introspection, so the ad hoc topic
+     duplicated them. The parts of the message that introspection does not
+     carry yet, the observation vector and the raw actions, will be
+     registered into the introspection registry instead.
+     Co-Authored-By: Claude Fable 5 <mailto:noreply@anthropic.com>
+     Claude-Session: https://claude.ai/code/session_01WUhufQkrqJ2LMQEaNq787e
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ b782b27adc9925cabac13849daee42f3845a8a61 4060008 ros-jazzy-legged-rl-controllers-dbgsym_3.6.0-2026.10.19.06.22_arm64.ddeb
+ 45ff0c16050434f7b18bc07fdee2f6ce6c01f3ad 32123 ros-jazzy-legged-rl-controllers_3.6.0-2026.10.19.06.22_arm64.buildinfo
+ fae05d361a27728820091e78dba24cb83bba3c39 144288 ros-jazzy-legged-rl-controllers_3.6.0-2026.10.19.06.22_arm64.deb
+Checksums-Sha256:
+ 283250dabebc7b7ea0b2916873c3ea34f38f354a2eb24049ee690f3e776f66a0 4060008 ros-jazzy-legged-rl-controllers-dbgsym_3.6.0-2026.10.19.06.22_arm64.ddeb
+ 949ff7a0bef04dd6c7d29ce54d47ab748494db075a4923e5a3b3566719cb7772 32123 ros-jazzy-legged-rl-controllers_3.6.0-2026.10.19.06.22_arm64.buildinfo
+ a228f0b8da8063ba3d4434e186d46bf6276dfd5ddbc6ab5ee04630d1f9114e58 144288 ros-jazzy-legged-rl-controllers_3.6.0-2026.10.19.06.22_arm64.deb
+Files:
+ 76746806f6152c0ed4fcf4005fc2aa2b 4060008 debug optional ros-jazzy-legged-rl-controllers-dbgsym_3.6.0-2026.10.19.06.22_arm64.ddeb
+ 68285068adf1e0e4cf471b62316efb15 32123 misc optional ros-jazzy-legged-rl-controllers_3.6.0-2026.10.19.06.22_arm64.buildinfo
+ 15c53d584e8e92fa72408b51db7d30c7 144288 misc optional ros-jazzy-legged-rl-controllers_3.6.0-2026.10.19.06.22_arm64.deb
