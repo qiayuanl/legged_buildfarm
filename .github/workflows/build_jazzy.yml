@@ -40,8 +40,12 @@ jobs:
         include:
           - arch: amd64
             runner: ubuntu-22.04
+            skip_packages: legged_rl_tensorrt
           - arch: arm64
             runner: ubuntu-22.04-arm
+            sbuild_conf: |
+              $extra_repositories = ['deb https://repo.download.nvidia.com/jetson/common r35.3 main'];
+              $extra_repository_keys = ["$ENV{GITHUB_WORKSPACE}/jetson/jetson-ota-public.asc"];
     runs-on: ${{ matrix.runner }}
     steps:
       - uses: actions/checkout@v4
@@ -88,6 +92,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SQUASH_HISTORY: true
           SKIP_CHECKOUT: true
+          SBUILD_CONF: ${{ matrix.sbuild_conf }}
+          ROSDEP_SOURCE: yaml file://${{ github.workspace }}/jetson/rosdep.yaml
+          SKIP_PACKAGES: ${{ matrix.skip_packages }}
 
   trigger-docker:
     needs: build
