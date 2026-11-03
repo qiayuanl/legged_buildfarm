@@ -1,0 +1,42 @@
+Format: 1.8
+Date: Mon, 02 Nov 2026 00:00:00 -0000
+Source: ros-jazzy-legged-rl-controllers
+Binary: ros-jazzy-legged-rl-controllers
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 3.7.0-2026.11.03.00.26
+Distribution: noble
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gamil.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gamil.com>
+Description:
+ ros-jazzy-legged-rl-controllers - Model of legged robot
+Changes:
+ ros-jazzy-legged-rl-controllers (3.7.0-2026.11.03.00.26) noble; urgency=high
+ .
+   * Add policy.threads and pluggable inference backends with TensorRT
+     policy.threads sets ONNX Runtime's intra-op threads, default 1 (the calling thread). Workers sleep between runs
+     instead of spinning. On the G1's Orin NX, 4 threads take the encoder + decoder tick from 3.0 ms to 1.5 ms.
+     OnnxPolicy uses the first installed legged::InferenceBackend plugin whose init() succeeds on the machine, after
+     checking its outputs against ONNX Runtime on a random input, and logs the choice. Without a plugin nothing changes.
+     legged_rl_tensorrt runs the policies on an NVIDIA GPU with FP32 engines (TF32 off), mapped host buffers and a CUDA
+     graph: 0.92 ms per encoder + decoder tick on the Orin NX. It loads TensorRT at run time and links the CUDA runtime
+     statically, so its deb depends on no NVIDIA package, and a machine without TensorRT or a GPU stays on the CPU.
+     Engines are built ahead, about 45 s on the Orin NX, with ros2 run legged_rl_tensorrt build_engine <model.onnx> ...,
+     next to the models and keyed by model, GPU and TensorRT version; a missing engine fails configure with that command.
+     OnnxPolicy's constructor and layout change, so dependent packages must be rebuilt.
+     Co-Authored-By: Claude Opus 5.5 <mailto:noreply@anthropic.com>
+     Claude-Session: https://claude.ai/code/session_01A2pd46YwYV5pUbH2WJmrKG
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ 257277b6c5c266bb017cf914f0de7bff9980f5c3 5228884 ros-jazzy-legged-rl-controllers-dbgsym_3.7.0-2026.11.03.00.26_arm64.ddeb
+ 212108107f05c3911fe578368be3b7320dcb8010 32134 ros-jazzy-legged-rl-controllers_3.7.0-2026.11.03.00.26_arm64.buildinfo
+ e82a045a11c64ccb8f9bd5fb06c41a371d37f979 217478 ros-jazzy-legged-rl-controllers_3.7.0-2026.11.03.00.26_arm64.deb
+Checksums-Sha256:
+ d3524d810343cf2592cecec8044958f3c5c6c2042198307a5d82f78a3fb0d01f 5228884 ros-jazzy-legged-rl-controllers-dbgsym_3.7.0-2026.11.03.00.26_arm64.ddeb
+ 09e2f570f4203eed4481f346e1a87363b7ebbc0e463f0cce86b7d1cd1bd8bbdf 32134 ros-jazzy-legged-rl-controllers_3.7.0-2026.11.03.00.26_arm64.buildinfo
+ d450bf818ae6e82a617be207b0d6d1c309448d04ec530722ebc6498189957825 217478 ros-jazzy-legged-rl-controllers_3.7.0-2026.11.03.00.26_arm64.deb
+Files:
+ 8fa9a5171982b9611044a173e1255d3c 5228884 debug optional ros-jazzy-legged-rl-controllers-dbgsym_3.7.0-2026.11.03.00.26_arm64.ddeb
+ d334c2a50ff9f87acb03fc63d374501d 32134 misc optional ros-jazzy-legged-rl-controllers_3.7.0-2026.11.03.00.26_arm64.buildinfo
+ ad766cf53d2ba7426cb3375e3e6382dc 217478 misc optional ros-jazzy-legged-rl-controllers_3.7.0-2026.11.03.00.26_arm64.deb

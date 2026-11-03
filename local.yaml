@@ -19,3 +19,6 @@ onnxruntime_ament:
 legged_rl_controllers:
   ubuntu:
   - ros-jazzy-legged-rl-controllers
+legged_rl_tensorrt:
+  ubuntu:
+  - ros-jazzy-legged-rl-tensorrt
