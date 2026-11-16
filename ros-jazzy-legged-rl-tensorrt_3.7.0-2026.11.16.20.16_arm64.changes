@@ -1,0 +1,56 @@
+Format: 1.8
+Date: Mon, 02 Nov 2026 00:00:00 -0000
+Source: ros-jazzy-legged-rl-tensorrt
+Binary: ros-jazzy-legged-rl-tensorrt
+Built-For-Profiles: noudeb
+Architecture: arm64
+Version: 3.7.0-2026.11.16.20.16
+Distribution: noble
+Urgency: high
+Maintainer: Qiayuan Liao <liaoqiayuan@gmail.com>
+Changed-By: Qiayuan Liao <liaoqiayuan@gmail.com>
+Description:
+ ros-jazzy-legged-rl-tensorrt - TensorRT inference backend for legged_rl_controllers
+Changes:
+ ros-jazzy-legged-rl-tensorrt (3.7.0-2026.11.16.20.16) noble; urgency=high
+ .
+   * Add policy.threads and pluggable inference backends with TensorRT
+     policy.threads sets ONNX Runtime's intra-op threads, default 1 (the calling thread). Workers sleep between runs
+     instead of spinning. On the G1's Orin NX, 4 threads take the encoder + decoder tick from 3.0 ms to 1.5 ms.
+     OnnxPolicy uses the first installed legged::InferenceBackend plugin whose init() succeeds on the machine, after
+     checking its outputs against ONNX Runtime on a random input, and logs the choice. Without a plugin nothing changes.
+     legged_rl_tensorrt runs the policies on an NVIDIA GPU with FP32 engines (TF32 off), mapped host buffers and a CUDA
+     graph: 0.92 ms per encoder + decoder tick on the Orin NX. It loads TensorRT at run time and links the CUDA runtime
+     statically, so its deb depends on no NVIDIA package, and a machine without TensorRT or a GPU stays on the CPU.
+     Engines are built ahead, about 45 s on the Orin NX, with ros2 run legged_rl_tensorrt build_engine <model.onnx> ...,
+     next to the models and keyed by model, GPU and TensorRT version; a missing engine fails configure with that command.
+     OnnxPolicy's constructor and layout change, so dependent packages must be rebuilt.
+     Co-Authored-By: Claude Opus 5.5 <mailto:noreply@anthropic.com>
+     Claude-Session: https://claude.ai/code/session_01A2pd46YwYV5pUbH2WJmrKG
+   * Contributors: qiayuanl
+   * Add policy.threads and pluggable inference backends with TensorRT
+     policy.threads sets ONNX Runtime's intra-op threads, default 1 (the calling thread). Workers sleep between runs
+     instead of spinning. On the G1's Orin NX, 4 threads take the encoder + decoder tick from 3.0 ms to 1.5 ms.
+     OnnxPolicy uses the first installed legged::InferenceBackend plugin whose init() succeeds on the machine, after
+     checking its outputs against ONNX Runtime on a random input, and logs the choice. Without a plugin nothing changes.
+     legged_rl_tensorrt runs the policies on an NVIDIA GPU with FP32 engines (TF32 off), mapped host buffers and a CUDA
+     graph: 0.92 ms per encoder + decoder tick on the Orin NX. It loads TensorRT at run time and links the CUDA runtime
+     statically, so its deb depends on no NVIDIA package, and a machine without TensorRT or a GPU stays on the CPU.
+     Engines are built ahead, about 45 s on the Orin NX, with ros2 run legged_rl_tensorrt build_engine <model.onnx> ...,
+     next to the models and keyed by model, GPU and TensorRT version; a missing engine fails configure with that command.
+     OnnxPolicy's constructor and layout change, so dependent packages must be rebuilt.
+     Co-Authored-By: Claude Opus 5.5 <mailto:noreply@anthropic.com>
+     Claude-Session: https://claude.ai/code/session_01A2pd46YwYV5pUbH2WJmrKG
+   * Contributors: qiayuanl
+Checksums-Sha1:
+ e2593b0f01c0486b70d583cfc32f2bbafecb6583 920820 ros-jazzy-legged-rl-tensorrt-dbgsym_3.7.0-2026.11.16.20.16_arm64.ddeb
+ a724e2295ebc36c1e3e0b671318356a57dddaaa1 32872 ros-jazzy-legged-rl-tensorrt_3.7.0-2026.11.16.20.16_arm64.buildinfo
+ 5a96008c1f097fc458a6061c823e56d2aa2b1caa 288176 ros-jazzy-legged-rl-tensorrt_3.7.0-2026.11.16.20.16_arm64.deb
+Checksums-Sha256:
+ 94cfad836f2e1b515f50e5db70241cb7564b3603f87873e3bd92754790690efe 920820 ros-jazzy-legged-rl-tensorrt-dbgsym_3.7.0-2026.11.16.20.16_arm64.ddeb
+ 966be4b7e39087a333e61392b7560df6dc9d7b7ec863d49e0620d07464a90d07 32872 ros-jazzy-legged-rl-tensorrt_3.7.0-2026.11.16.20.16_arm64.buildinfo
+ 2b20469ad1fab0076496cdc807804747d3b3d79cf28ba801cc0c45f1643bdf47 288176 ros-jazzy-legged-rl-tensorrt_3.7.0-2026.11.16.20.16_arm64.deb
+Files:
+ c6eef782819680293f1a2962d51ae5ed 920820 debug optional ros-jazzy-legged-rl-tensorrt-dbgsym_3.7.0-2026.11.16.20.16_arm64.ddeb
+ 65101447c33901e619a0e27e0fd3c03b 32872 misc optional ros-jazzy-legged-rl-tensorrt_3.7.0-2026.11.16.20.16_arm64.buildinfo
+ cbfc9d14936955294bee612c2f1536d8 288176 misc optional ros-jazzy-legged-rl-tensorrt_3.7.0-2026.11.16.20.16_arm64.deb
